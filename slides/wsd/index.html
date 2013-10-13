@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Discourses in Language Processing</title>
+
+    <meta name="author" content="Benjamin Bengfort">
+    <meta name="keywords" content="NLP, NLTK, Natural Language Processing, Computational Lingustics">
+    <meta name="description" content="An introduction to NLP and NLTK">
+
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" type="text/css" href="../css/reveal.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme/default.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />
+
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <script type="text/template">
+                    # Natural Language Understanding  #
+                    A whirlwind tour of Word Sense Disambiguation
+
+                    Ben Johnson
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## What is Natural Language Understanding (NLU) ##
+                    * Natural language is extremely ambiguous
+                    * It is really very difficult to reason with ambiguous premises
+                    * NLU = Natural Language --[magic]--> Propositional Logic
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Ambiguity ##
+                    * Syntax - "One morning I shot an elephant in my pajamas.
+                      How he got into my pajamas I'll never know." --Groucho Marx
+                    * Semantics - Mary had a little lamb.
+                    * Referential
+                        * Rumack: "You'd better tell the Captain we've got to land as soon as
+                          we can. This woman has to be gotten to a hospital."
+                        * Elaine Dickinson: "A hospital? What is it?"
+                        * Rumack: "It's a big building with patients, but that's not important right now."
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Word Sense Disambiguation ##
+                    * If you open a dictionary, you will see most words have several listed senses
+                    * WSD is the task of taking an input text and determining which sense
+                      each word is representing
+                    * This is crucial to NLU - you can't understand text if you don't know what it means.
+                    * So, John made a robot.
+                        * Did he construct it?
+                        * What did he make it do?
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## A few methods ##
+                    * Gloss method
+                    * Selectional constraints
+                    * Supervised methods
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## The gloss method: a super clever approach to WSD ##
+                    * Each sense in a dictionary will have a definition, i.e. a gloss
+                    * The gloss method selects the sense of a word based on how much overlap exists
+                      between the gloss of that sense and the surround context words in the input
+                    * Performs surprisingly well (50-70% accuracy!), and runs very fast
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## An Example ##
+                        pine l* 7 kinds of evergreen tree with needle-shaped
+                                  evergreen(l) tree(6)
+                             2  1 pine/ - pine(l)
+                             3  0 waste away through sorrow or illness:
+                             4  0 / pine for sth; pine to do sth, / have a
+                        cone 1  0 solid body which narrows to a point from a
+                             2  0 sth of this shape whether solid or hollow,
+                             3* 8 fruit of certain evergreen trees (fir, pine.
+                                  evergreen(l) tree(6) pine(l)
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Selectional constraints ##
+                    * Many words take other words as arguments, e.g. A verb takes its subject as an argument
+                    * These argument-taking words, selectors, can impose constraints on their arguments.
+                    * Selectional constraints require that the arguments have certain meanings.  e.g. The
+                      direct object of "eat" must be something that is edible.  Like a carrot.  But not a car.
+                      Or an opera.
+                    * WSD then becomes a task of determining an interpretation of an input texts that best
+                      upholds each word's constraints on its arguments.
+                    * Ambiguity can still be a problem.  Constraints aren't specific enough, or conflict:
+                        * Bill Clinton ran it.
+                        * He ran the race.
+                        * Bill Clinton ran the race.
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Supervised methods ##
+                    * Use machine learning classifiers to chose word senses
+                    * ML classifiers require features to learn from data
+                    * Example features:
+                        * lemmas (root words)
+                        * POS
+                        * n-grams and/or chunking
+                        * text string of arguments (similar to selectional constraints)
+                    * The ML classifier is trained on a marked corpus
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Read more! ##
+                    Roberto Navigli wrote a lovely survey, titled Word Sense Disambiguation: a Survey,
+                    available [here](http://promethee.philo.ulg.ac.be/engdep1/download/bacIII/ACM_Survey_2009_Navigli.pdf).
+                </script>
+            </section>
+        </div>
+    </div>
+
+    <!-- Javascript at the bottom of the page for faster loading -->
+    <script type="text/javascript" src="../lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../js/reveal.min.js"></script>
+    <script type="text/javascript">
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history:  false,
+            keyboard: true,
+            touch:    false,
+            overview: true,
+            center:   true,
+            loop:     false,
+            transition: 'default',
+            transitionSpeed: 'default',
+            backgroundTransition: 'default',
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            ]
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Discourses in Language Processing- Parsing</title>
+
+    <meta name="author" content="Benjamin Bengfort">
+    <meta name="keywords" content="NLP, NLTK, Natural Language Processing, Computational Lingustics">
+    <meta name="description" content="An introduction to NLP and NLTK">
+
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" type="text/css" href="../css/reveal.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme/default.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />
+
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <script type="text/template">
+                    # Parsing #
+                    Creating syntactic structures for analysis
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # Trees #
+                        A **tree** is a set of connected nodes, each with a label and
+                        reachable by a unique path from the root node.
+
+                        [![The man chased a bear][bear_sent.png]][bear_sent.png]
+
+                        Trees can encode any homogenous hierarchical structure for linguistic forms-
+                        but syntacitc and depenency trees are the most common.
+
+                        [bear_sent.png]: <../img/task_four/bear_sent.png> "The man chased a bear."
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # Trees #
+                        Trees are constructed with a node label and a list of children:
+
+                            >>> sent = Tree('S', [Tree('NP', ['the', 'man']), Tree('VP', [Tree('V', ['chased']), Tree('NP', ['a', 'bear'])])]
+                            >>> '(S (NP the man) (VP (V chased) (NP a bear)))'
+
+                        Trees then can be indexed as though are a list, and nodes have `node` and
+                        `children` properties.
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # Traversal #
+
+                            def traverse(tree):
+                                try:
+                                    print '(', tree.node,
+                                    for child in tree:
+                                        traverse(child)
+                                    print ')',
+                                except AttributeError:
+                                    print tree,
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Structural Ambiguity ##
+                        > While hunting in Africa, I shot an elephant in my pajamas.
+
+                        A quick CFG will help us parse to show ambiguity.
+
+                            >>> grammar = nltk.parse_cfg("""
+                                S -> NP VP
+                                PP -> P NP
+                                NP -> DET N | DET N PP | 'I'
+                                VP -> V NP | VP PP
+                                DET -> 'an' | 'my'
+                                N -> 'elephant' | 'pajamas'
+                                V -> 'shot'
+                                P -> 'in'
+                                """)
+                            >>> sent   = ["I", "shot", "an", "elephant", "in", "my", "pajamas"]
+                            >>> parser = nltk.ChartParser(grammar)
+                            >>> trees  = parser.nbest_parse(sent)
+                            >>> for tree in trees: print tree
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Context Free Grammars ##
+                        Grammars are knowledge resources that define how a sentence can be
+                        divided into its immediate constituents, and how those become more
+                        subdivided. A tree is a perfect data structure to represent this.
+
+                        CFGs require:
+
+                        * A start symbol
+                        * A series of non-terminals and terminals
+                        * Productions consiting of a left hand side producing one or more right hand sides
+
+
+                            >>> mygrammar = nltk.data.load('file:mygrammar.cfg')
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Probabalistic Context Free Grammars ##
+                        Grammars can be recursive or have other weaknesses at being able to
+                        produce reliable parse results (e.g. multiple parse results).
+
+                        PCFGs associate a probability with a production, which can be used to calculate
+                        the probability of a particular parse.
+
+                            S  -> NP VP    [1.0]
+                            VP -> V NP     [0.8]
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Developing Grammars from Annotated Corpora ##
+                        Developing large grammars by hand is **HARD**.
+
+                        Instead, we rely on annotated corpora to train our grammar.
+                        Consider, the part of the Penn Treebank built into NLTK:
+
+                            >>> from nltk.corpus import treebank
+                            >>> tree = treebank.parsed_sents('wsj_0001.mrg')[0]
+                            >>> print tree
+
+                        But developing this is beyond the scope of the course.
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Cart before the Horse ##
+
+                        [![Cart before the horse][cart_before_the_horse.jpg]][cart_before_the_horse.jpg]
+
+                        We covered Grammars and in the process showed some parsing.
+
+                        [cart_before_the_horse.jpg]: <../img/task_four/cart_before_the_horse.jpg> "Cart before the horse"
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Strategies to Parsing ##
+
+                        * Recursive Descent (Top Down)
+                        * Shift-Reduce Parsing (Bottom Up)
+                        * Left-Corner Parser (Top Down with Bottom Up filtering)
+                        * Chart Parsing (Dynamic Programming)
+                        * And more like the Viterbi Parser
+
+                        <br />
+                        NLTK Contains 40 parsers to evaulate  with your knowledge base, grammar, and corpus.
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## A Quick Parse ##
+
+                            import nltk
+                            from nltk.grammar import toy_pcfg1
+                            from nltk.parse import ViterbiParser
+
+                            def parse(sentence):
+                                tokens = nltk.word_tokenize(sentence)
+                                parser = ViterbiParser(toy_pcfg1)
+                                return parser.nbest_parse(tokens)
+
+                            if __name__ == "__main__":
+                                parse("I saw the man under my telescope")
+
+                    </script>
+                </section>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Your Turn! ##
+
+                    * There are a lot of moving pieces when it comes to parsing
+                    * See if you can create a grammar and achieve a successful parse
+                    * Use some of the toy grammars to get you started
+
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Tasks Complete! ##
+
+                        [Back to Main Page](../index.html)
+
+                    </script>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <!-- Javascript at the bottom of the page for faster loading -->
+    <script type="text/javascript" src="../lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../js/reveal.min.js"></script>
+    <script type="text/javascript">
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history:  false,
+            keyboard: true,
+            touch:    false,
+            overview: true,
+            center:   true,
+            loop:     false,
+            transition: 'default',
+            transitionSpeed: 'default',
+            backgroundTransition: 'default',
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            ]
+        });
+    </script>
+
+</body>
+</html>
