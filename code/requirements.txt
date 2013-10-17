@@ -1,0 +1,7 @@
+PyYAML==3.10
+dumbo==0.21.36
+language-selector==0.1
+nltk==2.0.4
+numpy==1.7.1
+typedbytes==0.3.8
+ufw==0.31.1-1
