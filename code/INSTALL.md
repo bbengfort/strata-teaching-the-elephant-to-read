@@ -194,6 +194,14 @@ You'll also have to download the NLTK data packages which will install to `/usr/
 
 At this point the steps that are left are loading data into Hadoop.
 
+### References ###
+
+1. [Hadoop/Java Versions][hadoop_java]
+2. [Installing Java on Ubuntu][installing_java]
+3. [An Update on Apache Hadoop 1.0][guide_to_hadoop_versions]
+4. [Running Hadoop on Ubuntu Linux Single Node Cluster][noll_tutorial]
+5. [Apache: Single Node Setup][single_node_setup]
+
 <!-- References -->
 [hadoop_java]: http://wiki.apache.org/hadoop/HadoopJavaVersions "Hadoop/Java Versions"
 [installing_java]: https://help.ubuntu.com/community/Java "Installing Java on Ubuntu"
@@ -202,3 +210,4 @@ At this point the steps that are left are loading data into Hadoop.
 [hadoop_update]: http://hadoop.apache.org/releases.html#15+October%2C+2013%3A+Release+2.2.0+available "October 15, 2013: Release 2.2.0 available"
 [opt_or_srv]: http://serverfault.com/questions/96416/should-i-install-linux-applications-in-var-or-opt "Stack Overflow"
 [noll_tutorial]: http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/#sun-java-6 "Michael Noll"
+[single_node_setup]: http://hadoop.apache.org/docs/stable/single_node_setup.html "Single Node Setup"
