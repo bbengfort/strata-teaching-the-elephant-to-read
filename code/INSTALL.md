@@ -5,16 +5,16 @@ In order to get ready execute the code in this library you need a development en
 **Base Environment**: Ubuntu x64 Server 12.04 LTS.
 
 If you're using the virtual machine provided by the instructors login with:
-    
+
     username: hadoop
     password: password
-    
+
 ## Linux Setup ##
 
 Let's get you ready to develop:
 
     ~$ sudo apt-get update && sudo apt-get upgrade
-    ~$ sudo apt-get install build-essential ssh avahi-daemon 
+    ~$ sudo apt-get install build-essential ssh avahi-daemon
     ~$ sudo apt-get install vim lzop git
     ~$ sudo apt-get install python-dev python-setuptools libyaml-dev
     ~$ sudo easy_install pip
@@ -23,18 +23,18 @@ At this point you should probably generate some ssh keys (for hadoop and so you 
 
     ~$ ssh-keygen
     Generating public/private rsa key pair.
-    Enter file in which to save the key (/home/hadoop/.ssh/id_rsa): 
+    Enter file in which to save the key (/home/hadoop/.ssh/id_rsa):
     Created directory '/home/hadoop/.ssh'.
-    Enter passphrase (empty for no passphrase): 
-    Enter same passphrase again: 
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
     Your identification has been saved in /home/hadoop/.ssh/id_rsa.
     Your public key has been saved in /home/hadoop/.ssh/id_rsa.pub.
     [… snip …]
-    
-Make sure that you leave the password as blank, hadoop will need the keys if you're setting up a cluster for more than one user. Also note that it is good practice to keep the administrator seperate from the hadoop user- but since this is a development cluster, we're just taking a shortcut and leaving them the same. 
+
+Make sure that you leave the password as blank, hadoop will need the keys if you're setting up a cluster for more than one user. Also note that it is good practice to keep the administrator seperate from the hadoop user- but since this is a development cluster, we're just taking a shortcut and leaving them the same.
 
 One final step, copy allow that key to be authorized for ssh.
-    
+
     ~$ cp .ssh/id_rsa.pub .ssh/authorized_keys
 
 You can download this key and use it to ssh into your virtual environment if needed.
@@ -44,35 +44,35 @@ You can download this key and use it to ssh into your virtual environment if nee
 Hadoop requires Java - and since we're using Ubuntu, we're going to use OpenJDK rather than Sun because Ubuntu doesn't provide a .deb package for Oracle Java. Hadoop supports OpenJDK with a few minor caveats: [java versions on hadoop][hadoop_java]. If you'd like to install a different version, see [installing java on hadoop][installing_java].
 
     ~$ sudo apt-get install openjdk-7-jdk
-    
+
 Do a quick check to make sure you have the right version of Java installed:
-    
+
     ~$ java -version
     java version "1.7.0_25"
     OpenJDK Runtime Environment (IcedTea 2.3.10) (7u25-2.3.10-1ubuntu0.12.04.2)
     OpenJDK 64-Bit Server VM (build 23.7-b01, mixed mode)
 
 Now we need to disable IPv6 on Ubuntu- there is one issue when hadoop binds on `0.0.0.0` that it also binds to the IPv6 address. This isn't too hard: simply edit (with the editor of your choice, I prefer `vim`) the `/etc/sysctl.conf` file and add the following lines to the end of the file:
-    
+
     # disable ipv6
     net.ipv6.conf.all.disable_ipv6 = 1
     net.ipv6.conf.default.disable_ipv6 = 1
     net.ipv6.conf.lo.disable_ipv6 = 1
-    
+
 Unfortunately you'll have to reboot your machine for this change to take affect. You can then check the status with the following command (0 is enabled, 1 is disabled):
 
     ~$ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 
 And now we're ready to download Hadoop from the [Apache Download Mirrors][download_hadoop]. Hadoop versions are a bit goofy: [an update on Apache Hadoop 1.0][guide_to_hadoop_versions] however, as of October 15, 2013 [release 2.2.0 is available][hadoop_update]. However, the stable version is still listed as version 1.2.1.
-    
+
 Go ahead and unpack in a location of your choice. We've debated internally what directory to place Hadoop and other distributed services like Cassandra or Titan in- but we've landed on `/srv` thanks to [this post][opt_or_srv]. Unpack the file, change the permissions to the hadoop user and then create a symlink from the version to a local hadoop link. This will allow you to set any version to the latest hadoop without worrying about losing versioning.
-    
-    /srv$ sudo tar -xzf hadoop-1.2.1.tar.gz 
+
+    /srv$ sudo tar -xzf hadoop-1.2.1.tar.gz
     /srv$ sudo chown -R hadoop:hadoop hadoop-1.2.1
     /srv$ sudo ln -s $(pwd)/hadoop-1.2.1 $(pwd)/hadoop
 
 Now we have to configure some environment variables so that everything executes correctly, while we're at it will create a couple aliases in our bash profile to make our lives a bit easier. Edit the `~/.profile` file in your home directory and add the following to the end:
-    
+
     # Set the Hadoop Related Environment variables
     export HADOOP_PREFIX=/srv/hadoop
 
@@ -98,10 +98,10 @@ Now we have to configure some environment variables so that everything executes 
 We'll continue configuring the Hadoop environment. Edit the following files in `/srv/hadoop/conf/`:
 
 **hadoop-env.sh**
-    
+
     # The java implementation to use. Required.
     export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-    
+
 **core-site.xml**
 
     <configuration>
@@ -134,7 +134,7 @@ We'll continue configuring the Hadoop environment. Edit the following files in `
     </configuration>
 
 That's it configuration over! But before we get going we have to format the distributed filesystem in order to use it. We'll store our file system in the `/app/hadoop/tmp` directory as per [Michael Noll][noll_tutorial] and as we set in the `core-site.xml` configuration. We'll have to set up this directory and then format the name node.
-    
+
     /srv$ sudo mdir -p /app/hadoop/tmp
     /srv$ sudo chown -R hadoop:hadoop /app/hadoop
     /srv$ sudo chmod -R 750 /app/hadoop
@@ -142,7 +142,7 @@ That's it configuration over! But before we get going we have to format the dist
     [… snip …]
 
 You should now be able to run Hadoop's `start-all.sh` command to start all the relevant daemons:
-    
+
     /srv$ bin/start-all.sh
     starting namenode, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-namenode-ubuntu.out
     localhost: starting datanode, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-datanode-ubuntu.out
@@ -151,7 +151,7 @@ You should now be able to run Hadoop's `start-all.sh` command to start all the r
     localhost: starting tasktracker, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-tasktracker-ubuntu.out
 
 And you can use the `jps` command to see what's running:
-    
+
     /srv$ jps
     1321 NameNode
     1443 DataNode
@@ -178,7 +178,7 @@ To run the code in this section, you'll need to install some Python packages as 
     [… snip …]
 
 However, if you simply want to install the dependencies yourself, here are the contents of the `requirements.txt` file:
-    
+
     # requirements.txt
     PyYAML==3.10
     dumbo==0.21.36
@@ -187,9 +187,9 @@ However, if you simply want to install the dependencies yourself, here are the c
     numpy==1.7.1
     typedbytes==0.3.8
     ufw==0.31.1-1
-    
+
 You'll also have to download the NLTK data packages which will install to `/usr/share/nltk_data` unless you set an environment variable called `NLTK_DATA`. The best way to install all this data is as follows:
-    
+
     ~$ sudo python -m nltk.downloader -d /usr/share/nltk_data all
 
 At this point the steps that are left are loading data into Hadoop.

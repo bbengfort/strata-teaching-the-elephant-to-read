@@ -1,7 +1,10 @@
 import nltk
 
+from nltk.stem import WordNetLemmatizer
+from nltk.tokenize import wordpunct_tokenize
+
 class Mapper(object):
-    
+
     def __init__(self):
         if 'stopwords' in self.params:
             with open(self.params['stopwords'], 'r') as excludes:
@@ -9,10 +12,20 @@ class Mapper(object):
         else:
             self._stopwords = None
 
+        self.lemmatizer = WordNetLemmatizer()
+
     def __call__(self, key, value):
-        for word in nltk.word_tokenize(value):
+        for word in self.tokenize(value):
             if not word in self.stopwords:
                 yield word, 1
+
+    def normalize(self, word):
+        word = word.lower()
+        return self.lemmatizer.lemmatize(word)
+
+    def tokenize(self, sentence):
+        for word in wordpunct_tokenize(sentence):
+            yield self.normalize(word)
 
     @property
     def stopwords(self):

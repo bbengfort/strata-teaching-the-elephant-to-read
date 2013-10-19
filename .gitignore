@@ -37,3 +37,7 @@ nosetests.xml
 
 # Mac Stuff
 .DS_Store
+
+# Dumbo Output for streaming
+output.txt
+.output.*
