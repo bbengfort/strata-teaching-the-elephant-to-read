@@ -8,7 +8,7 @@ efficiency as well as defines various helper functions.
 import sys
 
 class Mapper(object):
-    
+
     def __init__(self, infile=sys.stdin, separator='\t'):
         self.infile = infile
         self.sep    = separator
