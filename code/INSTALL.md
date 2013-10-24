@@ -52,7 +52,13 @@ Do a quick check to make sure you have the right version of Java installed:
     OpenJDK Runtime Environment (IcedTea 2.3.10) (7u25-2.3.10-1ubuntu0.12.04.2)
     OpenJDK 64-Bit Server VM (build 23.7-b01, mixed mode)
 
-Now we need to disable IPv6 on Ubuntu- there is one issue when hadoop binds on `0.0.0.0` that it also binds to the IPv6 address. This isn't too hard: simply edit (with the editor of your choice, I prefer `vim`) the `/etc/sysctl.conf` file and add the following lines to the end of the file:
+Now we need to disable IPv6 on Ubuntu- there is one issue when hadoop binds on `0.0.0.0` that it also binds to the IPv6 address. This isn't too hard: simply edit (with the editor of your choice, I prefer `vim`) the `/etc/sysctl.conf` file using the following command
+
+	sudo vim /etc/sysctl.conf
+
+and add the following lines to the end of the file:
+
+
 
     # disable ipv6
     net.ipv6.conf.all.disable_ipv6 = 1
