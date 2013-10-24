@@ -11,7 +11,16 @@ If you're using the virtual machine provided by the instructors login with:
 
 ## Linux Setup ##
 
-Let's get you ready to develop:
+Let's get you ready to develop. First, let's create a user account with admin privileges with username "hadoop" and the very creative password "password."
+
+	~$ sudo adduser hadoop
+	~$ sudo usermod -a -G sudo hadoop
+	~$ sudo adduser hadoop sudo
+
+Log out and log back in as "hadoop."
+
+Now you need to install some software.
+
 
     ~$ sudo apt-get update && sudo apt-get upgrade
     ~$ sudo apt-get install build-essential ssh avahi-daemon
@@ -141,7 +150,7 @@ We'll continue configuring the Hadoop environment. Edit the following files in `
 
 That's it configuration over! But before we get going we have to format the distributed filesystem in order to use it. We'll store our file system in the `/app/hadoop/tmp` directory as per [Michael Noll][noll_tutorial] and as we set in the `core-site.xml` configuration. We'll have to set up this directory and then format the name node.
 
-    /srv$ sudo mdir -p /app/hadoop/tmp
+    /srv$ sudo mkdir -p /app/hadoop/tmp
     /srv$ sudo chown -R hadoop:hadoop /app/hadoop
     /srv$ sudo chmod -R 750 /app/hadoop
     /srv$ hadoop namenode -format
@@ -149,7 +158,7 @@ That's it configuration over! But before we get going we have to format the dist
 
 You should now be able to run Hadoop's `start-all.sh` command to start all the relevant daemons:
 
-    /srv$ bin/start-all.sh
+    /srv$ hadoop-1.2.1/bin/start-all.sh
     starting namenode, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-namenode-ubuntu.out
     localhost: starting datanode, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-datanode-ubuntu.out
     localhost: starting secondarynamenode, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-secondarynamenode-ubuntu.out
