@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Discourses in Language Processing- Organizing Corpora</title>
+
+    <meta name="author" content="Benjamin Bengfort">
+    <meta name="keywords" content="NLP, NLTK, Natural Language Processing, Computational Lingustics">
+    <meta name="description" content="An introduction to NLP and NLTK">
+
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" type="text/css" href="../css/reveal.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme/default.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />
+
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <script type="text/template">
+                    # Organizing Text #
+                    The management of large bodies of natural language - copora
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Some Built In Corpora ##
+                        All can be found in `nltk.corpus`
+
+                        * `gutenberg`: Small selection of literature
+                        * `shakespeare`: For Elizabethan comparisons
+                        * `webtext`: Forums, personal ads, movie script, reviews
+                        * `nps_chat`: Chat text collectd by Naval Postgrad School
+                        * `brown`: First million word electronic corpus
+                        * `reuters`: News articles (1.3 million words)
+                        * `inaugural`: Innaugural addresses
+                        * `swtichboard`: Transcribed phone conversations
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        [![Gunny Approved][gunny.jpg]][gunny.jpg]
+
+                        > This is my corpus <br />
+                        > There are many like it <br />
+                        > But this one is mine.
+
+                        [gunny.jpg]: <../img/task_one/gunny.jpg> "Gunny Approved"
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Organizing your own corpus ##
+
+                            |-- Corpus Root
+                            +--+
+                               |-- README
+                               |-- categories.txt
+                               |-- texta.txt
+                               +-- textb.txt
+
+                        * Overrides for walking directory structures
+                        * ZipFile Corpus Readers for compression
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Accessing a Corpus ##
+
+                            >>> from nltk.corpus import PlaintextCorpusReader
+
+                            >>> root   = '/home/student/Corpora/books/'
+                            >>> corpus = PlaintextCorpusReader(root, '.*')
+                            >>> corpus.fileids()
+                            ['The', 'Project', 'Gutenberg', 'EBook', 'of', 'An', ...]
+                            >>> print corpus.readme()
+                            "The corpus of categorized books for the NLTK Workshop"
+
+                        Now you have access to two interesting features:
+
+                        * `corpus.words`
+                        * `corpus.sents`
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Accessing Text Objects ##
+
+                            >>> from nltk import Text
+                            >>> text = Text(corpus.words())
+                            >>> len(text)
+                            1516195
+                            >>> V = set(text)
+                            >>> len(V)
+                            44351
+                            >>> text.concordance('africa')
+                            ...
+                            >>> text.collocations()
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Beyond Plaintext ##
+
+                        * Tagged and Categoried Corpora
+                        * HTML - `nltk.clean_html` or `BeautifulSoup`
+                        * RSS - `feedparser` library
+                        * PDF - `pypdf`
+                        * MS Word - `pywin23`
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## A Note on Encoding ##
+
+                        * We are going to get away with UTF-8
+                        * But encoding is HARD
+                        * NLTK has stuff to handle it for you
+                        * But always be thinking about it!
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # Your Turn #
+                    </script>
+                </section>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Corpus Access Scripts ##
+                    Create a Python script to access your Corpora
+
+                        from nltk.text import Text
+                        from nltk.corpus import PlaintextCorpusReader
+
+                        CORPUS_ROOT = "/home/student/Corpora/books/"
+
+                        class MyCorpus(PlaintextCorpusReader):
+
+                            def __init__(self):
+                                super(MyCorpus, self).__init__(CORPUS_ROOT, '.*')
+
+                            def text(self):
+                                return Text(self.words())
+
+                    Feel free to extend or awesomeify!
+
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Vocabulary ##
+
+                        Vocabulary is the set of unique words.
+
+                        Lexical Diversity is how rich the lexicon is in a text.
+
+                            from __future__ import division
+
+                            class MyCorpus(PlaintextCorpusReader):
+
+                                def vocabulary(self):
+                                    return set(self.text())
+
+                                def lexical_diversity(self):
+                                    return len(self) / len(self.vocabulary()).
+
+                                def __len__(self):
+                                    return len(self.text())
+
+                        Create a method to calculate the percent a particular token is used.
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Frequency Distributions ##
+                        Lets add some basic statistics
+
+                            from nltk import FreqDist
+
+                            class MyCorpus(PlaintextCorpusReader):
+
+                                def histogram(self):
+                                    return FreqDist(self.text())
+
+                        Note that the FreqDist will also give you vocabulary and length. Refactor
+                        to calculate the frequency distribution on init and use that for your
+                        `vocabulary` and `__len__` methods.
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Conditional Frequency Distributions ##
+                        Lets use another corpus and analyze name endings.
+
+                            import nltk
+
+                            names  = nltk.corpus.names
+                            male   = names.words('male.txt')
+                            female = names.words('female.txt')
+
+                            distr  = nltk.ConditionalFreqDist(
+                                        (fileid, name[-1])
+                                        for fileid in name.fileids()
+                                        for name in names.words(fileid)
+                                     )
+                            distr.plot()
+
+                        Note: drawing and graphing might require additional libraries,
+                        particularly `python-tkinter` and `python-matplotlib`
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## To Task 2! ##
+                        Not enough? Call me over!
+
+                        [Back to Main Page](../index.html)
+
+                    </script>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <!-- Javascript at the bottom of the page for faster loading -->
+    <script type="text/javascript" src="../lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../js/reveal.min.js"></script>
+    <script type="text/javascript">
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history:  false,
+            keyboard: true,
+            touch:    false,
+            overview: true,
+            center:   true,
+            loop:     false,
+            transition: 'default',
+            transitionSpeed: 'default',
+            backgroundTransition: 'default',
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            ]
+        });
+    </script>
+
+</body>
+</html>
