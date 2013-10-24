@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Installation</title>
+
+</head>
+<body>
+<h1>Installation</h1>
+
+<p>In order to get ready execute the code in this library you need a development environment set up and ready to go. These instructions will help you get it set up.</p>
+
+<p><strong>Base Environment</strong>: Ubuntu x64 Server 12.04 LTS.</p>
+
+<p>If you're using the virtual machine provided by the instructors login with:</p>
+
+<pre><code>username: hadoop
+password: password
+</code></pre>
+
+<h2>Linux Setup</h2>
+
+<p>Let's get you ready to develop. First, let's create a user account with admin privileges with username "hadoop" and the very creative password "password."</p>
+
+<pre><code>~$ sudo adduser hadoop
+~$ sudo usermod -a -G sudo hadoop
+~$ sudo adduser hadoop sudo
+</code></pre>
+
+<p>Log out and log back in as "hadoop."</p>
+
+<p>Now you need to install some software.</p>
+
+<pre><code>~$ sudo apt-get update &amp;&amp; sudo apt-get upgrade
+~$ sudo apt-get install build-essential ssh avahi-daemon
+~$ sudo apt-get install vim lzop git
+~$ sudo apt-get install python-dev python-setuptools libyaml-dev
+~$ sudo easy_install pip
+</code></pre>
+
+<p>At this point you should probably generate some ssh keys (for hadoop and so you can ssh in and get out of the VM terminal.)</p>
+
+<pre><code>~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/hadoop/.ssh/id_rsa):
+Created directory '/home/hadoop/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/hadoop/.ssh/id_rsa.
+Your public key has been saved in /home/hadoop/.ssh/id_rsa.pub.
+[… snip …]
+</code></pre>
+
+<p>Make sure that you leave the password as blank, hadoop will need the keys if you're setting up a cluster for more than one user. Also note that it is good practice to keep the administrator seperate from the hadoop user- but since this is a development cluster, we're just taking a shortcut and leaving them the same.</p>
+
+<p>One final step, copy allow that key to be authorized for ssh.</p>
+
+<pre><code>~$ cp .ssh/id_rsa.pub .ssh/authorized_keys
+</code></pre>
+
+<p>You can download this key and use it to ssh into your virtual environment if needed.</p>
+
+<h2>Installing Hadoop</h2>
+
+<p>Hadoop requires Java - and since we're using Ubuntu, we're going to use OpenJDK rather than Sun because Ubuntu doesn't provide a .deb package for Oracle Java. Hadoop supports OpenJDK with a few minor caveats: <a href="http://wiki.apache.org/hadoop/HadoopJavaVersions" title="Hadoop/Java Versions">java versions on hadoop</a>. If you'd like to install a different version, see <a href="https://help.ubuntu.com/community/Java" title="Installing Java on Ubuntu">installing java on hadoop</a>.</p>
+
+<pre><code>~$ sudo apt-get install openjdk-7-jdk
+</code></pre>
+
+<p>Do a quick check to make sure you have the right version of Java installed:</p>
+
+<pre><code>~$ java -version
+java version "1.7.0_25"
+OpenJDK Runtime Environment (IcedTea 2.3.10) (7u25-2.3.10-1ubuntu0.12.04.2)
+OpenJDK 64-Bit Server VM (build 23.7-b01, mixed mode)
+</code></pre>
+
+<p>Now we need to disable IPv6 on Ubuntu- there is one issue when hadoop binds on <code>0.0.0.0</code> that it also binds to the IPv6 address. This isn't too hard: simply edit (with the editor of your choice, I prefer <code>vim</code>) the <code>/etc/sysctl.conf</code> file using the following command</p>
+
+<pre><code>~$ sudo vim /etc/sysctl.conf
+</code></pre>
+
+<p>and add the following lines to the end of the file:</p>
+
+<pre><code># disable ipv6
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+</code></pre>
+
+<p>Unfortunately you'll have to reboot your machine for this change to take affect. You can then check the status with the following command (0 is enabled, 1 is disabled):</p>
+
+<pre><code>~$ cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+</code></pre>
+
+<p>And now we're ready to download Hadoop from the <a href="http://www.apache.org/dyn/closer.cgi/hadoop/core" title="Hadoop Mirrors">Apache Download Mirrors</a>. Hadoop versions are a bit goofy: <a href="http://blog.cloudera.com/blog/2012/01/an-update-on-apache-hadoop-1-0/" title="Apache Hadoop version 1.0">an update on Apache Hadoop 1.0</a> however, as of October 15, 2013 <a href="http://hadoop.apache.org/releases.html#15+October%2C+2013%3A+Release+2.2.0+available" title="October 15, 2013: Release 2.2.0 available">release 2.2.0 is available</a>. However, the stable version is still listed as version 1.2.1.</p>
+
+<p>Go ahead and unpack in a location of your choice. We've debated internally what directory to place Hadoop and other distributed services like Cassandra or Titan in- but we've landed on <code>/srv</code> thanks to <a href="http://serverfault.com/questions/96416/should-i-install-linux-applications-in-var-or-opt" title="Stack Overflow">this post</a>. Unpack the file, change the permissions to the hadoop user and then create a symlink from the version to a local hadoop link. This will allow you to set any version to the latest hadoop without worrying about losing versioning.</p>
+
+<pre><code>/srv$ sudo tar -xzf hadoop-1.2.1.tar.gz
+/srv$ sudo chown -R hadoop:hadoop hadoop-1.2.1
+/srv$ sudo ln -s $(pwd)/hadoop-1.2.1 $(pwd)/hadoop
+</code></pre>
+
+<p>Now we have to configure some environment variables so that everything executes correctly, while we're at it will create a couple aliases in our bash profile to make our lives a bit easier. Edit the <code>~/.profile</code> file in your home directory and add the following to the end:</p>
+
+<pre><code># Set the Hadoop Related Environment variables
+export HADOOP_PREFIX=/srv/hadoop
+
+# Set the JAVA_HOME
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+
+# Add Hadoop bin/ directory to PATH
+export PATH=$PATH:$HADOOP_PREFIX/bin
+
+# Some helpful aliases
+
+unalias fs &amp;&gt; /dev/null
+alias fs="hadoop fs"
+unalias hls &amp;&gt; /dev/null
+alias hls="fs -ls"
+alias ..="cd .."
+alias ...="cd ../.."
+
+lzohead() {
+    hadoop fs -cat $1 | lzop -dc | head -1000 | less
+}
+</code></pre>
+
+<p>We'll continue configuring the Hadoop environment. Edit the following files in <code>/srv/hadoop/conf/</code>:</p>
+
+<p><strong>hadoop-env.sh</strong></p>
+
+<pre><code># The java implementation to use. Required.
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+</code></pre>
+
+<p><strong>core-site.xml</strong></p>
+
+<pre><code>&lt;configuration&gt;
+    &lt;property&gt;
+        &lt;name&gt;fs.default.name&lt;/name&gt;
+        &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+        &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;
+        &lt;value&gt;/app/hadoop/tmp&lt;/value&gt;
+    &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre>
+
+<p><strong>hdfs-site.xml</strong></p>
+
+<pre><code>&lt;configuration&gt;
+    &lt;property&gt;
+        &lt;name&gt;dfs.replication&lt;/name&gt;
+        &lt;value&gt;1&lt;/value&gt;
+    &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre>
+
+<p><strong>mapred-site.xml</strong></p>
+
+<pre><code>&lt;configuration&gt;
+    &lt;property&gt;
+        &lt;name&gt;mapred.job.tracker&lt;/name&gt;
+        &lt;value&gt;localhost:9001&lt;/value&gt;
+    &lt;/property&gt;
+&lt;/configuration&gt;
+</code></pre>
+
+<p>That's it configuration over! But before we get going we have to format the distributed filesystem in order to use it. We'll store our file system in the <code>/app/hadoop/tmp</code> directory as per <a href="http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/#sun-java-6" title="Michael Noll">Michael Noll</a> and as we set in the <code>core-site.xml</code> configuration. We'll have to set up this directory and then format the name node.</p>
+
+<pre><code>/srv$ sudo mkdir -p /app/hadoop/tmp
+/srv$ sudo chown -R hadoop:hadoop /app/hadoop
+/srv$ sudo chmod -R 750 /app/hadoop
+/srv$ hadoop namenode -format
+[… snip …]
+</code></pre>
+
+<p>You should now be able to run Hadoop's <code>start-all.sh</code> command to start all the relevant daemons:</p>
+
+<pre><code>/srv$ hadoop-1.2.1/bin/start-all.sh
+starting namenode, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-namenode-ubuntu.out
+localhost: starting datanode, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-datanode-ubuntu.out
+localhost: starting secondarynamenode, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-secondarynamenode-ubuntu.out
+starting jobtracker, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-jobtracker-ubuntu.out
+localhost: starting tasktracker, logging to /srv/hadoop-1.2.1/libexec/../logs/hadoop-hadoop-tasktracker-ubuntu.out
+</code></pre>
+
+<p>And you can use the <code>jps</code> command to see what's running:</p>
+
+<pre><code>/srv$ jps
+1321 NameNode
+1443 DataNode
+1898 Jps
+1660 JobTracker
+1784 TaskTracker
+1573 SecondaryNameNode
+</code></pre>
+
+<p>Furthermore, you can access the various hadoop web interfaces as follows:</p>
+
+<ul>
+<li><a href="http://localhost:50070/">http://localhost:50070/</a> – web UI of the NameNode daemon</li>
+<li><a href="http://localhost:50030/">http://localhost:50030/</a> – web UI of the JobTracker daemon</li>
+<li><a href="http://localhost:50060/">http://localhost:50060/</a> – web UI of the TaskTracker daemon</li>
+</ul>
+
+
+<p>To stop Hadoop simply run the <code>stop-all.sh</code> command.</p>
+
+<h2>Python Packages</h2>
+
+<p>To run the code in this section, you'll need to install some Python packages as dependencies, and in particular the NLTK library. The simplest way to install these packages is with the <code>requirements.txt</code> file that comes with the code library in our repository. We'll clone it into a repository called <code>tutorial</code>.</p>
+
+<pre><code>~$ git clone https://github.com/bbengfort/strata-teaching-the-elephant-to-read.git tutorial
+~$ cd tutorial/code
+~$ sudo pip install -U -r requirements.txt
+[… snip …]
+</code></pre>
+
+<p>However, if you simply want to install the dependencies yourself, here are the contents of the <code>requirements.txt</code> file:</p>
+
+<pre><code># requirements.txt
+PyYAML==3.10
+dumbo==0.21.36
+language-selector==0.1
+nltk==2.0.4
+numpy==1.7.1
+typedbytes==0.3.8
+ufw==0.31.1-1
+</code></pre>
+
+<p>You'll also have to download the NLTK data packages which will install to <code>/usr/share/nltk_data</code> unless you set an environment variable called <code>NLTK_DATA</code>. The best way to install all this data is as follows:</p>
+
+<pre><code>~$ sudo python -m nltk.downloader -d /usr/share/nltk_data all
+</code></pre>
+
+<p>At this point the steps that are left are loading data into Hadoop.</p>
+
+<a href="index.html">Return to main course index</a>
+
+<h3>References</h3>
+
+<ol>
+<li><a href="http://wiki.apache.org/hadoop/HadoopJavaVersions" title="Hadoop/Java Versions">Hadoop/Java Versions</a></li>
+<li><a href="https://help.ubuntu.com/community/Java" title="Installing Java on Ubuntu">Installing Java on Ubuntu</a></li>
+<li><a href="http://blog.cloudera.com/blog/2012/01/an-update-on-apache-hadoop-1-0/" title="Apache Hadoop version 1.0">An Update on Apache Hadoop 1.0</a></li>
+<li><a href="http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/#sun-java-6" title="Michael Noll">Running Hadoop on Ubuntu Linux Single Node Cluster</a></li>
+<li><a href="http://hadoop.apache.org/docs/stable/single_node_setup.html" title="Single Node Setup">Apache: Single Node Setup</a></li>
+</ol>
+
+
+<!-- References -->
+
+</body>
+</html>
