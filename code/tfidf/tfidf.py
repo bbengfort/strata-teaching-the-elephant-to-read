@@ -7,7 +7,7 @@ from operator import itemgetter
 from nltk.corpus import stopwords
 from nltk.tokenize import wordpunct_tokenize
 
-N = 50.0 # Number of documents, in float to make division work.
+N = 10788.0 # Number of documents, in float to make division work.
 
 class TermMapper(object):
 
@@ -18,10 +18,15 @@ class TermMapper(object):
         else:
             self._stopwords = None
 
+        self.curdoc = None
+
     def __call__(self, key, value):
-        for word in self.tokenize(value):
-            if not word in self.stopwords:
-                yield (word, key), 1
+        if value.startswith('='*34):
+            self.curdoc = int(value.strip("=").strip())
+        else:
+            for word in self.tokenize(value):
+                if not word in self.stopwords:
+                    yield (word, self.curdoc), 1
 
     def normalize(self, word):
         word = word.lower()
@@ -51,7 +56,7 @@ class IDFMapper(object):
         term, docid = key
         tf, n = value
         idf = math.log(N/n)
-        yield (term, docid), idf
+        yield (term, docid), idf*tf
 
 class SumReducer(object):
 
@@ -61,12 +66,11 @@ class SumReducer(object):
 class BufferReducer(object):
 
     def __call__(self, key, values):
-        term = key
-        for docid, group in groupby(values, itemgetter(0)):
-            group = list(group)
-            tf = group[0][1]
-            n  = sum(g[2] for g in group)
-            yield (term, docid), (tf, n)
+        term   = key
+        values = list(values)
+        n = sum(g[2] for g in values)
+        for g in values:
+            yield (term, g[0]), (g[1], n)
 
 class IdentityReducer(object):
 
