@@ -1,41 +1,52 @@
-# Welcome #
+# Welcome to Teaching the Elephant to Read #
 
 We are very excited to be teaching the Teaching the Elephant to Read tutorial at Strata on Monday, the 28th of October. We will be covering numerous software packages that can be time consuming to install on various operating sytems and laptops.
 
-The instructions below will walk you through the creation and configuration of a virtual machine running in Virtual Box. The instructions have been tested and debugged so you shouldn't have too many problems. However, if you have any issues, please email me at sayhitosean [AT] gmail.com. 
+The instructions below will walk you through the creation and configuration of a virtual machine running in Virtual Box with a lot of different software packages. The instructions have been tested and debugged so you shouldn't have too many problems. However, if you do have any issues, please email me at sayhitosean [AT] gmail.com. 
 
-Please note that you will need a **64-bit machine and operating system** for this tutorial. The virtual machine/image that we will be using has been tested on Mac OS X (up through Mavericks) and 64-bit Windows. 
+Please note that you will need a **64-bit machine and operating system** for this tutorial. The virtual machine/image that we will be building and using has been tested on Mac OS X (up through Mavericks) and 64-bit Windows. 
 
 
 # Installation #
 
-In order to get ready execute the code in this library you need a development environment set up and ready to go. These instructions will help you get it set up.
+In order to get ready execute the code in this tutorial, you will need a development environment set up and ready to go. These instructions will help you get it set up.
 
-**Base Environment**: Ubuntu x64 Server 12.04 LTS.
+Please note that this process could take an hour or longer depending on the bandwidth of your connection as you will need to download approximately 1 GB of software. DO NOT WAIT UNTIL THE BEGINNING OF THE TUTORIAL to follow these instructions.
 
-If you're using the virtual machine provided by the instructors login with:
+## Install and Configure Virtual Machine ##
+
+First, you will need to install Virtual Box, free software from Oracle. Go here to download the 64-bit version appropriate for your machine:
+
+<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Download Virtual Box</a>
+
+Once Virtual Box is installed, you will need to grab a Ubuntu x64 Server 12.04 LTS image and you can do that directly from Ubuntu here.
+
+<a href="http://www.ubuntu.com/download/desktop/thank-you?release=lts&bits=64&distro=desktop&status=zeroc" target="_blank">Ubuntu Image</a>
+
+## Linux Setup ##
+
+First, let's create a user account with admin privileges with username "hadoop" and the very creative password "password."
 
     username: hadoop
     password: password
 
-## Linux Setup ##
-
-Let's get you ready to develop. First, let's create a user account with admin privileges with username "hadoop" and the very creative password "password."
+Honestly, you don't have to do this. If you have a user account that can already sudo, you are good to go and can skip to the install some software.  But if not, use the following commands.
 
 	~$ sudo adduser hadoop
 	~$ sudo usermod -a -G sudo hadoop
 	~$ sudo adduser hadoop sudo
 
-Log out and log back in as "hadoop."
+Log out and log back in as "hadoop." 
 
 Now you need to install some software.
-
 
     ~$ sudo apt-get update && sudo apt-get upgrade
     ~$ sudo apt-get install build-essential ssh avahi-daemon
     ~$ sudo apt-get install vim lzop git
     ~$ sudo apt-get install python-dev python-setuptools libyaml-dev
     ~$ sudo easy_install pip
+
+The above installs may take some time. 
 
 At this point you should probably generate some ssh keys (for hadoop and so you can ssh in and get out of the VM terminal.)
 
