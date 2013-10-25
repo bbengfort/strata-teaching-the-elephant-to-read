@@ -1,3 +1,8 @@
+# Welcome #
+We are very excited to be teaching the Teaching the Elephant to Read tutorial at Strata this coming Monday 
+
+If you have questions, please feel free to email me at murphsp1@gmail.com
+
 # Installation #
 
 In order to get ready execute the code in this library you need a development environment set up and ready to go. These instructions will help you get it set up.

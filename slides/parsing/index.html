@@ -43,33 +43,7 @@
                         [bear_sent.png]: <../img/task_four/bear_sent.png> "The man chased a bear."
                     </script>
                 </section>
-                <section data-markdown>
-                    <script type="text/template">
-                        # Trees #
-                        Trees are constructed with a node label and a list of children:
 
-                            >>> sent = Tree('S', [Tree('NP', ['the', 'man']), Tree('VP', [Tree('V', ['chased']), Tree('NP', ['a', 'bear'])])]
-                            >>> '(S (NP the man) (VP (V chased) (NP a bear)))'
-
-                        Trees then can be indexed as though are a list, and nodes have `node` and
-                        `children` properties.
-                    </script>
-                </section>
-                <section data-markdown>
-                    <script type="text/template">
-                        # Traversal #
-
-                            def traverse(tree):
-                                try:
-                                    print '(', tree.node,
-                                    for child in tree:
-                                        traverse(child)
-                                    print ')',
-                                except AttributeError:
-                                    print tree,
-
-                    </script>
-                </section>
             </section>
             <section>
                 <section data-markdown>
@@ -189,6 +163,15 @@
                             if __name__ == "__main__":
                                 parse("I saw the man under my telescope")
 
+                    </script>
+                </section>
+            </section>
+
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## PLACE HOLDER ##
+                        
                     </script>
                 </section>
             </section>
