@@ -1,3 +1,12 @@
+# Welcome #
+
+We are very excited to be teaching the Teaching the Elephant to Read tutorial at Strata on Monday, the 28th of October. We will be covering numerous software packages that can be time consuming to install on various operating sytems and laptops.
+
+The instructions below will walk you through the creation and configuration of a virtual machine running in Virtual Box. The instructions have been tested and debugged so you shouldn't have too many problems. However, if you have any issues, please email me at sayhitosean [AT] gmail.com. 
+
+Please note that you will need a **64-bit machine and operating system** for this tutorial. The virtual machine/image that we will be using has been tested on Mac OS X (up through Mavericks) and 64-bit Windows. 
+
+
 # Installation #
 
 In order to get ready execute the code in this library you need a development environment set up and ready to go. These instructions will help you get it set up.
