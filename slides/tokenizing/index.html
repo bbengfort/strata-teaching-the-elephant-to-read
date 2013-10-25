@@ -22,11 +22,47 @@
 
     <div class="reveal">
         <div class="slides">
-            <section data-markdown>
-                <script type="text/template">
-                    # Tokenization and Segmentation #
-                    Breaking text into analyzable chunks
-                </script>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # Tokenization and Segmentation #
+                        Breaking text into analyzable chunks
+                    </script>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>The NLTK Preprocessing Toolkit</h2>
+                    <a href="../img/tokenizing/space-tools.jpg" class="image"><img src="img/space-tools.jpg" style="max-height:300px;" /></a>
+                    <p><small>Apparently this tool is used in space!</small></p>
+                </section>
+                <section>
+                    <p>Breaking the strings with NLTK:</p>
+                    <p><small>Tokenization</small></p>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">Punkt Sentence Tokenizer (segmenter)</li>
+                        <li class="fragment" data-fragment-index="1">Punkt Word Tokenizer (language vars)</li>
+                        <li class="fragment" data-fragment-index="2">Punkt uses unsupervised model for abbreviation words, collocations, sentence start- must be trained</li>
+                        <li class="fragment" data-fragment-index="3">Regexp (rule based tokenizer)</li>
+                        <li class="fragment" data-fragment-index="4">Text Tiling - detects subtopic shifts based on lexical co-occurence</li>
+                        <li class="fragment" data-fragment-index="5">Treebank tokenizer</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Understanding Syntactic Class</p>
+                    <p><small>Tagging</small></p>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">From simple tokenization to a better understanding of the syntactic role of the tokens.</li>
+                        <li class="fragment" data-fragment-index="1">Tagging is another stochastic process.</li>
+                        <li class="fragment" data-fragment-index="2">Lexical decision making - most likely tag for a word.</li>
+                        <li class="fragment" data-fragment-index="3">Trigram Tagger - chooses tags based on preceeding two tokens' tags</li>
+                        <li class="fragment" data-fragment-index="4">BrillTagger - transformational rule-based tagger</li>
+                        <li class="fragment" data-fragment-index="5">Hidden Markov Model Tagger - a generative model</li>
+                    </ul>
+                </section>
+
             </section>
             <section data-markdown>
                 <script type="text/template">
@@ -135,7 +171,7 @@
             </section>
             <section data-markdown>
                 <script type="text/template">
-                    ## Your Turn! ##
+                    ## Time for the Demo ##
 
                     * Extend your project to enable bigrams
                     * What are the most frequent bigrams?
@@ -160,8 +196,7 @@
             <section>
                 <section data-markdown>
                     <script type="text/template">
-                        ## To Task 3! ##
-                        If you have time, go to trigrams!
+                        ## Time to Start Tagging ##
 
                         [Back to Main Page](../index.html)
 

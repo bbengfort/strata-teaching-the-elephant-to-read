@@ -34,11 +34,11 @@
                         ## Some Built In Corpora ##
                         All can be found in `nltk.corpus`
 
-                        * `gutenberg`: Small selection of literature
-                        * `shakespeare`: For Elizabethan comparisons
+                        * <strong>`gutenberg`: Small selection of literature</strong>
+                        * <strong class="color:red">`shakespeare`: For Elizabethan comparisons</strong>
+                        * `brown`: First million word electronic corpus                        
                         * `webtext`: Forums, personal ads, movie script, reviews
                         * `nps_chat`: Chat text collectd by Naval Postgrad School
-                        * `brown`: First million word electronic corpus
                         * `reuters`: News articles (1.3 million words)
                         * `inaugural`: Innaugural addresses
                         * `swtichboard`: Transcribed phone conversations
@@ -144,28 +144,7 @@
                     </script>
                 </section>
             </section>
-            <section data-markdown>
-                <script type="text/template">
-                    ## Corpus Access Scripts ##
-                    Create a Python script to access your Corpora
-
-                        from nltk.text import Text
-                        from nltk.corpus import PlaintextCorpusReader
-
-                        CORPUS_ROOT = "/home/student/Corpora/books/"
-
-                        class MyCorpus(PlaintextCorpusReader):
-
-                            def __init__(self):
-                                super(MyCorpus, self).__init__(CORPUS_ROOT, '.*')
-
-                            def text(self):
-                                return Text(self.words())
-
-                    Feel free to extend or awesomeify!
-
-                </script>
-            </section>
+           
             <section>
                 <section data-markdown>
                     <script type="text/template">
@@ -192,6 +171,31 @@
 
                     </script>
                 </section>
+               <section data-markdown>
+                    <script type="text/template">
+                        ## Lexical Diversity ##
+
+                        Vocabulary is the set of unique words.
+
+                        Lexical Diversity is how rich the lexicon is in a text.
+
+                            from __future__ import division
+
+                            class MyCorpus(PlaintextCorpusReader):
+
+                                def vocabulary(self):
+                                    return set(self.text())
+
+                                def lexical_diversity(self):
+                                    return len(self) / len(self.vocabulary()).
+
+                                def __len__(self):
+                                    return len(self.text())
+
+                        Create a method to calculate the percent a particular token is used.
+
+                    </script>
+                </section>                
             </section>
             <section>
                 <section data-markdown>

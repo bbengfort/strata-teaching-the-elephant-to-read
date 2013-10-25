@@ -138,11 +138,36 @@
                             <li class="fragment" data-fragment-index="3">You've got a cluster in your closet.</li>
                         </ul>                
                 </section>
-                
+
                 <section>
-                        <a href="img/cluster.png" class="image"><img src="img/cluster.png" /></a>
-                        <p><small>The beginning of a startup's seven node cluster, total cost less than $1500</small></p>
+                    <h3>Does Hadoop really do native tokenization?</h3>
+                    <a href="img/babar.jpg" class="image"><img src="img/babar.jpg" style="max-height:200px;" /></a>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">Word count is your first Hadoop program</li>
+                        <li class="fragment" data-fragment-index="1">(sometimes also called segmentation or chunking)</li>
+                        <li class="fragment" data-fragment-index="2">Not as simple as splitting on punctuation and whitespace</li>
+                        <li class="fragment" data-fragment-index="4">Different NLP tasks require different kinds of tokenization</li>
+                    </ul>
+                    <br /><br />
+                    <blockquote class="fragment" data-fragment-index="3">
+                        <p><small>You're not going to the U.S.A. in that super-zeppelin, Dr. Stoddard?</small></p>
+                    </blockquote>
                 </section>
+
+                <section>
+                    <h3>Preprocessing Unstructured Text</h3>
+                    <a href="img/king-babar.jpg" class="image"><img src="img/king-babar.jpg" style="max-height:200px;" /></a>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">Hadoop stores output as it's own file</li>
+                        <li class="fragment" data-fragment-index="1">Map/Reduce jobs are now essentially built-in preprocessors</li>
+                        <li class="fragment" data-fragment-index="2">Last-mile computation can be done in 100GB of Memory</li>
+                        <li class="fragment" data-fragment-index="3">Hadoop is best for a series of jobs that transform data to something machine tractable</li>
+                        <li class="fragment" data-fragment-index="4">In NLP this means: text → tokenized → tagged → parsed → Treebank</li>
+                    </ul>
+                </section>
+                
+
+
             </section>
 
             <section>
@@ -151,6 +176,9 @@
                     <p>Hadoop is Java and NLTK is Python, how to make them play?</p>
                     <br /><br />
                     <p><small>Comic Attribution: <a href="http://askrahul.com/blog/from-funny-moments-to-emails-to-sms/python-vs-java/">askrahul.com</a></small></p>
+                </section>
+                <section>
+                    <h2>Now We Start Typing</h2>
                 </section>
                 <section>
                     <h2>Hadoop Streaming</h2>
@@ -242,40 +270,19 @@
                 </section>
             </section>
 
-            <section>
-                <a href="img/deep-end.jpg" class="image"><img src="img/deep-end.jpg" /></a>
-                <p>On to NLP/Big Data Nuts and Bolts</p>
-            </section>
 
             <section>
-
                 <section>
-                    <h3>Does Hadoop really do native tokenization?</h3>
-                    <a href="img/babar.jpg" class="image"><img src="img/babar.jpg" style="max-height:200px;" /></a>
+                    <h3>Pro Tips</h3>
+                    <a href="img/elephant-ninja-funny.jpg" class="image"><img src="img/elephant-ninja-funny.jpg" style="max-height:200px;" /></a>
                     <ul>
-                        <li class="fragment" data-fragment-index="0">Word count is your first Hadoop program</li>
-                        <li class="fragment" data-fragment-index="1">(sometimes also called segmentation or chunking)</li>
-                        <li class="fragment" data-fragment-index="2">Not as simple as splitting on punctuation and whitespace</li>
-                        <li class="fragment" data-fragment-index="4">Different NLP tasks require different kinds of tokenization</li>
-                    </ul>
-                    <br /><br />
-                    <blockquote class="fragment" data-fragment-index="3">
-                        <p><small>You're not going to the U.S.A. in that super-zeppelin, Dr. Stoddard?</small></p>
-                    </blockquote>
-                </section>
-
-                <section>
-                    <h3>Preprocessing Unstructured Text</h3>
-                    <a href="img/king-babar.jpg" class="image"><img src="img/king-babar.jpg" style="max-height:200px;" /></a>
-                    <ul>
-                        <li class="fragment" data-fragment-index="0">Hadoop stores output as it's own file</li>
-                        <li class="fragment" data-fragment-index="1">Map/Reduce jobs are now essentially built-in preprocessors</li>
-                        <li class="fragment" data-fragment-index="2">Last-mile computation can be done in 100GB of Memory</li>
-                        <li class="fragment" data-fragment-index="3">Hadoop is best for a series of jobs that transform data to something machine tractable</li>
-                        <li class="fragment" data-fragment-index="4">In NLP this means: text → tokenized → tagged → parsed → Treebank</li>
+                        <li class="fragment" data-fragment-index="0">Reusable tasks for generating domain-specific knowledge</li>
+                        <li class="fragment" data-fragment-index="1">NLTK Trainer loads from Pickled Data</li>
+                        <li class="fragment" data-fragment-index="2">We generated tag data sets, lexicons, PCFGs</li>
+                        <li class="fragment" data-fragment-index="3">10-fold training/test/validation on your corpus</li>
+                        <li class="fragment" data-fragment-index="4">Did I mention NLTK has built in NER? <code>nltk.ne_chunk</code></li>
                     </ul>
                 </section>
-
             </section>
             
             <section>
@@ -332,47 +339,9 @@
                         <li class="fragment" data-fragment-index="1">Annotated treebanks can be the basis for <em>all</em> previous stochastic mechanisms</li>
                     </ul>
                 </section>
-
             </section>
             
-            <section>
-                <section>
-                    <h3>Hadoop and Preprocessing</h3>
-                    <a href="img/king-babar.jpg" class="image"><img src="img/king-babar.jpg" style="max-height:200px;" /></a>
-                    <ul>
-                        <li class="fragment" data-fragment-index="0">All the previous steps are well suited to Map Reduce</li>
-                        <li class="fragment" data-fragment-index="1">NLP is embarrassingly parallel</li>
-                        <li class="fragment" data-fragment-index="3">Mappers operate on preprocessed text at all levels</li>
-                        <li class="fragment" data-fragment-index="4">Reducers use document ids to generate intermediary stages</li>
-                    </li>
-                </section>
 
-                <section>
-                    <h3>Pro Tips</h3>
-                    <a href="img/elephant-ninja-funny.jpg" class="image"><img src="img/elephant-ninja-funny.jpg" style="max-height:200px;" /></a>
-                    <ul>
-                        <li class="fragment" data-fragment-index="0">Reusable tasks for generating domain-specific knowledge</li>
-                        <li class="fragment" data-fragment-index="1">NLTK Trainer loads from Pickled Data</li>
-                        <li class="fragment" data-fragment-index="2">We generated tag data sets, lexicons, PCFGs</li>
-                        <li class="fragment" data-fragment-index="3">10-fold training/test/validation on your corpus</li>
-                        <li class="fragment" data-fragment-index="4">Did I mention NLTK has built in NER? <code>nltk.ne_chunk</code></li>
-                    </ul>
-                </section>
-            </section>
-            
-            <!-- 
-            <section>
-                <h2>Quick ML in NLTK</h2>
-                <p class="fragment" data-fragment-index="0">Quick Confession: I didn't do Mahout...</p>
-                <ul>
-                    <li class="fragment" data-fragment-index="1">nltk.classify</li>
-                    <li class="fragment" data-fragment-index="2">nltk.cluster</li>
-                    <li class="fragment" data-fragment-index="3">nltk-trainer for classifier</li>
-                    <li class="fragment" data-fragment-index="4">Naive Bayes &amp; Max Entropy</li>
-                    <li class="fragment" data-fragment-index="5">Not NLTK: Scipy & Numpy</li>
-                </ul>
-            </section>
-            -->
 
             <section>
                 <section>
@@ -405,17 +374,7 @@
                     </ul>
                 </section>
             </section>
-            
-            <section>
-                <h2>Quick Recap</h2>
-                <ul>
-                    <li>NLP needs Big Data</li>
-                    <li>Big Data will need NLP</li>
-                    <li>Domain Knowledge + Data Set = Foo!</li>
-                    <li>NLTK &amp; Hadoop good for preprocessing &amp; stochastic tasks</li>
-                    <li>Hadoop may not be the best for large scale TMR graphing</li>
-                </ul>
-            </section>
+ 
         </div>
     </div>
 
