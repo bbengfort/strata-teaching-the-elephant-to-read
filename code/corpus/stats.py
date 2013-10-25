@@ -1,4 +1,5 @@
 from __future__ import division
+
 from nltk.tokenize import wordpunct_tokenize
 
 class VocabularyMapper(object):
@@ -24,10 +25,22 @@ class LexicalDiversityReducer(object):
         self.vocab += 1
         self.tokens += sum(values)
         lexdiv = self.tokens / self.vocab
-        yield self.vocab, self.tokens, lexdiv
+        yield 1, (self.vocab, self.tokens, lexdiv)
+
+class UnitMapper(object):
+
+    def __call__(self, key, value):
+        yield key, value
+
+class MaxFinalReducer(object):
+
+    def __call__(self, key, values):
+        yield "vocab", "token count", "lexical diversity"
+        yield max(values, key=lambda x: x[0])
 
 def runner(job):
     job.additer(VocabularyMapper, LexicalDiversityReducer)
+    job.additer(UnitMapper, MaxFinalReducer)
 
 if __name__ == "__main__":
     import dumbo
