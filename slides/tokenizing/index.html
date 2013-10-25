@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Teaching the Elephant to Read: Tokenization and Segmentation</title>
+
+    <meta name="author" content="Benjamin Bengfort">
+    <meta name="keywords" content="NLP, NLTK, Natural Language Processing, Computational Lingustics">
+    <meta name="description" content="An introduction to NLP and NLTK">
+
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" type="text/css" href="../css/reveal.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme/default.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />
+
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <script type="text/template">
+                    # Tokenization and Segmentation #
+                    Breaking text into analyzable chunks
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Analyzable Text Segments ##
+
+                    * Paragraphs
+                    * Sentences
+                    * Tokens
+                    * Characters
+
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Segmentation ##
+                        Splitting raw text into sentences (or other segments)
+
+                        > Welcome back to the U.S.A. Dr. Strange!
+
+                        > eBay went public for $4.90 per share.
+
+                        Is simply splitting on punctuation enough? Even further,
+                        is it enough to check for capitialization or other rule signals?
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Punkt Sentence Tokenizer ##
+
+                            >>> import nltk, pprint
+                            >>> segmenter = nltk.data.load('tokenizers/punkt/english.pickle')
+                            >>> raw_text  = nltk.corpus.gutenberg.raw('melville-moby_dick.txt')
+                            >>> sentences = segmenter.tokenize(raw_text)
+                            >>> pprint.pprint(sentences[58:63])
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Words Segmenters ##
+
+                        > whatarethewordsinthissentence?
+
+                        > 中国是个美好的国家。
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Word Tokenization ##
+
+                    > "When I'M a Duchess," she said to herself (not in a very hopeful tone though),
+                    > 'I won't have any pepper in my kitchen AT ALL.'
+
+                    Splitting on whitespace is clearly not enough. Plus, how do we get
+                    words (tokens with meaning attached) out of tokens like won't (will not)
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ## Word Tokenization ##
+
+                        >>> nltk.word_tokenize("'When I'M a Duchess,' she said to herself (not in a very "
+                        "hopeful tone though), 'I won't have any pepper in my kitchen AT ALL.'")
+                        >>> ["'When", 'I', "'M", 'a', 'Duchess', ',', "'", 'she', 'said', 'to', 'herself', '(',
+                             'not', 'in', 'a', 'very', 'hopeful', 'tone', 'though', ')', ',', "'I", 'wo', "n't",
+                             'have', 'any', 'pepper', 'in', 'my', 'kitchen', 'AT', 'ALL', '.', "'"]
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## N-Grams ##
+                        A contiguous sequence of N items from a sequence of text.
+
+                        The items can be characters, morphemes, tokens, etc.
+
+                        * 1-Grams are "Unigrams", equivalent to Vocabulary
+                        * 2-Grams are "Bigrams"
+                        * 3-Grams are "Trigrams"
+
+                        Statistical analysis associated with N-Grams are referred to as language models.
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## N-Grams ##
+                        Generate Bigrams with NLTK:
+
+                            >>> import nltk
+                            >>> raw_text  = nltk.corpus.gutenberg.raw('melville-moby_dick.txt')
+                            >>> tokens    = nltk.word_tokenize(raw_text)
+                            >>> bigrams   = nltk.bigrams(tokens)
+                            >>> histogram = nltk.FreqDist(bigrams)
+
+                    </script>
+                </section>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Your Turn! ##
+
+                    * Extend your project to enable bigrams
+                    * What are the most frequent bigrams?
+                    * Evaluate your word and sentence tokenization
+
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Sentence Generation ##
+                    Extend your project to include sentence generation
+
+                        def generate_text(cfdist, start, num=15):
+                            for i in xrange(num):
+                                print start,
+                                start = cfdist[start].max()
+
+                        generate_text(nltk.ConditionalFreqDist(bigrams))
+
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## To Task 3! ##
+                        If you have time, go to trigrams!
+
+                        [Back to Main Page](../index.html)
+
+                    </script>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <!-- Javascript at the bottom of the page for faster loading -->
+    <script type="text/javascript" src="../lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../js/reveal.min.js"></script>
+    <script type="text/javascript">
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history:  false,
+            keyboard: true,
+            touch:    false,
+            overview: true,
+            center:   true,
+            loop:     false,
+            transition: 'default',
+            transitionSpeed: 'default',
+            backgroundTransition: 'default',
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            ]
+        });
+    </script>
+
+</body>
+</html>

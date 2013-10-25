@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Teaching the Elephant to Read- Tagging and Stemming</title>
+
+    <meta name="author" content="Benjamin Bengfort">
+    <meta name="keywords" content="NLP, NLTK, Natural Language Processing, Computational Lingustics">
+    <meta name="description" content="An introduction to NLP and NLTK">
+
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" type="text/css" href="../css/reveal.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme/default.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />
+
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <script type="text/template">
+                    # Tagging and Stemming #
+                    Exploring lexical relationships
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Stemming ##
+                        The goal of stemming is to reduce the number of lexical forms and
+                        produce a lemmata in order to ease dictionary lookup proceses as well
+                        as reduce complexity in traning data.
+
+                        > the boy's cars are different colors
+
+                        > the boy car be differ color
+
+                        Note that capitialization differences are already ignored.
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## NLTK Stemmers ##
+                        NLTK comes with two built in stemmers: Porter and Lancaster.
+
+                        Stemming isn't a well defined process, so pick the one that best suits
+                        your application. NLTK recommends Porter for indexing tasks.
+
+                            >>> text   = nltk.corpus.webtext.words('grail.txt')
+                            >>> sent   = text.sents()[0]
+                            >>> porter = nltk.PorterStemmer()
+                            >>> lancaster = nltk.LancasterStemmer()
+                            >>> [porter.stem(t) for t in sent]
+                            >>> [lancaster.stem(t) for t in sent]
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## NLTK Lemmatizer ##
+                        NLTK comes with a built in lemmatizer - which only strips affixes if the
+                        resulting word is in the dictionary (slower, but slightly more effective.)
+
+                            >>> text   = nltk.corpus.webtext.words('grail.txt')
+                            >>> sent   = text.sents()[0]
+                            >>> lemmatizer = nltk.WordNetLemmatizer()
+                            >>> [lemmatizer.lemmatize(t) for t in sent]
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Tagging ##
+
+                        [![Origen][thrax.jpg]][thrax.jpg]
+
+                        Dionysius Thrax of Alexandria (c. 100 B.C.) summaraized the linguistic
+                        knowledge of his time including a description of eight _parts of speech_:
+                        noun, verb, pronoun, preposition, adverb, conjunction, particple, and article.
+
+                        More modern lexical tagsets feature more parts- 45 for Penn Treebank, 87 for Brown.
+
+                        [thrax.jpg]: <../img/task_three/thrax.jpg> "Origen"
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Simplified Tagset ##
+
+                                  ADJ  adjective          ADV  adverb          CNJ   conjunction
+                                  DET  determiner         EX   existential     FW    foreign word
+                                  MOD  modal verb         NN   noun            NNP   proper noun
+                                  NUM  number             PRO  pronoun         PREP  preposition
+                                  TO   word to            UH   interjection    VB    Verb (infinitve)
+                                  VBD  Verb (past tense)  VBG  present part    VBN   past particple
+                                  WH   WH-Determiner      NP   Noun Phrase     VP    Verb Phrase
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Quick Tagging ##
+
+                            >>> text   = "They refuse to permit us to obtain the refuse permit."
+                            >>> tokens = nltk.word_tokenize(text)
+                            >>> nltk.pos_tag(tokens)
+
+                        Still not perfect - "refuse" is both a verb and a noun.
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Tagged Corpora ##
+                        There are several corpora in NLTK that have been human annotated with tags.
+                        This serves as a training set to improve the efficiency of the tagger.
+
+                            >>> from nltk.corpus import brown
+                            >>> from nltk import PlaintextCorpusReader
+                            >>> corpus = PlaintextCorpusReader('/home/student/Corpora/books/', './*')
+                            >>> training_sents = brown.tagged_sents(categories='mystery')
+                            >>> testing_sents  = corpus.sents('The Shadow of the Rope.txt')
+                            >>> unigram_tagger = nlkt.UnigramTagger(training_sents)
+                            >>> unigram_tagger.tag(testing_sents[100])
+                            >>> unigram_tagger.evaluate(testing_sents)
+
+                    </script>
+                </section>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## More Taggers ##
+                    There are many more taggers to explore in NLTK, particularly
+
+                    * Bigram Taggers
+                    * Transformation based taggers (Brill)
+                    * Chunkers
+                    * Named Entity Tagging
+
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    # Your Turn! #
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Indexing Task ##
+                    Extend your project to index based on a stem or lemma
+
+                        import nltk
+
+                        class IndexedText(object):
+
+                            def __init__(self, stemmer, text):
+                                self._text = text
+                                self._stemmer = stemmer
+                                self._index = nltk.Index(self._stem(word), i) for (i, word) in enumerate(text))
+
+                            def concordance(self, word, width=40):
+                                key = self._stem(word)
+                                wc  = width / 4
+                                for i in self._index[key]:
+                                    lcontext = ' '.join(self._text[i-wc:i])
+                                    rcontext = ' '.join(self._text[i:i+wc])
+                                    ldisplay = "%*s" % (width, lcontext[-width:])
+                                    rdisplay = "%-*s" % (width, rcontext[:width])
+                                    print ldisplay, rdisplay
+
+                            def _stem(self, word):
+                                return self._stemmer.stem(word).lower()
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Continue with Tagging ##
+
+                    * Update your project to include a machine learning tagger
+                    * Evaluate your tagger against the Brown Corpus
+                    * Run `nltk.ne_chunk` on some text and see how it performs
+
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## To Task 4! ##
+
+                        [Back to Main Page](../index.html)
+
+                    </script>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <!-- Javascript at the bottom of the page for faster loading -->
+    <script type="text/javascript" src="../lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../js/reveal.min.js"></script>
+    <script type="text/javascript">
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history:  false,
+            keyboard: true,
+            touch:    false,
+            overview: true,
+            center:   true,
+            loop:     false,
+            transition: 'default',
+            transitionSpeed: 'default',
+            backgroundTransition: 'default',
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            ]
+        });
+    </script>
+
+</body>
+</html>

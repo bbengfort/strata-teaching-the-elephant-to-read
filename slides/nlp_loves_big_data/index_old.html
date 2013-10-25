@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Teaching the Elephant to Read: Introduction</title>
+
+    <meta name="author" content="Benjamin Bengfort">
+    <meta name="keywords" content="NLP, NLTK, Natural Language Processing, Computational Lingustics">
+    <meta name="description" content="NLP Loves Big Data and Vice Versa">
+
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" type="text/css" href="../css/reveal.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme/default.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />
+
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # NLP needs Big Data #
+                        >The science that has been developed around the facts of language passed through three stages before finding its true and unique object. First something called "grammar" was studied. This study, initiated by the Greeks and continued mainly by the French, was based on logic. It lacked a scientific approach and was detached from language itself. Its only aim was to give rules for distinguishing between correct and incorrect forms; it was a normative discipline, far removed from actual observation, and its scope was limited.
+                        
+                        -- Ferdinand de Saussure
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # NLP needs Big Data #
+                        ## Using Hadoop with NLTK ##
+                        <ul>
+                            <li class="fragment" data-fragment-index="0">Computational Lingusitics methodologies are stochastic</li>
+                            <li class="fragment" data-fragment-index="1">Examples are easier to create than rules</li>
+                            <li class="fragment" data-fragment-index="2">Rules and Logic miss frequency and language dynamics</li>
+                            <li class="fragment" data-fragment-index="3">Humans use lots of data for the same task- It's AI!</li>
+                            <li class="fragment" data-fragment-index="4">More data is better - relevance is in the long tail</li>
+                            <li class="fragment" data-fragment-index="5">If you don't have enough data - hire a knowledge engineer</li>
+                        </ul>
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # Big Data will need NLP #
+                        ## Using NLTK with Hadoop ##
+                            [![goodreads_reviews][goodreads_reviews.jpg]][goodreads_reviews.jpg]
+
+                             <a href="img/GoodReadsReviews.png" class="image"><img src="img/GoodReadsReviews.png" style="max-height:350px;" /></a>
+                            <a href="img/Tweets.png" class="image"><img src="../img/nlp_loves_big_data/Tweets.png" style="max-height:350px;" /></a>
+                            <a href="img/email.png" class="image"><img src="img/email.png" style="max-height:350px;" /></a>
+
+                            [goodreads_reviews.jpg]: <../img/nlp_loves_big_data/GoodReadsReview.png> "GoodReads Reviews"
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        # Big Data will need NLP #
+                        ## Using NLTK with Hadoop ##
+                        <ul>
+                            <li class="fragment" data-fragment-index="0">Hadoop is great at massive amounts of text data</li>
+                            <li class="fragment" data-fragment-index="1">However, current methods aren't really NLP</li>
+                            <li class="fragment" data-fragment-index="2">Indexing, Co-Occurrence, even N-Gram Modeling is search</li>
+                            <li class="fragment" data-fragment-index="3">We haven't exhausted frequency analysis yet</li>
+                            <li class="fragment" data-fragment-index="4">But when we do, we are going to want semantic analyses</li>
+                        </ul>
+                    </script>
+                </section>
+
+            </section>
+
+ 
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <h2>Domain Knowledge is <em>IMPORTANT</em></h2>
+                        <a href="../img/nlp_loves_big_data/brief.jpg" class="image"><img src="../img/nlp_loves_big_data/brief.jpg"></a>
+                        <a href="../img/nlp_loves_big_data/tweet.jpg" class="image"><img src="../img/nlp_loves_big_data/tweet.jpg"></a>
+                        <a href="../img/nlp_loves_big_data/poem.jpg" class="image"><img src="../img/nlp_loves_big_data/poem.jpg"></a>
+
+                        <ul>
+                            <li class="fragment" data-fragment-index="0">Stochastic methods are not universal</li>
+                            <li class="fragment" data-fragment-index="1">Domain specific training sets and knowledge required</li>
+                        </ul>                    
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        <h2>Capitol Words</h2>
+                        <a href="..img/nlp_loves_big_data/open_government.png" class="image"><img src="../img/nlp_loves_big_data/open_government.png" /></a>
+                        <p><small>From <a href="http://sunlightfoundation.com/blog/tag/capitol-words/">How Congress Talks about Sunshine Week</a></small></p>                    
+                    </script>
+                </section>
+                 <section data-markdown>
+                    <script type="text/template">
+                        <h2>The Foo of Big Data</h2>
+                        <p>Given a large data set and domain specific knowledge:</p>
+                        <ol>
+                            <li class="fragment" data-fragment-index="0">Form hypothesis (a data product)</li>
+                            <li class="fragment" data-fragment-index="1">Mix in NLP techniques and machine learning tools</li>
+                            <li class="fragment" data-fragment-index="2">Perform computation and test hypothesis</li>
+                            <li class="fragment" data-fragment-index="3">Add to data set and domain knowledge</li>
+                            <li class="fragment" data-fragment-index="4">Repeat</li>
+                        </ol>
+                        <br />
+                        <br />
+                        <p class="fragment" data-fragment-index="5">We have a wealth of data and can iterate rapidly!</p>
+                    </script>
+                </section>               
+            </section>
+
+            <section>
+                <section>
+                        <h2>Why NLTK?</h2>
+                        <a href="../img/nlp_loves_big_data/python-zen.png" class="image"><img src="../img/nlp_loves_big_data/python-zen.png" /></a>
+                        <ul>
+                            <li class="fragment" data-fragment-index="0">It's not Stanford</li>
+                            <li class="fragment" data-fragment-index="1">It's Open Source (the price is right)</li>
+                            <li class="fragment" data-fragment-index="2">The blessing (and curse) of choice</li>
+                            <li class="fragment" data-fragment-index="3"><em>It lets you use your domain knowledge (it forces you to)</em></li>
+                            <li class="fragment" data-fragment-index="4">Out of the box NLP</li>
+                        </ul>
+                </section>
+                
+                <section>
+                        <h2>Why Hadoop?</h2>
+                        <a href="../img/nlp_loves_big_data/hadoop-blue.jpg" class="image"><img src="../img/nlp_loves_big_data/hadoop-blue.jpg" /></a>                        
+                        <ul>
+                            <li class="fragment" data-fragment-index="0">Silly question at a Big Data talk?</li>
+                            <li class="fragment" data-fragment-index="1">Who doesn't have a distribution? Intel has one!</li>
+                            <li class="fragment" data-fragment-index="2">NLP is embarrassingly parallel, perfect for Map Reduce.</li>
+                            <li class="fragment" data-fragment-index="3">You've got a cluster in your closet.</li>
+                        </ul>                
+                </section>
+                
+                <section>
+                        <a href="..img/nlp_loves_big_data/cluster.png" class="image"><img src="../img/nlp_loves_big_data/cluster.png" /></a>
+                        <p><small>The beginning of Unbound's seven node cluster, total cost less than $1500</small></p>
+                </section>
+
+            </section>            
+
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+
+                    </script>
+                </section>
+                 <section data-markdown>
+                    <script type="text/template">
+
+                    </script>
+                </section>               
+
+            </section>            
+
+        </div>
+    </div>
+
+    <!-- Javascript at the bottom of the page for faster loading -->
+    <script type="text/javascript" src="../lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../js/reveal.min.js"></script>
+    <script type="text/javascript">
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history:  false,
+            keyboard: true,
+            touch:    false,
+            overview: true,
+            center:   true,
+            loop:     false,
+            transition: 'default',
+            transitionSpeed: 'default',
+            backgroundTransition: 'default',
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            ]
+        });
+    </script>
+
+</body>
+</html>

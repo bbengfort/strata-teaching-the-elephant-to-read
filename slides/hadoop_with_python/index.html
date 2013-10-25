@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Discourses in Language Processing: A 10,000 Foot View</title>
+
+    <meta name="author" content="Benjamin Bengfort">
+    <meta name="keywords" content="NLP, NLTK, Natural Language Processing, Computational Lingustics">
+    <meta name="description" content="An introduction to NLP and NLTK">
+
+    <link rel="shortcut icon" href="../favicon.png">
+
+    <!-- CSS : implied media="all" -->
+    <link rel="stylesheet" type="text/css" href="../css/reveal.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/theme/default.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />
+
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <script type="text/template">
+                    # Crash NLP Course #
+                    A 10,000 Foot View of NLP & NLTK
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Some Background ##
+                        * _1940 - 1957_: automatons & information theoretic models
+                        * _1957 - 1970_: formal languages and the rise of AI (Two Camps: Symbolic and Stochastic)
+                        <!-- Minksy for AI, Chomsky for Formal Language -->
+                        * _1970 - 1983_: Four paradigms: stochastic, logic, NLU, discourse modeling
+                        * _1983 - 1993_: Empiricism and finite-state models
+                        * _1994 - 1999_: Fields rejoin with memory and speed increases
+                        * _2000 - now_: The rise of machine learning
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## The State of the Art ##
+                        * NLP is designed alongside or for intelligent agents
+                        * Relies on formal models or representations of knowledge and language
+                        * Models are augmented and adapted through probalistic methods and machine learning
+                        * A small number of algorithms comprise the standard framework
+                        * With the rise of distributed computation, and massive amounts of training data,
+                          NLP has led to many revolutionary applications
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## What is required? ##
+                        [![Knowledge and Data][knowledge.gif]][knowledge.gif]
+
+                        1. Domain Knowledge
+                        2. A Corpus in the Domain
+
+                        [knowledge.gif]: <../img/skyview/knowledge.gif> "Knowledge and Data"
+                    </script>
+                </section>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Our Task ##
+                    [![Giant Rooster][rooster.jpg]][rooster.jpg]
+
+                    Build a system that ingests raw language data and transforms it into a suitable
+                    representation for creating above said revolutionay applications.
+
+                    Along the way, we will get to do interesting things with it- but the goal of
+                    today is to learn preprocessing for NLP.
+
+                    [rooster.jpg]: <../img/skyview/rooster.jpg> "Giant Rooster"
+                </script>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## The NLP Pipeline ##
+                        [![The NLP Pipeline][pipeline.png]][pipeline.png]
+
+                        [pipeline.png]: <../img/skyview/pipeline.png> "The NLP Pipeline"
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Morphology ##
+                        The study of the forms of things, words in particular.
+
+                        Consider pluralization for English:
+
+                        * Orthograpic Rules: `puppy` &rarr; `puppies`
+                        * Morphological Rules: `goose` &rarr; `geese` or `fish`
+
+                        <!--
+                        Not just nouns - consider verbs (particularly gerunds).
+                        Morphemes consist of two major classes: stems and affixes. -->
+
+                        <br />
+                        > Major parsing task: stemming (lemmatization) and tokenization.
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Syntax ##
+                        The study of the rules for formation of sentences.
+
+                        [![Sentence Parse][parse.png]][parse.png]
+
+                        The first context-free grammar parse tree (Chomsky, 1956)
+
+                        [parse.png]: <../img/skyview/parse.png> "Sentence Parse"
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Semantics ##
+                        The study of meaning.
+
+                        > I see what I eat. <br />
+                        > I eat what I see.
+
+                        [![Mad Hatter][hatter.png]][hatter.png]
+
+                        > He poached salmon.
+
+                        [hatter.png]: <../img/skyview/hatter.png> "The Mad Hatter"
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Leveraging NLTK ##
+
+                        * `nltk.download` - comes with NLP batteries!
+                        * _extend_ - Hooks to add your own power supplies!
+
+                        [![Fast and Formal][fastandformal.png]][fastandformal.png]
+
+                        NLTK is _fast_ as much as it is _formal_
+
+                        * Production ready analytics with Numpy or Pandas
+                        * Powered fast indexing - I use it for my research!
+
+                        [fastandformal.png]: <../img/skyview/fastandformal.png> "Fast and Formal"
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## The Defaults ##
+
+                            >>> import nltk
+                            >>> dir(nltk)
+
+                        Ok, so there is a lot, and that doesn't include the various library packages
+                        for other formalisms in language processing like Dependency Grammars etcetera.
+
+                        But don't let that stop you from going into the code: [NLTK on GitHub][nltk]
+
+                        [nltk]: <https://github.com/nltk/nltk> "NLTK on GitHub"
+
+                    </script>
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Some Major Packages and Modules ##
+
+                        Utilities:
+
+                        * `probability` (Frequency and Conditional Distributions)
+                        * `text`, `data`, `grammar`, and `corpus`
+                        * `tree` (An impressive tree data structure and subclasses)
+                        * `draw` (Visualizations in Tkinter)
+
+                        Language Processing:
+
+                        * `tokenize`, `stem` (Morphological Processing, Segmentation)
+                        * `collocations`, `models` (NGram Analysis)
+                        * `tag`, `chunk` (Tagging and NE Recognition)
+                        * `parse` (Syntactic Parsing)
+                        * `sem` (Semantic Analyses)
+
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## NLP is Embarassingly Parallel ##
+                        Unit of work is a sentence - in preprocessing we can get away without context.
+
+                        [![Hadoop Elephant][hadoop.png]][hadoop.png]
+
+                        Perfect for MapReduce - there is a reason Hadoop focuses on NLP
+
+                        [hadoop.png]: <../img/skyview/hadoop.png> "Hadoop Elephant"
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Fundamental NLP Methodogies ##
+                        * Dynamic Programming Algorithms
+                        * Stochastic Models
+                        * Knowledge-Based Reasoning
+
+                    </script>
+                </section>
+            </section>
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Time to explore some corpora. ##
+                        [Back to Main Page](../index.html)
+                    </script>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <!-- Javascript at the bottom of the page for faster loading -->
+    <script type="text/javascript" src="../lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../js/reveal.min.js"></script>
+    <script type="text/javascript">
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history:  false,
+            keyboard: true,
+            touch:    false,
+            overview: true,
+            center:   true,
+            loop:     false,
+            transition: 'default',
+            transitionSpeed: 'default',
+            backgroundTransition: 'default',
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            ]
+        });
+    </script>
+
+</body>
+</html>
