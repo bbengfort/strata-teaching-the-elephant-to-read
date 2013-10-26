@@ -40,8 +40,8 @@ def runner(job):
     job.additer(Mapper, reducer, reducer)
 
 def starter(prog):
-    excludes = prog.delopt("excludes")
-    if excludes: prog.addopt("param", "excludes="+excludes)
+    excludes = prog.delopt("stopwords")
+    if excludes: prog.addopt("param", "stopwords="+excludes)
 
 if __name__ == "__main__":
     import dumbo

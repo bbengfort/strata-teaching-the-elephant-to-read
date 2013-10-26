@@ -3,7 +3,7 @@ import string
 
 from nltk.util import bigrams, trigrams
 from nltk.tokenize import wordpunct_tokenize
-from dumbo import MultiMapper, sumreducer, main
+from dumbo import sumreducer, main
 
 class CollocationMapper(object):
 

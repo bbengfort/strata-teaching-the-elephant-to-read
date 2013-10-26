@@ -1,6 +1,9 @@
 from ast import literal_eval
 from nltk import sent_tokenize, word_tokenize, pos_tag
 
+INDENT = "      "
+BANNER = "="*34
+
 class PipelineMapper(object):
 
     def __init__(self):
@@ -18,17 +21,23 @@ class PipelineMapper(object):
 class ParagraphMapper(PipelineMapper):
 
     def __init__(self):
-        self.parano  = 0
+        self.docid  = 0
         self.current = ""
 
     def __call__(self, key, value):
-        value = value.strip()
-        if not value:
+        if value.startswith(BANNER):
+            # This is the docid from reuters joiner.
+            self.docid = int(value.strip('=').strip())
+            value = ''
+        if not value.startswith(" "):
+            # This is the title.
+            value = ''
+        if value.startswith(INDENT):
+            # We found a new paragraph!
             if self.current:
-                self.parano += 1
-                yield self.parano, self.current
+                yield self.docid, self.current
                 self.current = ""
-        self.current += " " + value
+        self.current += " " + value.strip()
 
 class SegmenterMapper(PipelineMapper):
 
