@@ -36,7 +36,7 @@
 
                         * <strong>`gutenberg`: Small selection of literature</strong>
                         * <strong class="color:red">`shakespeare`: For Elizabethan comparisons</strong>
-                        * `brown`: First million word electronic corpus                        
+                        * `brown`: First million word electronic corpus
                         * `webtext`: Forums, personal ads, movie script, reviews
                         * `nps_chat`: Chat text collectd by Naval Postgrad School
                         * `reuters`: News articles (1.3 million words)
@@ -74,7 +74,6 @@
                 <section data-markdown>
                     <script type="text/template">
                         ## Organizing your own corpus ##
-                        # FIX ME BEN #
 
                             |-- Corpus Root
                             +--+
@@ -83,45 +82,9 @@
                                |-- texta.txt
                                +-- textb.txt
 
-                        * Overrides for walking directory structures
-                        * ZipFile Corpus Readers for compression
-
-                    </script>
-                </section>
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Accessing a Corpus ##
-
-                            >>> from nltk.corpus import PlaintextCorpusReader
-
-                            >>> root   = '/home/student/Corpora/books/'
-                            >>> corpus = PlaintextCorpusReader(root, '.*')
-                            >>> corpus.fileids()
-                            ['The', 'Project', 'Gutenberg', 'EBook', 'of', 'An', ...]
-                            >>> print corpus.readme()
-                            "The corpus of categorized books for the NLTK Workshop"
-
-                        Now you have access to two interesting features:
-
-                        * `corpus.words`
-                        * `corpus.sents`
-
-                    </script>
-                </section>
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Accessing Text Objects ##
-
-                            >>> from nltk import Text
-                            >>> text = Text(corpus.words())
-                            >>> len(text)
-                            1516195
-                            >>> V = set(text)
-                            >>> len(V)
-                            44351
-                            >>> text.concordance('africa')
-                            ...
-                            >>> text.collocations()
+                        * NLTK Corpus Organization works with HDFS
+                        * Use a container to ensure files are 64MB
+                        * Directory hierarchy for classifiers.
 
                     </script>
                 </section>
@@ -155,10 +118,12 @@
                 <section data-markdown>
                     <script type="text/template">
                         # STOP, Tutorial Time #
+
+                        * Vocabulary & Lexical Diversity
                     </script>
                 </section>
             </section>
-           
+
             <section>
                 <section data-markdown>
                     <script type="text/template">
@@ -168,20 +133,21 @@
 
                         Lexical Diversity is how rich the lexicon is in a text.
 
-                            from __future__ import division
+                            from nltk.tokenize import wordpunct_tokenize
 
-                            class MyCorpus(PlaintextCorpusReader):
+                            class VocabularyMapper(object):
 
-                                def vocabulary(self):
-                                    return set(self.text())
+                                def __call__(self, key, value):
+                                    for word in self.tokenize(value):
+                                            yield word, 1
 
-                                def lexical_diversity(self):
-                                    return len(self) / len(self.vocabulary()).
+                                def normalize(self, word):
+                                    return word.lower()
 
-                                def __len__(self):
-                                    return len(self.text())
+                                def tokenize(self, sentence):
+                                    for word in wordpunct_tokenize(sentence):
+                                        yield self.normalize(word)
 
-                        Create a method to calculate the percent a particular token is used.
 
                     </script>
                 </section>
@@ -195,27 +161,27 @@
 
                             from __future__ import division
 
-                            class MyCorpus(PlaintextCorpusReader):
+                            class LexicalDiversityReducer(object):
 
-                                def vocabulary(self):
-                                    return set(self.text())
+                                def __init__(self):
+                                    self.vocab  = 0
+                                    self.tokens = 0
 
-                                def lexical_diversity(self):
-                                    return len(self) / len(self.vocabulary()).
-
-                                def __len__(self):
-                                    return len(self.text())
-
-                        Create a method to calculate the percent a particular token is used.
+                                def __call__(self, key, values):
+                                    self.vocab += 1
+                                    self.tokens += sum(values)
+                                    lexdiv = self.tokens / self.vocab
+                                    yield 1, (self.vocab, self.tokens, lexdiv)
 
                     </script>
-                </section>                
+                </section>
             </section>
             <section>
                 <section data-markdown>
                     <script type="text/template">
                         ## Frequency Distributions ##
-                        Lets add some basic statistics
+                        Lets add some basic statistics with NLTK built-in
+                        data structures. FreqDist is _often used_!
 
                             from nltk import FreqDist
 
@@ -224,10 +190,7 @@
                                 def histogram(self):
                                     return FreqDist(self.text())
 
-                        Note that the FreqDist will also give you vocabulary and length. Refactor
-                        to calculate the frequency distribution on init and use that for your
-                        `vocabulary` and `__len__` methods.
-
+                        Note that the FreqDist will also give you vocabulary and length.
                     </script>
                 </section>
             </section>
@@ -235,7 +198,8 @@
                 <section data-markdown>
                     <script type="text/template">
                         ## Conditional Frequency Distributions ##
-                        Lets use another corpus and analyze name endings.
+                        This helper data structure holds a set of
+                        FreqDists for conditions.
 
                             import nltk
 
@@ -260,7 +224,7 @@
                 <section data-markdown>
                     <script type="text/template">
                         ## On to Some Actual Big Data NLP ##
-    
+
                         [Back to Main Page](../index.html)
 
                     </script>
