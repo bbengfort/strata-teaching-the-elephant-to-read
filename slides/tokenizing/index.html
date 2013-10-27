@@ -34,7 +34,7 @@
             <section>
                 <section>
                     <h2>The NLTK Preprocessing Toolkit</h2>
-                    <a href="../img/tokenizing/space-tools.jpg" class="image"><img src="img/space-tools.jpg" style="max-height:300px;" /></a>
+                    <a href="../img/tokenizing/space-tools.jpg" class="image"><img src="../img/tokenizing/space-tools.jpg" style="max-height:300px;" /></a>
                     <p><small>Apparently this tool is used in space!</small></p>
                 </section>
                 <section>
@@ -173,16 +173,16 @@
                 <script type="text/template">
                     ## Time for the Demo ##
 
-                    * Extend your project to enable bigrams
-                    * What are the most frequent bigrams?
-                    * Evaluate your word and sentence tokenization
+                    * TF-IDF
+                    * Collocations
+                    * Sentence Generation
 
                 </script>
             </section>
             <section data-markdown>
                 <script type="text/template">
                     ## Sentence Generation ##
-                    Extend your project to include sentence generation
+                    Use output of Bigram MapReduce job in a fun application!
 
                         def generate_text(cfdist, start, num=15):
                             for i in xrange(num):
@@ -191,6 +191,8 @@
 
                         generate_text(nltk.ConditionalFreqDist(bigrams))
 
+                    **Note**: This is a max generator, the demo example
+                    uses a uniform distribution to generate.
                 </script>
             </section>
             <section>
