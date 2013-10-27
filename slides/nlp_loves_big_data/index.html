@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href="../css/reveal.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/theme/default.css" />
-    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />    
+    <link rel="stylesheet" type="text/css" href="../lib/css/zenburn.css" />
 
     <link rel="stylesheet" href="../css/print/pdf.css" media="print" type="text/css">
 
@@ -25,7 +25,7 @@
 
 </head>
 <body>
-    
+
     <div class="reveal">
         <div class="slides">
 
@@ -90,28 +90,26 @@
                         <li class="fragment" data-fragment-index="1">Domain specific training sets and knowledge required</li>
                     </ul>
                 </section>
-               
+
                 <section>
                     <h2>Capitol Words</h2>
                     <a href="img/open_government.png" class="image"><img src="img/open_government.png" /></a>
                     <p><small>From <a href="http://sunlightfoundation.com/blog/tag/capitol-words/">How Congress Talks about Sunshine Week</a></small></p>
                 </section>
-
-                <section>
-                    <h2>The Foo of Big Data</h2>
-                    <p>Given a large data set and domain specific knowledge:</p>
-                    <ol>
-                        <li class="fragment" data-fragment-index="0">Form hypothesis (a data product)</li>
-                        <li class="fragment" data-fragment-index="1">Mix in NLP techniques and machine learning tools</li>
-                        <li class="fragment" data-fragment-index="2">Perform computation and test hypothesis</li>
-                        <li class="fragment" data-fragment-index="3">Add to data set and domain knowledge</li>
-                        <li class="fragment" data-fragment-index="4">Repeat</li>
-                    </ol>
-                    <br />
-                    <br />
-                    <p class="fragment" data-fragment-index="5">We have a wealth of data and can iterate rapidly!</p>
-                </section>
-                
+            </section>
+            <section>
+                <h2>The Foo of Big Data</h2>
+                <p>Given a large data set and domain specific knowledge:</p>
+                <ol>
+                    <li class="fragment" data-fragment-index="0">Form hypothesis (a data product)</li>
+                    <li class="fragment" data-fragment-index="1">Mix in NLP techniques and machine learning tools</li>
+                    <li class="fragment" data-fragment-index="2">Perform computation and test hypothesis</li>
+                    <li class="fragment" data-fragment-index="3">Add to data set and domain knowledge</li>
+                    <li class="fragment" data-fragment-index="4">Repeat</li>
+                </ol>
+                <br />
+                <br />
+                <p class="fragment" data-fragment-index="5">We have a wealth of data and can iterate rapidly!</p>
             </section>
 
             <section>
@@ -124,19 +122,36 @@
                             <li class="fragment" data-fragment-index="1">It's Open Source (the price is right)</li>
                             <li class="fragment" data-fragment-index="2">The blessing (and curse) of choice</li>
                             <li class="fragment" data-fragment-index="3"><em>It lets you use your domain knowledge (it forces you to)</em></li>
-                            <li class="fragment" data-fragment-index="4">Out of the box NLP</li>
                         </ul>
                 </section>
-                
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Why NLTK? ##
+
+                        [![Batteries Included][batteries_included.jpg]][batteries_included.jpg]
+
+                        * Batteries included
+                        * Fast prototyping and iteration
+                        * Strong community
+                        * out of the box NLP
+
+                        [batteries_included.jpg]: img/batteries.jpg
+
+                    </script>
+                </section>
+
+            </section>
+            <section>
                 <section>
                         <h2>Why Hadoop?</h2>
-                        <a href="img/hadoop-blue.jpg" class="image"><img src="img/hadoop-blue.jpg" /></a>                        
+                        <a href="img/hadoop-blue.jpg" class="image"><img src="img/hadoop-blue.jpg" /></a>
                         <ul>
                             <li class="fragment" data-fragment-index="0">Silly question at a Big Data talk?</li>
                             <li class="fragment" data-fragment-index="1">Who doesn't have a distribution? Intel has one!</li>
                             <li class="fragment" data-fragment-index="2">NLP is embarrassingly parallel, perfect for Map Reduce.</li>
                             <li class="fragment" data-fragment-index="3">You've got a cluster in your closet.</li>
-                        </ul>                
+                        </ul>
                 </section>
 
                 <section>
@@ -165,13 +180,13 @@
                         <li class="fragment" data-fragment-index="4">In NLP this means: text → tokenized → tagged → parsed → Treebank</li>
                     </ul>
                 </section>
-                
+
 
 
             </section>
 
             <section>
-                <section>   
+                <section>
                     <a href="img/python-vs-java.jpg" class="image"><img src="img/python-vs-java.jpg" /></a>
                     <p>Hadoop is Java and NLTK is Python, how to make them play?</p>
                     <br /><br />
@@ -179,7 +194,13 @@
                 </section>
                 <section>
                     <h2>Now We Start Typing</h2>
+                    <ul>
+                        <li>Intro to Hadoop Streaming with Python</li>
+                        <li>An NLP token count with Dumbo</li>
+                    </ul>
                 </section>
+            </section>
+            <section>
                 <section>
                     <h2>Hadoop Streaming</h2>
                     <ul>
@@ -192,62 +213,62 @@
                 <section>
                     <h3>mapper.py</h3>
                     <pre><code>
-    #!/usr/bin/env python
-
     import sys
-    from nltk.tokenize import wordpunct_tokenize
 
-    def read_input(file):
-        for line in file:
-            # split the line into tokens
-            yield wordpunct_tokenize(line)
+    class Mapper(object):
 
-    def main(separator='\t'):
-        # input comes from STDIN (standard input)
-        data = read_input(sys.stdin)
-        for tokens in data:
-            # write the results to STDOUT (standard output);
-            # what we output here will be the input for the
-            # Reduce step, i.e. the input for reducer.py
-            #
-            # tab-delimited; the trivial token count is 1
-            for token in tokens:
-                print '%s%s%d' % (word, separator, 1)
+        def __init__(self, infile=sys.stdin, separator='\t'):
+            self.infile = infile
+            self.sep    = separator
+
+        def emit(self, key, value):
+            sys.stdout.write("%s%s%s\n" % (key, self.sep, value))
+
+        def map(self):
+            for line in self:
+                for word in line.split():
+                    self.emit(word, 1)
+
+        def __iter__(self):
+            for line in self.infile:
+                yield line
 
     if __name__ == "__main__":
-        main()</code></pre>
+        mapper = Mapper()
+        mapper.map()</code></pre>
                 </section>
 
                 <section>
                     <h3>reducer.py</h3>
                     <pre><code>
-    #!/usr/bin/env python
-
+    import sys
     from itertools import groupby
     from operator import itemgetter
-    import sys
 
-    def read_mapper_output(file, separator='\t'):
-        for line in file:
-            yield line.rstrip().split(separator, 1)
+    class Reducer(object):
 
-    def main(separator='\t'):
-        # input comes from STDIN (standard input)
-        data = read_mapper_output(sys.stdin, separator=separator)
-        # groupby groups multiple word-count pairs by word,
-        # and creates an iterator that returns consecutive keys and their group:
-        #   current_word - string containing a word (the key)
-        #   group - iterator yielding all ["&lt;current_word&gt;", "&lt;count&gt;"] items
-        for current_word, group in groupby(data, itemgetter(0)):
-            try:
-                total_count = sum(int(count) for current_word, count in group)
-                print "%s%s%d" % (current_word, separator, total_count)
-            except ValueError:
-                # count was not a number, so silently discard this item
-                pass
+        def __init__(self, infile=sys.stdin, separator="\t"):
+            self.infile = infile
+            self.sep    = separator
+
+        def emit(self, key, value):
+            sys.stdout.write("%s%s%s\n" % (key, self.sep, value))
+
+        def reduce(self):
+            for current, group in groupby(self, itemgetter(0)):
+                try:
+                    total = sum(int(count) for current, count in group)
+                    self.emit(current, total)
+                except ValueError:
+                    pass
+
+        def __iter__(self):
+            for line in self.infile:
+                yield line.rstrip().split(self.sep, 1)
 
     if __name__ == "__main__":
-        main()</pre></code>
+        reducer = Reducer()
+        reducer.reduce()</pre></code>
                 </section>
 
                 <section>
@@ -258,20 +279,95 @@
         -file /home/hduser/reducer.py   -reducer /home/hduser/reducer.py \
         -input /user/hduser/gutenberg/* -output /user/hduser/gutenberg-output</code></pre>
                 </section>
+            </section>
 
+            <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ## MapReduce With Dumbo ##
+
+                        * Serialization with TypedBytes
+                        * Unix Pipes for development
+                        * Wraps Hadoop Streaming Jar
+                        * Manages jobs, starters, and iterationl
+                        * Allows you to focus on MapReduce
+
+                    </script>
+                </section>
+                <section>
+                    <h3>token_count.py</h3>
+                    <pre><code>
+    import nltk
+
+    from nltk.stem import WordNetLemmatizer
+    from nltk.tokenize import wordpunct_tokenize
+
+    class Mapper(object):
+
+        def __init__(self):
+            if 'stopwords' in self.params:
+                with open(self.params['stopwords'], 'r') as excludes:
+                    self._stopwords = set(line.strip() for line in excludes)
+            else:
+                self._stopwords = None
+
+            self.lemmatizer = WordNetLemmatizer()
+
+        def __call__(self, key, value):
+            for word in self.tokenize(value):
+                if not word in self.stopwords:
+                    yield word, 1
+
+        def normalize(self, word):
+            word = word.lower()
+            return self.lemmatizer.lemmatize(word)
+
+        def tokenize(self, sentence):
+            for word in wordpunct_tokenize(sentence):
+                yield self.normalize(word)
+
+        @property
+        def stopwords(self):
+            if not self._stopwords:
+                self._stopwords = nltk.corpus.stopwords.words('english')
+            return self._stopwords
+
+    def reducer(key, values):
+        yield key, sum(values)
+
+    def runner(job):
+        job.additer(Mapper, reducer, reducer)
+
+    def starter(prog):
+        excludes = prog.delopt("stopwords")
+        if excludes: prog.addopt("param", "stopwords="+excludes)
+
+    if __name__ == "__main__":
+        import dumbo
+        dumbo.main(runner, starter)</code></pre>
+                </section>
+
+                <section>
+                    <h3>Running the job</h3>
+                    <pre><code>
+    hduser@ubuntu:~$ dumbo start token_count.py \
+        -input /user/hduser/gutenberg
+        -output /user/hduser/gutenberg-output
+        -hadoop $HADOOP_BIN
+        -hadooplib $HADOOP_CLASSPATH</code></pre>
+                </section>
+            </section>
+
+            <section>
                 <section>
                     <h2>Important Notes</h2>
                     <ul>
                         <li class="fragment" data-fragment-index="0">An Interpreter is loaded for every job (no multiprocessing)</li>
                         <li class="fragment" data-fragment-index="1">NLTK data loading only happens <em>ONCE</em>!</li>
                         <li class="fragment" data-fragment-index="2">Use generators to save on memory</li>
-                        <li class="fragment" data-fragment-index="3">Libraries exist for quickly creating tools (Dumbo)</li>
+                        <li class="fragment" data-fragment-index="3">Other Libraries exist for quickly creating tools.</li>
                     </ul>
                 </section>
-            </section>
-
-
-            <section>
                 <section>
                     <h3>Pro Tips</h3>
                     <a href="img/elephant-ninja-funny.jpg" class="image"><img src="img/elephant-ninja-funny.jpg" style="max-height:200px;" /></a>
@@ -280,82 +376,25 @@
                         <li class="fragment" data-fragment-index="1">NLTK Trainer loads from Pickled Data</li>
                         <li class="fragment" data-fragment-index="2">We generated tag data sets, lexicons, PCFGs</li>
                         <li class="fragment" data-fragment-index="3">10-fold training/test/validation on your corpus</li>
-                        <li class="fragment" data-fragment-index="4">Did I mention NLTK has built in NER? <code>nltk.ne_chunk</code></li>
                     </ul>
                 </section>
             </section>
-            
-            <!--BEN YOU PROBABLY WANT TO KILL THIS PART OF THE SLIDES-->
-            <section>
-                <section>
-                    <h2>The NLTK Preprocessing Toolkit</h2>
-                    <a href="img/space-tools.jpg" class="image"><img src="img/space-tools.jpg" style="max-height:300px;" /></a>
-                    <p><small>Apparently this tool is used in space!</small></p>
-                </section>
-                <section>
-                    <p>Breaking the strings with NLTK:</p>
-                    <p><small>Tokenization</small></p>
-                    <ul>
-                        <li class="fragment" data-fragment-index="0">Punkt Sentence Tokenizer (segmenter)</li>
-                        <li class="fragment" data-fragment-index="1">Punkt Word Tokenizer (language vars)</li>
-                        <li class="fragment" data-fragment-index="2">Punkt uses unsupervised model for abbreviation words, collocations, sentence start- must be trained</li>
-                        <li class="fragment" data-fragment-index="3">Regexp (rule based tokenizer)</li>
-                        <li class="fragment" data-fragment-index="4">Text Tiling - detects subtopic shifts based on lexical co-occurence</li>
-                        <li class="fragment" data-fragment-index="5">Treebank tokenizer</li>
-                    </ul>
-                </section>
 
-                <section>
-                    <p>Understanding Syntactic Class</p>
-                    <p><small>Tagging</small></p>
-                    <ul>
-                        <li class="fragment" data-fragment-index="0">From simple tokenization to a better understanding of the syntactic role of the tokens.</li>
-                        <li class="fragment" data-fragment-index="1">Tagging is another stochastic process.</li>
-                        <li class="fragment" data-fragment-index="2">Lexical decision making - most likely tag for a word.</li>
-                        <li class="fragment" data-fragment-index="3">Trigram Tagger - chooses tags based on preceeding two tokens' tags</li>
-                        <li class="fragment" data-fragment-index="4">BrillTagger - transformational rule-based tagger</li>
-                        <li class="fragment" data-fragment-index="5">Hidden Markov Model Tagger - a generative model</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <p>Discovering Structure</p>
-                    <p><small>Parsing</small></p>
-                    <a href="img/parse-tree.png" class="image"><img src="img/parse-tree.png" style="max-height:200px;" /></a>
-                    <ul>
-                        <li class="fragment" data-fragment-index="0">Parsing requires knowledge: a context free grammar</li>
-                        <li class="fragment" data-fragment-index="1">Probabalistic CFGs add ambiguity detection and correction</li>
-                        <li class="fragment" data-fragment-index="2">Dynamic Programming Algorithms</li>
-                        <li class="fragment" data-fragment-index="3">Chart Parser: Adds edges to a chart (Earley and Feature)</li>
-                        <li class="fragment" data-fragment-index="4">Viterbi Parser: "Most Likely Constituent Table"</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <p>The final result of preprocessing</p>
-                    <p><small>Treebanks</small></p>
-                    <a href="img/treebank.jpg" class="image"><img src="img/treebank.jpg" style="max-height:300px;" /></a>
-                    <ul>
-                        <li class="fragment" data-fragment-index="0">Treebanks can be human-annotated or -reviewed to create better training sets</li>
-                        <li class="fragment" data-fragment-index="1">Annotated treebanks can be the basis for <em>all</em> previous stochastic mechanisms</li>
-                    </ul>
-                </section>
-            </section>
             <section>
                 <section>
                     <h2>Next we need to handle Big Data</h2>
                     <a href = "../index.html">Back to Main Page</a>
                 </section>
             </section>
-            
- 
+
+
         </div>
     </div>
 
     <!-- JavaScript at the bottom of the page for faster page loading. -->
     <script type="text/javascript" src="../lib/js/head.min.js"></script>
     <script type="text/javascript" src="../js/reveal.min.js"></script>
-    
+
         <script type="text/javascript">
         Reveal.initialize({
             controls: true,
@@ -387,7 +426,7 @@
     </script>
     <!--
     <script>
-        
+
         Reveal.initialize({
             controls: true,
             progress: true,
