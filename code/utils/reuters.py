@@ -36,5 +36,5 @@ def writer(inpath, outpath):
                 out.write(f.read())
 
 if __name__ == "__main__":
-    #writer(CORPUS_ROOT, "reuters.txt")
+    writer(CORPUS_ROOT, "reuters.txt")
     print len(list(corpus_names(CORPUS_ROOT)))

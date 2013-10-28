@@ -1,0 +1,2668 @@
+"(PERSON Gather/NNP 'd/NNP)"	1
+'(FACILITY Air/NNP)'	1
+'(FACILITY Captain/NNP)'	1
+'(FACILITY English/NNP House/NNP)'	1
+'(FACILITY Grand/NNP Armada/NNP)'	1
+'(FACILITY Grand/NNP Canal/NNP)'	1
+'(FACILITY Grand/NNP Jury/NNP)'	1
+'(FACILITY Grand/NNP Turk/NNP)'	1
+'(FACILITY Kremlin/NNP)'	1
+'(FACILITY White/NNP Dog/NNP)'	1
+'(FACILITY White/NNP Elephants/NNP)'	1
+'(FACILITY White/NNP Friar/NNP)'	1
+'(FACILITY White/NNP Hoods/NNP)'	1
+'(FACILITY White/NNP Mountains/NNP)'	1
+'(FACILITY White/NNP Nun/NNP)'	1
+'(FACILITY White/NNP Sea/NNP)'	1
+'(FACILITY White/NNP Squall/NNP)'	1
+'(FACILITY White/NNP Steed/NNP)'	3
+'(FACILITY White/NNP Tower/NNP)'	1
+'(FACILITY White/NNP Whale/NNP)'	73
+'(FACILITY White/NNP Whales/NNP)'	1
+'(FACILITY White/NNP)'	1
+'(GPE AHAB/NNP)'	1
+'(GPE AZORE/NNP)'	2
+'(GPE Abashed/JJ)'	1
+'(GPE Abednego/NNP)'	1
+'(GPE Abjectus/NNP)'	1
+'(GPE Abraham/NNP)'	2
+'(GPE Accessory/NNP)'	1
+'(GPE Actium/NNP)'	1
+'(GPE Adieu/NNP)'	2
+'(GPE Adverse/NNP)'	1
+'(GPE Affected/NNP)'	1
+'(GPE Affrighted/NNP)'	1
+'(GPE Africa/NNP)'	7
+'(GPE African/JJ)'	2
+'(GPE Ah/NNP)'	13
+'(GPE Ahab/NNP)'	77
+'(GPE Ahoy/NNP)'	1
+'(GPE Akin/NNP)'	1
+'(GPE Alabama/NNP)'	3
+'(GPE Alas/NNP)'	2
+'(GPE Aldrovandi/NNP)'	1
+'(GPE Algiers/NNP)'	1
+'(GPE Alike/NNP)'	1
+'(GPE Alleghanian/NNP)'	1
+'(GPE Aloft/NNP)'	4
+'(GPE Alone/NNP)'	2
+'(GPE Ambergriese/NNP)'	1
+'(GPE Ambergris/NNP)'	1
+'(GPE Amelia/NNP)'	2
+'(GPE America/NNP)'	9
+'(GPE American/JJ)'	8
+'(GPE American/NNP)'	20
+'(GPE Americans/NNPS)'	4
+'(GPE Americas/NNP)'	1
+'(GPE Andromeda/NNP)'	1
+'(GPE Answer/NNP)'	2
+'(GPE Antwerp/NNP)'	1
+'(GPE Anyhow/NNP)'	1
+'(GPE Anyway/NNP)'	1
+'(GPE Apoplexy/NNP)'	1
+'(GPE Applied/NNP)'	1
+'(GPE Archer/NNP)'	2
+'(GPE Arctic/NNP)'	1
+'(GPE Aristotle/NNP)'	1
+'(GPE Ark/NNP)'	1
+'(GPE Arrayed/NNP)'	1
+'(GPE Arrived/NNP)'	2
+'(GPE Arsacidean/NNP)'	2
+'(GPE Artedi/NNP)'	1
+'(GPE Asia/NNP)'	4
+'(GPE Asiatic/NNP)'	1
+'(GPE Aside/NNP)'	1
+'(GPE Assyrian/JJ)'	1
+'(GPE Atlantic/NNP)'	1
+'(GPE August/NNP)'	2
+'(GPE Australia/NNP)'	2
+'(GPE Australian/JJ)'	1
+'(GPE Austrian/JJ Empire/NNP)'	1
+'(GPE Avast/NNP)'	1
+'(GPE Away/NNP)'	6
+'(GPE Awful/NNP)'	1
+'(GPE Aye/NNP)'	29
+'(GPE Azores/NNP)'	3
+'(GPE BALEINE/NN)'	1
+'(GPE BALLENA/NNP)'	1
+'(GPE Babel/NNP)'	1
+'(GPE Babylon/NNP)'	1
+'(GPE Babylonian/JJ)'	1
+'(GPE Bachelor/NNP)'	1
+'(GPE Back/NNP)'	1
+'(GPE Baltimore/NNP)'	1
+'(GPE Basilosaurus/NNP)'	1
+'(GPE Bastille/NNP)'	1
+'(GPE Beale/NNP)'	1
+'(GPE Bear/NNP)'	1
+'(GPE Beat/NNP)'	1
+'(GPE Begone/NNP)'	2
+'(GPE Behold/NNP)'	1
+'(GPE Behring/NNP)'	1
+'(GPE Belated/NNP)'	1
+'(GPE Belial/NNP)'	1
+'(GPE Believe/NNP)'	1
+'(GPE Belshazzar/NNP)'	2
+'(GPE Beneath/NNP)'	1
+'(GPE Bengal/NNP)'	1
+'(GPE Bethink/NNP)'	2
+'(GPE Beware/NNP)'	4
+'(GPE Bible/JJ)'	1
+'(GPE Bible/NNP)'	2
+'(GPE Bildad/NNP)'	43
+'(GPE Biographical/JJ)'	1
+'(GPE Birmah/NNP)'	1
+'(GPE Bishop/NNP)'	1
+'(GPE Bite/NNP)'	1
+'(GPE Blanco/NNP)'	1
+'(GPE Blanket/NNP)'	1
+'(GPE Blind/NNP)'	1
+'(GPE Blood/NNP)'	2
+'(GPE Boat/NNP)'	2
+'(GPE Bolivia/NNP)'	2
+'(GPE Bombay/NNP)'	1
+'(GPE Bone/NN)'	1
+'(GPE Bonneterre/NNP)'	1
+'(GPE Booble/NNP Alley/NNP)'	1
+'(GPE Book/NNP)'	1
+'(GPE Bordeaux/NNP)'	1
+'(GPE Born/NNP)'	1
+'(GPE Borneo/NNP)'	1
+'(GPE Boston/NNP)'	2
+'(GPE Bowditch/NNP)'	2
+'(GPE Breakfast/NNP)'	1
+'(GPE Bremen/NNP)'	2
+'(GPE Brighggians/NNPS)'	1
+'(GPE Bright/JJ)'	1
+'(GPE Brisson/NNP)'	1
+'(GPE Brit/NN)'	1
+'(GPE Britain/NNP)'	1
+'(GPE British/JJ)'	3
+'(GPE Broad/NNP)'	1
+'(GPE Broadway/NNP)'	2
+'(GPE Buffalo/NNP)'	1
+'(GPE Bulkington/NNP)'	2
+'(GPE Bunger/NNP)'	1
+'(GPE Bungle/NNP)'	1
+'(GPE Buoyed/NNP)'	1
+'(GPE Burst/NNP)'	1
+'(GPE Burton/NNP)'	1
+'(GPE CETUS/NNP)'	1
+'(GPE CHINA/NNP)'	1
+'(GPE COLL/NNP)'	1
+'(GPE Cabaco/NNP)'	1
+'(GPE Cadiz/NNP)'	1
+'(GPE Caesar/NNP)'	1
+'(GPE Caesarian/NNP)'	1
+'(GPE Cain/NNP)'	1
+'(GPE Calais/NNP)'	1
+'(GPE Californian/NN)'	1
+'(GPE Call/NNP)'	3
+'(GPE Callao/NNP)'	1
+'(GPE Camel/NNP)'	1
+'(GPE Campagna/NNP)'	1
+'(GPE Can/NNP)'	2
+'(GPE Canaan/NNP)'	2
+'(GPE Canada/NNP)'	2
+'(GPE Canadian/JJ)'	1
+'(GPE Canallers/NNP)'	1
+'(GPE Canaris/NNP)'	1
+'(GPE Candles/NNP)'	1
+'(GPE Cannibal/NNP)'	1
+'(GPE Cannibals/NNPS)'	1
+'(GPE Canst/NNP)'	1
+'(GPE Canterbury/NNP)'	1
+'(GPE Cape/NNP Horn/NNP)'	1
+'(GPE Cape/NNP)'	2
+'(GPE Capricornus/NNP)'	1
+'(GPE Captain/NNP Ahab/NNP)'	5
+'(GPE Captain/NNP Davis/NNP)'	1
+'(GPE Captain/NNP Mayhew/NNP)'	1
+'(GPE Captain/NNP Noah/NNP)'	1
+'(GPE Captain/NNP Sleet/NNP)'	2
+'(GPE Captain/NNP)'	58
+'(GPE Captains/NNP)'	1
+'(GPE Capting/NNP)'	1
+'(GPE Careful/NNP)'	1
+'(GPE Carthage/NNP)'	1
+'(GPE Caryatid/NNP)'	1
+'(GPE Cassock/NNP)'	1
+'(GPE Castle/NNP)'	1
+'(GPE Caught/NNP)'	1
+'(GPE Caw/NNP)'	1
+'(GPE Certain/NNP)'	1
+'(GPE Cetacea/NNP)'	1
+'(GPE Cetacean/NNP)'	1
+'(GPE Cetology/NNP)'	5
+'(GPE Cetus/NNP)'	1
+'(GPE Ceylon/NNP)'	1
+'(GPE Chace/NNP)'	1
+'(GPE Chestnut/NNP)'	1
+'(GPE Chief/NN)'	3
+'(GPE Childe/NNP)'	1
+'(GPE Chili/NNP)'	2
+'(GPE Chilian/NNP)'	2
+'(GPE China/NNP Seas/NNP)'	1
+'(GPE China/NNP)'	7
+'(GPE Chinese/JJ)'	3
+'(GPE Chinese/NNP)'	2
+'(GPE Cholo/NNP)'	1
+'(GPE Chowder/NNP)'	2
+'(GPE Christendom/NNP)'	4
+'(GPE Christian/JJ)'	11
+'(GPE Christian/NNP)'	5
+'(GPE Christianity/NNP)'	1
+'(GPE Circassian/JJ)'	1
+'(GPE Cistern/NNP)'	1
+'(GPE Clap/NNP)'	1
+'(GPE Cleopatra/NNP)'	1
+'(GPE Cleveland/NNP)'	1
+'(GPE Close/JJ)'	1
+'(GPE Coffin/NNP)'	3
+'(GPE Cold/NNP)'	1
+'(GPE College/NNP)'	1
+'(GPE Cologne/NNP)'	2
+'(GPE Come/NNP)'	8
+'(GPE Cook/NNP)'	2
+'(GPE Cooper/NNP)'	1
+'(GPE Copenhagen/NNP)'	1
+'(GPE Corinthians/NNP)'	1
+'(GPE Corlaer/NNP)'	1
+'(GPE Crack/NNP)'	2
+'(GPE Crazed/JJ)'	1
+'(GPE Created/NNP)'	1
+'(GPE Cretan/NNP)'	2
+'(GPE Crete/NNP)'	1
+'(GPE Crish/JJ)'	1
+'(GPE Cross/NNP)'	1
+'(GPE Crotch/NNP)'	1
+'(GPE Crozetts/NNP)'	1
+'(GPE Cruelty/NNP)'	1
+'(GPE Crushed/JJ)'	1
+'(GPE Curious/JJ)'	1
+'(GPE Curse/NNP)'	2
+'(GPE Cuvier/NNP)'	2
+'(GPE DAGGOO/NNP)'	3
+'(GPE DANISH/JJ)'	1
+'(GPE DANISH/NNP)'	1
+'(GPE DUTCH/NN)'	1
+'(GPE DUTCH/NNP)'	1
+'(GPE Daggoo/NNP)'	14
+'(GPE Dan/NNP)'	1
+'(GPE Dance/NN)'	1
+'(GPE Danes/NNP)'	2
+'(GPE Danish/NNP)'	2
+'(GPE Dantean/NNP)'	1
+'(GPE Dardanelles/NNP)'	1
+'(GPE Darien/NNP)'	1
+'(GPE Dash/NNP)'	1
+'(GPE De/NNP Witt/NNP)'	1
+'(GPE Deacon/NNP)'	1
+'(GPE Death/NN)'	3
+'(GPE Death/NNP)'	6
+'(GPE Deep/NNP)'	1
+'(GPE Deity/NNP)'	1
+'(GPE Delight/NNP)'	5
+'(GPE Delightful/NNP)'	1
+'(GPE Den/NNP)'	1
+'(GPE Denderah/NNP)'	1
+'(GPE Descartian/JJ)'	1
+'(GPE Desmarest/NNP)'	2
+'(GPE Despatch/NN)'	1
+'(GPE Devil/NNP)'	1
+'(GPE Disdain/NNP)'	1
+'(GPE Dish/NNP)'	1
+'(GPE Dives/NNP)'	1
+'(GPE Do/NNP)'	1
+'(GPE Dog/NNP)'	1
+'(GPE Dominic/NNP)'	2
+'(GPE Don/NNP)'	2
+'(GPE Doubloon/NNP)'	1
+'(GPE Dover/NNP)'	1
+'(GPE Down/NNP)'	5
+'(GPE Dragged/JJ)'	1
+'(GPE Dragon/NNP)'	1
+'(GPE Drawn/NNP)'	1
+'(GPE Drink/NN)'	1
+'(GPE Duck/NNP)'	1
+'(GPE Dunder/NNP)'	1
+'(GPE Dunfermline/NNP)'	1
+'(GPE Dunkirk/NNP)'	1
+'(GPE Duodecimo/NNP)'	1
+'(GPE Durand/NNP)'	1
+'(GPE Dusk/NNP)'	1
+'(GPE Dutch/JJ)'	12
+'(GPE Dutch/NN)'	1
+'(GPE Dutch/NNP Fishery/NNP)'	1
+'(GPE Dutch/NNP)'	6
+'(GPE Dutchman/NNP)'	1
+'(GPE ENGLISH/NNP)'	1
+'(GPE East/NNP)'	7
+'(GPE Easy/NNP)'	1
+'(GPE Egypt/NNP)'	2
+'(GPE Egyptian/JJ)'	5
+'(GPE Egyptian/NNP)'	2
+'(GPE Eh/NNP)'	1
+'(GPE Eight/NNP)'	3
+'(GPE Elephanta/NNP)'	2
+'(GPE Elijah/NNP)'	2
+'(GPE Emperors/NNP)'	1
+'(GPE England/NNP)'	15
+'(GPE English/JJ)'	8
+'(GPE English/NNP)'	23
+'(GPE Enveloped/NNP)'	1
+'(GPE Ephesian/NNP)'	1
+'(GPE Epilogue/NNP)'	1
+'(GPE Equality/NNP)'	1
+'(GPE Equator/NNP)'	1
+'(GPE Erromanggoans/NNP)'	1
+'(GPE Espied/NNP)'	1
+'(GPE Eternity/NNP)'	3
+'(GPE Ethiopian/JJ)'	2
+'(GPE Euclid/NNP)'	1
+'(GPE Euclidean/NNP)'	1
+'(GPE Euroclydon/NNP)'	4
+'(GPE Europa/NNP)'	1
+'(GPE Europe/NNP)'	4
+'(GPE European/JJ)'	2
+'(GPE Ex/NNP)'	1
+'(GPE Exception/NN)'	1
+'(GPE Explain/NNP)'	1
+'(GPE Ezekiel/NNP)'	1
+'(GPE FRENCH/NN)'	3
+'(GPE FRENCH/NNP)'	1
+'(GPE Fa/NNP)'	1
+'(GPE Fain/NNP)'	1
+'(GPE Fair/NNP)'	2
+'(GPE Falsehood/NNP)'	1
+'(GPE Farewell/NNP)'	2
+'(GPE Fast/NNP)'	1
+'(GPE Fedallah/NNP)'	4
+'(GPE Feegee/NNP)'	1
+'(GPE Feel/NNP)'	1
+'(GPE Feet/NNP)'	1
+'(GPE Fife/NNP)'	1
+'(GPE Fifth/NNP)'	2
+'(GPE Fill/NNP)'	1
+'(GPE Fine/NN)'	2
+'(GPE First/NNP)'	3
+'(GPE Fishes/NNP)'	1
+'(GPE Fishiest/NNP)'	1
+'(GPE Flask/NNP)'	37
+'(GPE Flat/JJ)'	1
+'(GPE Fleece/NNP)'	5
+'(GPE Flip/NNP)'	1
+'(GPE Flounders/NNP)'	1
+'(GPE Fool/NNP)'	2
+'(GPE Foolish/JJ)'	1
+'(GPE Form/NN)'	1
+'(GPE Fountain/NNP)'	1
+'(GPE Fourth/JJ)'	1
+'(GPE Fourth/NNP)'	2
+'(GPE France/NNP)'	5
+'(GPE Freeze/NNP)'	1
+'(GPE French/JJ)'	17
+'(GPE French/NNP)'	1
+'(GPE Frenchman/NNP)'	2
+'(GPE Frenchmen/NNP)'	1
+'(GPE Friends/NNPS)'	1
+'(GPE Friesland/NNP)'	2
+'(GPE Froissart/NNP)'	1
+'(GPE Full/NNP)'	1
+'(GPE Furthermore/NNP)'	4
+'(GPE Future/JJ)'	1
+'(GPE GREEK/NNP)'	1
+'(GPE GREENLAND/NNP)'	1
+'(GPE Garnery/NNP)'	2
+'(GPE Genesis/NNP)'	1
+'(GPE Geneva/NNP)'	1
+'(GPE Genius/NNP)'	1
+'(GPE Ger/NNP)'	1
+'(GPE German/JJ)'	3
+'(GPE German/NNP)'	9
+'(GPE Germans/NNP)'	1
+'(GPE Germans/NNS)'	1
+'(GPE Gesner/NNP)'	1
+'(GPE Get/NN)'	1
+'(GPE Ghent/NNP)'	1
+'(GPE Gibraltar/NNP)'	1
+'(GPE Gifted/NNP)'	1
+'(GPE Ginger/NNP)'	2
+'(GPE Gnawed/NNP)'	1
+'(GPE Go/NNP)'	1
+'(GPE Goa/NNP)'	1
+'(GPE Goat/NNP)'	1
+'(GPE God/NNP)'	7
+'(GPE Gods/NNPS)'	1
+'(GPE Goethe/NNP)'	1
+'(GPE Gomorrah/NNP)'	1
+'(GPE Gone/NNP)'	1
+'(GPE Goney/NNP)'	1
+'(GPE Good/NNP)'	2
+'(GPE Gospel/NNP)'	1
+'(GPE Gothic/NNP)'	2
+'(GPE Grace/NN)'	1
+'(GPE Grand/NNP)'	1
+'(GPE Great/NNP)'	7
+'(GPE Grecian/JJ)'	1
+'(GPE Grecian/NNP)'	1
+'(GPE Greece/NNP)'	2
+'(GPE Greek/NNP)'	8
+'(GPE Greeks/NNP)'	1
+'(GPE Green/NNP)'	1
+'(GPE Greenland/NNP Whale/NNP)'	2
+'(GPE Greenland/NNP)'	32
+'(GPE Greenwich/NNP Palace/NNP)'	1
+'(GPE Grenadier/NNP)'	1
+'(GPE Groan/NNP)'	1
+'(GPE Gulfweed/NNP)'	1
+'(GPE HVALT/NNP)'	2
+'(GPE HWAL/NNP)'	1
+'(GPE Ha/NNP)'	14
+'(GPE Hackluyt/NNP)'	2
+'(GPE Hah/NNP)'	1
+'(GPE Halloa/NNP)'	6
+'(GPE Halloo/NNP)'	1
+'(GPE Hand/NNP)'	6
+'(GPE Hanoverian/NNP)'	1
+'(GPE Hark/NNP)'	10
+'(GPE Harmattans/NNP)'	1
+'(GPE Harris/NNP)'	1
+'(GPE Hast/NNP)'	2
+'(GPE Haul/NNP)'	4
+'(GPE Have/NNP)'	1
+'(GPE Hawaiian/JJ)'	2
+'(GPE Heaven/NNP)'	2
+'(GPE Hebrew/NNP)'	1
+'(GPE Hebrews/NNP)'	1
+'(GPE Hecla/NNP)'	1
+'(GPE Heidelburgh/NNP)'	2
+'(GPE Hemp/NNP)'	1
+'(GPE Hence/NN)'	6
+'(GPE Herculaneum/NNP)'	1
+'(GPE High/JJ)'	1
+'(GPE Highland/NNP)'	3
+'(GPE Him/NNP)'	2
+'(GPE Hindoo/NNP)'	1
+'(GPE Hindoos/NNP)'	1
+'(GPE Hindostan/NNP)'	1
+'(GPE Hish/JJ)'	1
+'(GPE Hist/NNP)'	2
+'(GPE Hitherto/NNP)'	1
+'(GPE Ho/NNP)'	7
+'(GPE Hoe/NNP)'	1
+'(GPE Hogarthian/JJ)'	1
+'(GPE Hold/NNP)'	4
+'(GPE Holland/NNP)'	4
+'(GPE Hoot/NN)'	1
+'(GPE Horatii/NNP)'	1
+'(GPE Horned/NNP)'	1
+'(GPE Huge/JJ)'	1
+'(GPE Hull/NNP)'	2
+'(GPE Human/NNP)'	1
+'(GPE Humiliation/NNP)'	1
+'(GPE Humph/NNP)'	2
+'(GPE Hurrah/NNP)'	8
+'(GPE Hussey/NNP)'	3
+'(GPE Hydrus/NNP)'	1
+'(GPE Hyena/NNP)'	2
+'(GPE Hygiene/NNP)'	1
+'(GPE Hyperborean/JJ)'	1
+'(GPE ICELAND/NNP)'	1
+'(GPE Iceland/NNP)'	1
+'(GPE Icelandic/NNP)'	1
+'(GPE Ignorance/NN)'	1
+'(GPE Illinois/NNP)'	2
+'(GPE Impossible/JJ)'	1
+'(GPE Imprimis/NNP)'	1
+'(GPE Inasmuch/JJ)'	1
+'(GPE India/NNP)'	5
+'(GPE Indiamen/NNP)'	1
+'(GPE Indian/JJ)'	18
+'(GPE Indian/NNP Ocean/NNP)'	2
+'(GPE Indian/NNP Oceans/NNPS)'	1
+'(GPE Indian/NNP)'	34
+'(GPE Indies/NNPS)'	1
+'(GPE Indolence/NN)'	1
+'(GPE Io/NNP)'	1
+'(GPE Ireland/NNP)'	1
+'(GPE Irish/JJ)'	1
+'(GPE Isaiah/NNP)'	1
+'(GPE Ishmael/NNP)'	16
+'(GPE Island/NNP)'	3
+'(GPE Israel/NNP)'	1
+'(GPE Italian/JJ)'	4
+'(GPE Italy/NNP)'	1
+'(GPE Japan/NNP)'	10
+'(GPE Japanese/JJ)'	9
+'(GPE Java/NNP)'	3
+'(GPE Javan/NNP)'	2
+'(GPE Jenny/NNP)'	1
+'(GPE Jeroboam/NNP)'	1
+'(GPE Jimmini/NNP)'	1
+'(GPE Job/NNP)'	1
+'(GPE Jonah/NNP)'	17
+'(GPE Joppa/NNP)'	4
+'(GPE Jove/NNP)'	1
+'(GPE Joy/NNP)'	1
+'(GPE Judea/NNP)'	1
+'(GPE Judges/NNP)'	1
+'(GPE Judith/NNP)'	1
+'(GPE Julys/NNP)'	1
+'(GPE Jump/NNP)'	1
+'(GPE Jumped/NNP)'	1
+'(GPE Justinian/JJ)'	1
+'(GPE Kant/NNP)'	1
+'(GPE Kentuckian/JJ)'	2
+'(GPE Kick/NNP)'	1
+'(GPE Killed/NNP)'	1
+'(GPE Killer/NNP)'	1
+'(GPE Kings/NNP)'	1
+'(GPE Knife/NNP)'	1
+'(GPE Know/NNP)'	1
+'(GPE Korah/NNP)'	1
+'(GPE Krusenstern/NNP)'	1
+'(GPE Krusensterns/NNP)'	1
+'(GPE La/NNP)'	1
+'(GPE Labrador/NNP)'	3
+'(GPE Lacepede/NNP)'	3
+'(GPE Lad/NNP)'	1
+'(GPE Langsdorff/NNP)'	3
+'(GPE Lapland/NNP)'	1
+'(GPE Laplandish/NNP)'	1
+'(GPE Lashed/JJ)'	1
+'(GPE Latin/NNP)'	3
+'(GPE Leap/NNP)'	1
+'(GPE Learning/NNP)'	1
+'(GPE Leg/NNP)'	1
+'(GPE Let/NNP)'	5
+'(GPE Level/NNP)'	1
+'(GPE Leviathan/NNP)'	4
+'(GPE Leviathanism/NNP)'	1
+'(GPE Leviathans/NNPS)'	1
+'(GPE Leyden/NNP)'	3
+'(GPE Life/NNP)'	3
+'(GPE Lifted/NNP)'	1
+'(GPE Light/NN)'	1
+'(GPE Likewise/NNP)'	4
+'(GPE Lima/NNP)'	2
+'(GPE Limeese/NNP)'	1
+'(GPE Line/NNP)'	4
+'(GPE Linnaeus/NNP)'	2
+'(GPE Lionel/NNP)'	1
+'(GPE Listen/NNP)'	3
+'(GPE Lit/NN)'	1
+'(GPE Lo/NNP)'	3
+'(GPE Loaded/JJ)'	1
+'(GPE Locke/NNP)'	1
+'(GPE Loftiest/NNP)'	1
+'(GPE Lombardy/NNP)'	2
+'(GPE London/NNP)'	11
+'(GPE Long/JJ)'	8
+'(GPE Long/NNP Island/NNP)'	1
+'(GPE Look/NNP)'	18
+'(GPE Lord/NNP)'	9
+'(GPE Lose/NNP)'	1
+'(GPE Louis/NNP)'	1
+'(GPE Louisiana/NNP)'	1
+'(GPE Luck/NNP)'	1
+'(GPE Lucky/NNP)'	1
+'(GPE Luff/NNP)'	2
+'(GPE MALTESE/NN)'	2
+'(GPE Macey/NNP)'	1
+'(GPE Mackinaw/NNP)'	1
+'(GPE Madness/NN)'	1
+'(GPE Magian/JJ)'	1
+'(GPE Mahomet/NNP)'	1
+'(GPE Make/NNP)'	1
+'(GPE Malacca/NNP)'	2
+'(GPE Malay/NNP)'	1
+'(GPE Malays/NNP)'	2
+'(GPE Malays/NNPS)'	2
+'(GPE Man/NN)'	1
+'(GPE Man/NNP)'	2
+'(GPE Manilla/NNP)'	1
+'(GPE Manillas/NNP)'	1
+'(GPE Marchant/NNP)'	1
+'(GPE Marten/NNP)'	1
+'(GPE Martha/NNP)'	1
+'(GPE Massachusetts/NNP)'	2
+'(GPE Mayhew/NNP)'	3
+'(GPE Meantime/NNP)'	15
+'(GPE Measured/NNP)'	1
+'(GPE Mecca/NNP)'	1
+'(GPE Mediterranean/NNP)'	4
+'(GPE Mephistophelean/NNP)'	1
+'(GPE Merchant/NN)'	1
+'(GPE Mesopotamian/JJ)'	1
+'(GPE Mexico/NNP)'	3
+'(GPE Middle/NNP American/NNP States/NNPS)'	1
+'(GPE Middle/NNP)'	1
+'(GPE Midnight/NNP)'	2
+'(GPE Midwifery/NNP)'	1
+'(GPE Miracle/NNP)'	1
+'(GPE Miserable/JJ)'	1
+'(GPE Mississippi/NNP)'	1
+'(GPE Mixed/NNP)'	1
+'(GPE Moby/NNP Dick/NNP)'	1
+'(GPE Moorish/NNP)'	1
+'(GPE Mordecai/NNP)'	1
+'(GPE Moses/NNP)'	1
+'(GPE Moss/NNP)'	1
+'(GPE Mountains/NNP)'	1
+'(GPE Mounttop/NNP)'	1
+'(GPE Mt/NNP)'	1
+'(GPE Muffled/NNP)'	1
+'(GPE NEW/NNP YORK/NNP)'	1
+'(GPE Nail/NNP)'	1
+'(GPE Names/NNP)'	1
+'(GPE Nantucket/NN)'	2
+'(GPE Nantucket/NNP)'	42
+'(GPE Nantucketer/NNP)'	1
+'(GPE Nantucketers/NNP)'	1
+'(GPE Napoleon/NNP)'	2
+'(GPE Narcissus/NNP)'	1
+'(GPE Narwhale/NNP)'	2
+'(GPE Nature/NNP)'	2
+'(GPE Naught/NNP)'	1
+'(GPE Nay/NNP)'	7
+'(GPE Needle/NNP)'	1
+'(GPE Netherlands/NNPS)'	1
+'(GPE New/NNP Bedford/NNP)'	14
+'(GPE New/NNP Guinea/NNP)'	3
+'(GPE New/NNP Hampshire/NNP)'	2
+'(GPE New/NNP Holland/NNP)'	1
+'(GPE New/NNP Year/NNP)'	1
+'(GPE New/NNP York/NNP State/NNP)'	1
+'(GPE New/NNP York/NNP)'	4
+'(GPE New/NNP Zealand/NNP)'	2
+'(GPE New/NNP)'	4
+'(GPE Newcastle/NNP)'	1
+'(GPE Newfoundland/NNP)'	2
+'(GPE Nicholas/NNP)'	1
+'(GPE Niger/NNP)'	1
+'(GPE Nightgown/NNP)'	1
+'(GPE Nimble/JJ)'	1
+'(GPE Nineveh/NNP)'	5
+'(GPE Noah/NNP)'	3
+'(GPE Nod/NNP)'	1
+'(GPE None/NN)'	1
+'(GPE Nor/NNP)'	70
+'(GPE Norse/NNP)'	1
+'(GPE North/NNP)'	4
+'(GPE Northern/NNP)'	2
+'(GPE Norwegian/NNP)'	1
+'(GPE Nothing/NN)'	5
+'(GPE Oahu/NNP)'	1
+'(GPE Ocean/NNP)'	3
+'(GPE Ochotsh/NNP)'	1
+'(GPE Octavo/NNP)'	1
+'(GPE Ohio/NNP)'	1
+'(GPE Old/NNP)'	2
+'(GPE Olmstead/NNP)'	1
+'(GPE Ombay/NNP)'	1
+'(GPE Oregon/NNP)'	2
+'(GPE Other/JJ)'	1
+'(GPE Ottoman/NNP)'	1
+'(GPE Outward/NNP)'	1
+'(GPE Owen/NNP)'	2
+'(GPE PIP/NNP)'	1
+'(GPE PORTUGUESE/NN)'	1
+'(GPE Pacific/NNP)'	5
+'(GPE Paean/JJ)'	1
+'(GPE Pagan/NNP)'	1
+'(GPE Paint/NNP)'	1
+'(GPE Pampas/NNP)'	1
+'(GPE Pan/NNP)'	1
+'(GPE Pannangians/NNP)'	1
+'(GPE Pantheistic/NNP)'	1
+'(GPE Paradise/NNP)'	2
+'(GPE Parallel/NNP)'	1
+'(GPE Pardon/NNP)'	2
+'(GPE Paris/NNP)'	1
+'(GPE Parsee/NNP)'	5
+'(GPE Pascal/NNP)'	1
+'(GPE Pass/NNP)'	1
+'(GPE Patagonia/NNP)'	1
+'(GPE Patagonian/NNP)'	3
+'(GPE Patience/NNP)'	1
+'(GPE Peace/NN)'	2
+'(GPE Pegu/NNP)'	1
+'(GPE Peleg/NNP)'	4
+'(GPE Pequod/NNP)'	49
+'(GPE Perchance/NN)'	2
+'(GPE Perseus/NNP)'	6
+'(GPE Persia/NNP)'	1
+'(GPE Persian/JJ)'	1
+'(GPE Persian/NNP)'	3
+'(GPE Perth/NNP)'	6
+'(GPE Peru/NNP)'	3
+'(GPE Peruvian/NNP)'	3
+'(GPE Pharaoh/NNP)'	1
+'(GPE Phidias/NNP)'	1
+'(GPE Physiognomy/NNP)'	1
+'(GPE Pip/NNP)'	9
+'(GPE Pirohitee/NNP)'	1
+'(GPE Pitferren/NNP)'	1
+'(GPE Pity/NN)'	1
+'(GPE Planted/NNP)'	1
+'(GPE Plata/NNP)'	1
+'(GPE Platonian/JJ)'	1
+'(GPE Platonic/NNP)'	1
+'(GPE Plenty/NN)'	1
+'(GPE Pliny/NNP)'	5
+'(GPE Plunge/NNP)'	1
+'(GPE Poland/NNP)'	2
+'(GPE Polynesia/NNP)'	1
+'(GPE Polynesian/NNP)'	1
+'(GPE Poor/NNP)'	1
+'(GPE Popayan/NNP)'	1
+'(GPE Porpoise/NNP)'	5
+'(GPE Porpoises/NNS)'	1
+'(GPE Portugal/NNP)'	1
+'(GPE Portuguese/JJ)'	1
+'(GPE Portuguese/NNP)'	1
+'(GPE Porus/NNP)'	1
+'(GPE Postscript/NNP)'	1
+'(GPE Povelson/NNP)'	1
+'(GPE Pray/NNP)'	1
+'(GPE Prick/NNP)'	1
+'(GPE Priest/NNP)'	1
+'(GPE Procopius/NNP)'	1
+'(GPE Prometheus/NNP)'	2
+'(GPE Providence/NNP)'	1
+'(GPE Pull/NNP)'	4
+'(GPE Pulpit/NNP)'	1
+'(GPE Pupella/NNP)'	2
+'(GPE Purchas/NNP)'	1
+'(GPE Pyrrho/NNP)'	1
+'(GPE Pythagoras/NNP)'	1
+'(GPE Pythagorean/NNP)'	1
+'(GPE Quaker/NNP)'	6
+'(GPE Quebec/NNP)'	1
+'(GPE Queen/NNP Anne/NNP)'	1
+'(GPE Queen/NNP Nature/NNP)'	1
+'(GPE Queequeg/NNP)'	91
+'(GPE Quick/NNP)'	5
+'(GPE Quohog/NNP)'	5
+'(GPE Rachel/NNP)'	3
+'(GPE Rad/NNP)'	1
+'(GPE Radney/NNP)'	10
+'(GPE Ram/NNP)'	1
+'(GPE Ramadan/NNP)'	9
+'(GPE Ramadans/NNP)'	2
+'(GPE Randolphs/NNP)'	1
+'(GPE Raphael/NNP)'	1
+'(GPE Rattle/NNP)'	1
+'(GPE Ray/NNP)'	1
+'(GPE Real/NNP)'	1
+'(GPE Reality/NN)'	1
+'(GPE Reference/NN)'	2
+'(GPE Relieved/JJ)'	1
+'(GPE Remark/NNP)'	1
+'(GPE Retribution/NN)'	1
+'(GPE Rhenish/NNP)'	1
+'(GPE Rhyme/NNP)'	1
+'(GPE Riotous/JJ)'	1
+'(GPE Roar/NNP)'	1
+'(GPE Rokovoko/NNP)'	2
+'(GPE Roman/JJ)'	1
+'(GPE Roman/NNP)'	2
+'(GPE Romans/NNP)'	2
+'(GPE Rome/NNP)'	4
+'(GPE Romish/NNP)'	3
+'(GPE Rondeletius/NNP)'	1
+'(GPE Round/NN)'	2
+'(GPE Rousseau/NNP)'	1
+'(GPE Run/NNP)'	1
+'(GPE Russian/JJ)'	3
+'(GPE Russian/NNP)'	1
+'(GPE SACRED/NNP)'	3
+'(GPE SICILIAN/NN)'	2
+'(GPE SPANISH/JJ)'	3
+'(GPE SPANISH/NNP)'	1
+'(GPE ST./NNP JAGO/NNP)'	1
+'(GPE STATES/NNPS)'	1
+'(GPE STUBB/NNP)'	1
+'(GPE SWEDISH/NNP)'	1
+'(GPE Sabbath/NNP)'	1
+'(GPE Sag/NNP Harbor/NNP)'	1
+'(GPE Sagittarius/NNP)'	1
+'(GPE Sahara/NNP)'	1
+'(GPE Saint/NNP Stylites/NNP)'	1
+'(GPE Salem/NNP)'	1
+'(GPE Same/NNP)'	1
+'(GPE Sandwich/NNP)'	1
+'(GPE Santa/NNP)'	1
+'(GPE Saratoga/NNP)'	1
+'(GPE Satan/NNP)'	3
+'(GPE Saturn/NNP)'	1
+'(GPE Savage/NN)'	1
+'(GPE Savesoul/NNP)'	2
+'(GPE Scales/NNP)'	1
+'(GPE Scandinavian/JJ)'	1
+'(GPE Scandinavian/NNP)'	1
+'(GPE Science/NN)'	1
+'(GPE Scoresby/NNP)'	2
+'(GPE Scotland/NNP)'	1
+'(GPE Sea/NNP)'	1
+'(GPE Seated/NNP)'	1
+'(GPE Sebastian/NNP)'	1
+'(GPE See/NNP)'	9
+'(GPE Seek/NNP)'	1
+'(GPE Seen/NNP)'	1
+'(GPE Seldom/NNP)'	1
+'(GPE Senor/NNP)'	2
+'(GPE Serious/JJ)'	1
+'(GPE Sermon/NNP)'	1
+'(GPE Shame/NNP)'	3
+'(GPE Shetland/NNP)'	1
+'(GPE Ship/NN)'	2
+'(GPE Shipmate/NNP)'	1
+'(GPE Short/JJ)'	1
+'(GPE Siam/NNP)'	1
+'(GPE Siamese/JJ)'	1
+'(GPE Siamese/NNP)'	1
+'(GPE Sibbald/NNP)'	1
+'(GPE Siberia/NNP)'	2
+'(GPE Siberian/NNP)'	1
+'(GPE Sicilian/NNP)'	1
+'(GPE Sikoke/NNP)'	1
+'(GPE Silence/NN)'	1
+'(GPE Silent/NNP)'	1
+'(GPE Simoon/NNP)'	1
+'(GPE Sink/NNP)'	1
+'(GPE Sir/NNP)'	3
+'(GPE Sixteen/NNP)'	1
+'(GPE Skin/NNP)'	1
+'(GPE Skrimshander/NNP)'	1
+'(GPE Sleep/NNP)'	1
+'(GPE Slid/NNP)'	1
+'(GPE Slope/NNP)'	1
+'(GPE Small/JJ)'	2
+'(GPE Smeerenberg/NNP)'	1
+'(GPE Smithfield/NNP)'	1
+'(GPE Snap/NNP)'	1
+'(GPE Snatch/NN)'	1
+'(GPE Sodom/NNP)'	1
+'(GPE Solander/NNP)'	1
+'(GPE Somehow/NNP)'	1
+'(GPE Sons/NNP)'	1
+'(GPE Soothed/JJ)'	1
+'(GPE Sorrows/NNP)'	1
+'(GPE South/NNP America/NNP)'	1
+'(GPE South/NNP American/NNP)'	1
+'(GPE South/NNP Atlantic/NNP)'	1
+'(GPE South/NNP)'	3
+'(GPE Southern/NNP)'	2
+'(GPE Southerner/NNP)'	1
+'(GPE Spain/NNP)'	4
+'(GPE Spanish/NNP)'	7
+'(GPE Speak/NNP)'	3
+'(GPE Specksioneer/NNP)'	1
+'(GPE Spell/NNP)'	1
+'(GPE Sphinx/NNP)'	1
+'(GPE Sphynx/NNP)'	1
+'(GPE Spite/NNP)'	2
+'(GPE Spitzbergen/NNP)'	3
+'(GPE Split/NN)'	1
+'(GPE Spring/NNP)'	1
+'(GPE Squall/NNP)'	1
+'(GPE Squeeze/NNP)'	1
+'(GPE Squid/NNP)'	2
+'(GPE St./NNP George/NNP)'	3
+'(GPE St./NNP Helena/NNP)'	1
+'(GPE St./NNP John/NNP)'	1
+'(GPE St./NNP Paul/NNP)'	1
+'(GPE St./NNP Peter/NNP)'	2
+'(GPE St./NNP Pott/NNP)'	1
+'(GPE St./NNP)'	2
+'(GPE St/NNP)'	1
+'(GPE Stand/NNP)'	14
+'(GPE Starbuck/NNP)'	20
+'(GPE Stars/NNP)'	1
+'(GPE Steelkilt/NNP)'	2
+'(GPE Stoic/NNP)'	1
+'(GPE Stone/NNP)'	1
+'(GPE Stop/NNP)'	3
+'(GPE Straightway/NNP)'	1
+'(GPE Strange/NNP)'	2
+'(GPE Strangest/NNP)'	1
+'(GPE Street/NNP)'	1
+'(GPE Stripped/NNP)'	1
+'(GPE Strong/JJ)'	2
+'(GPE Struck/NNP)'	2
+'(GPE Stubb/NNP)'	43
+'(GPE Subject/JJ)'	1
+'(GPE Such/JJ)'	5
+'(GPE Sultan/NNP)'	1
+'(GPE Sumatra/NNP)'	4
+'(GPE Sunda/NNP)'	4
+'(GPE Sunset/NNP)'	1
+'(GPE Supper/NNP)'	2
+'(GPE Suppose/NNP)'	1
+'(GPE Swallow/NNP)'	1
+'(GPE Swedes/NNP)'	1
+'(GPE Sweet/NNP)'	1
+'(GPE Swerve/NNP)'	2
+'(GPE Swiss/NNP)'	1
+'(GPE Sydney/NNP)'	1
+'(GPE Syracuse/NNP)'	1
+'(GPE Syrian/NNP)'	3
+'(GPE TAHITAN/NNP)'	1
+'(GPE TASHTEGO/NNP)'	1
+'(GPE Tahiti/NNP)'	3
+'(GPE Tahitian/NNP)'	3
+'(GPE Tail/NNP)'	1
+'(GPE Take/NNP)'	7
+'(GPE Talk/NNP)'	1
+'(GPE Tall/NNP)'	1
+'(GPE Tarshish/JJ)'	3
+'(GPE Tarshish/NNP)'	3
+'(GPE Tartarian/NNP)'	1
+'(GPE Tashtego/NNP)'	22
+'(GPE Taurus/NNP)'	2
+'(GPE Teeth/NNP)'	1
+'(GPE Tell/NNP)'	7
+'(GPE Tempered/NNP)'	1
+'(GPE Temple/NNP)'	1
+'(GPE Tennessee/NNP)'	1
+'(GPE Texas/NNP)'	1
+'(GPE Texel/NNP)'	1
+'(GPE Thames/NNP)'	1
+'(GPE Thank/NNP)'	2
+'(GPE That/NNP)'	1
+'(GPE Thee/NNP)'	1
+'(GPE Thereby/NNP)'	1
+'(GPE Therefore/NNP)'	6
+'(GPE Thermes/NNP)'	1
+'(GPE Third/NNP)'	1
+'(GPE Thou/NNP)'	8
+'(GPE Throw/NNP)'	1
+'(GPE Thrusted/NNP)'	1
+'(GPE Thunder/NNP)'	1
+'(GPE Thy/NNP)'	3
+'(GPE Tierce/NNP)'	1
+'(GPE Tigris/NNP)'	2
+'(GPE Till/NNP)'	1
+'(GPE Time/NNP)'	2
+'(GPE Timor/NNP)'	1
+'(GPE Tisbury/NNP)'	1
+'(GPE Tistig/NNP)'	1
+'(GPE Titans/NNPS)'	1
+'(GPE Tolland/NNP)'	2
+'(GPE Tophet/NNP)'	1
+'(GPE Trades/NNP)'	1
+'(GPE Trafalgar/NNP Square/NNP)'	1
+'(GPE Tranque/NNP)'	2
+'(GPE Transported/NNP)'	1
+'(GPE Tropics/NNP)'	1
+'(GPE True/JJ)'	8
+'(GPE Trumpet/NNP)'	1
+'(GPE Truth/NNP)'	6
+'(GPE Tumble/JJ)'	1
+'(GPE Tumbled/NNP)'	1
+'(GPE Turk/NNP)'	3
+'(GPE Turkey/NNP)'	1
+'(GPE Turkish/JJ)'	3
+'(GPE Turkish/NNP)'	2
+'(GPE Turks/NNP)'	2
+'(GPE Turn/NNP)'	3
+'(GPE Tusked/NNP)'	1
+'(GPE Tut/NNP)'	1
+'(GPE Typhoon/NNP)'	1
+'(GPE U.S./NNP)'	1
+'(GPE Um/NNP)'	2
+'(GPE United/NNP States/NNPS)'	2
+'(GPE Unshored/NNP)'	1
+'(GPE Upon/NNP)'	16
+'(GPE VEINS/NNP)'	1
+'(GPE Vanity/NNP)'	1
+'(GPE Vedas/NNP)'	1
+'(GPE Vendome/NNP)'	1
+'(GPE Venetian/NNP)'	4
+'(GPE Venetianly/NNP)'	1
+'(GPE Venice/NNP)'	1
+'(GPE Verdes/NNP)'	1
+'(GPE Vermont/NNP)'	1
+'(GPE Versailles/NNP)'	1
+'(GPE Very/NNP)'	4
+'(GPE Vesuvius/NNP)'	1
+'(GPE Vice/NNP)'	1
+'(GPE Vidocq/NNP)'	1
+'(GPE Virginia/NNP)'	4
+'(GPE Virtue/NNP)'	1
+'(GPE Vishnoo/NNP)'	2
+'(GPE Vishnu/NNP)'	1
+'(GPE WALLEN/NNP)'	1
+'(GPE WHALE/NNP)'	2
+'(GPE WHOEL/NNP)'	1
+'(GPE Wales/NNP)'	1
+'(GPE Wapping/NNP)'	1
+'(GPE Warmest/NNP)'	1
+'(GPE Was/NNP)'	4
+'(GPE Washington/NNP)'	2
+'(GPE Watch/NN)'	1
+'(GPE Watery/NNP)'	1
+'(GPE Watts/NNP)'	1
+'(GPE Wave/NNP)'	1
+'(GPE Well/NNP)'	29
+'(GPE West/NNP)'	3
+'(GPE Wet/NNP)'	1
+'(GPE Whale/NNP)'	7
+'(GPE Whales/NNP)'	6
+'(GPE Wheelbarrow/NNP)'	1
+'(GPE Whence/NN)'	2
+'(GPE Wherefore/NNP)'	5
+'(GPE Wherein/NNP)'	1
+'(GPE Whereupon/NNP)'	2
+'(GPE Which/NNP)'	2
+'(GPE White/NNP)'	2
+'(GPE Whitsuntide/NNP)'	1
+'(GPE Whom/NNP)'	1
+'(GPE Wife/NNP)'	1
+'(GPE Willoughby/NNP)'	1
+'(GPE Wind/NNP)'	1
+'(GPE Winnebago/NNP)'	1
+'(GPE Wisdom/NNP)'	1
+'(GPE Wish/JJ)'	1
+'(GPE Within/NNP)'	1
+'(GPE Witness/NN)'	1
+'(GPE Woe/NNP)'	6
+'(GPE Wonder/NNP)'	1
+'(GPE Wonderfullest/NNP)'	1
+'(GPE Wondrous/JJ)'	1
+'(GPE Wood/NNP)'	1
+'(GPE Wooden/NNP)'	1
+'(GPE Wrapped/NNP)'	1
+'(GPE Wretched/NNP)'	1
+'(GPE Yarman/NNP)'	1
+'(GPE Yea/NNP)'	4
+'(GPE Yojo/NNP)'	3
+'(GPE Yoke/NNP)'	1
+'(GPE Yon/NNP)'	1
+'(GPE Yonder/NNP)'	2
+'(GPE Yorkshire/NNP)'	1
+'(GPE Young/NNP)'	1
+'(GPE Zoned/NNP)'	1
+'(GPE Zoology/NNP)'	1
+'(GPE bar-room/NNP)'	1
+'(GPE bill-fish/JJ)'	1
+'(GPE broken-hearted/JJ)'	1
+'(GPE hat-band/NNP)'	1
+'(GPE kill-e/JJ)'	1
+'(GPE middle-watch/JJ)'	1
+'(GPE wash-stand/NNP)'	1
+'(GSP African/JJ)'	1
+'(GSP Connecticut/NNP)'	1
+'(GSP Consider/NNP)'	5
+'(GSP Don/NNP)'	1
+'(GSP PHIL/NNP)'	1
+'(GSP Philistines/NNP)'	2
+'(GSP Sunda/NNP)'	1
+'(GSP Zogranda/NNP)'	1
+'(LOCATION Black/NNP Sea/NNP)'	1
+'(LOCATION Eastern/NNP Continents/NNP)'	1
+'(LOCATION Mediterranean/NNP Sea/NNP)'	1
+'(LOCATION Mediterranean/NNP)'	2
+'(LOCATION North/NNP)'	2
+'(LOCATION Northern/NNP Lights/NNP)'	1
+'(LOCATION Northern/NNP Ocean/NNP)'	1
+'(LOCATION Persian/NNP Gulf/NNP)'	2
+'(LOCATION Polynesian/NNP Isles/NNP)'	1
+'(LOCATION South/NNP Sea/NNP Voyages/NNP)'	1
+'(LOCATION South/NNP Sea/NNP)'	6
+'(LOCATION South/NNP Seas/NNP)'	3
+'(LOCATION South/NNP)'	2
+'(LOCATION Southern/NNP Fishery/NNP)'	1
+'(LOCATION Southern/NNP Seas/NNP)'	1
+'(LOCATION Southern/NNP)'	3
+'(LOCATION Upper/NNP Mississippi/NNP)'	1
+'(LOCATION West/NNP Coast/NNP)'	1
+'(LOCATION West/NNP Indian/NNP)'	1
+'(LOCATION West/NNP Passage/NNP)'	1
+'(LOCATION West/NNP)'	4
+'(ORGANIZATION ACCOUNT/NNP)'	1
+'(ORGANIZATION ADVANCING/NNP)'	1
+'(ORGANIZATION ADVENTURES/NNP)'	1
+'(ORGANIZATION AFRICA/NNP)'	1
+'(ORGANIZATION AFTER/NNP)'	1
+'(ORGANIZATION AHAB/NNP)'	8
+'(ORGANIZATION ALGERINE/NN)'	1
+'(ORGANIZATION ALIVE/NNP)'	1
+'(ORGANIZATION ALL/DT)'	1
+'(ORGANIZATION ALL/NNP)'	2
+'(ORGANIZATION ALONE/NNP)'	1
+'(ORGANIZATION ANCHORS/NNP)'	1
+'(ORGANIZATION AND/NNP)'	1
+'(ORGANIZATION ANIMAL/NNP)'	1
+'(ORGANIZATION ANNALS/NNS)'	1
+'(ORGANIZATION ANNUS/NNP)'	1
+'(ORGANIZATION APOLOGY/NN FOR/IN)'	1
+'(ORGANIZATION APPLICATION/NNP)'	1
+'(ORGANIZATION ARCTIC/NNP)'	1
+'(ORGANIZATION ASCENDING/NN)'	1
+'(ORGANIZATION ASIDE/NNP)'	1
+'(ORGANIZATION Academy/NNP of/IN Sciences/NNPS)'	1
+'(ORGANIZATION Acushnet/NNP)'	1
+'(ORGANIZATION Admiral/NNP)'	1
+'(ORGANIZATION Advocate/NNP)'	1
+'(ORGANIZATION Affidavit/NNP)'	1
+'(ORGANIZATION Ages/NNP)'	1
+'(ORGANIZATION Ahab/NNP)'	10
+'(ORGANIZATION Alabama/NNP)'	3
+'(ORGANIZATION Albino/NNP)'	3
+'(ORGANIZATION Aldrovandus/NNP)'	1
+'(ORGANIZATION Algerine/NNP Porpoise/NNP)'	1
+'(ORGANIZATION Almighty/NNP)'	1
+'(ORGANIZATION Alps/NNP)'	1
+'(ORGANIZATION American/NNP Canals/NNP)'	1
+'(ORGANIZATION American/NNP Whale/NNP Fleet/NNP)'	1
+'(ORGANIZATION American/NNP)'	2
+'(ORGANIZATION Anak/NNP)'	1
+'(ORGANIZATION Andes/NNP)'	1
+'(ORGANIZATION Animated/NNP Nature/NNP)'	1
+'(ORGANIZATION Antarctic/NNP)'	4
+'(ORGANIZATION Anvil/NNP Headed/NNP)'	1
+'(ORGANIZATION Apollo/NNP Green/NNP)'	1
+'(ORGANIZATION Archbishop/NNP)'	1
+'(ORGANIZATION Arctic/JJ)'	1
+'(ORGANIZATION Arctic/NNP)'	1
+'(ORGANIZATION Arethusa/NNP)'	1
+'(ORGANIZATION Aries/NNPS)'	1
+'(ORGANIZATION Arkansas/NNP)'	1
+'(ORGANIZATION Arm/NNP)'	1
+'(ORGANIZATION Arnold/NNP)'	1
+'(ORGANIZATION Arsacidean/NNP)'	2
+'(ORGANIZATION Arsacides/NNP)'	2
+'(ORGANIZATION Asiatic/NNP)'	2
+'(ORGANIZATION Asphaltites/NNPS)'	1
+'(ORGANIZATION Atlantic/NNP Ocean/NNP)'	1
+'(ORGANIZATION Atlantic/NNP)'	13
+'(ORGANIZATION Atlantics/NNP)'	1
+'(ORGANIZATION Author/NNP)'	1
+'(ORGANIZATION Authors/NNP)'	1
+'(ORGANIZATION BARON/NNP)'	1
+'(ORGANIZATION BATTLE/NNP)'	1
+'(ORGANIZATION BEFORE/NNP)'	1
+'(ORGANIZATION BEING/NNP)'	1
+'(ORGANIZATION BELFAST/NN)'	1
+'(ORGANIZATION BENCH/NNP)'	1
+'(ORGANIZATION BERMUDAS/NNP)'	1
+'(ORGANIZATION BETWEEN/NNP)'	1
+'(ORGANIZATION BIOGRAPHY/NNP)'	1
+'(ORGANIZATION BLACK/NNP)'	2
+'(ORGANIZATION BLACKSMITH/NNP)'	1
+'(ORGANIZATION BLOODY/NNP)'	1
+'(ORGANIZATION BOAT/NNP)'	2
+'(ORGANIZATION BOATS/NNP)'	1
+'(ORGANIZATION BOOK/NN)'	8
+'(ORGANIZATION BOOK/NNP)'	4
+'(ORGANIZATION BOOKS/NNS)'	1
+'(ORGANIZATION BOSOM/NNP)'	1
+'(ORGANIZATION BOUTON/NNP)'	1
+'(ORGANIZATION BRACE/NNP)'	1
+'(ORGANIZATION BRACTON/NNP)'	1
+'(ORGANIZATION BREAKERS/NNP)'	1
+'(ORGANIZATION BRIT/NN)'	1
+'(ORGANIZATION BROKE/NNP)'	1
+'(ORGANIZATION BROWN/NNP)'	1
+'(ORGANIZATION BROWNE/NNP)'	1
+'(ORGANIZATION BURKE/NNP)'	1
+'(ORGANIZATION BURST/NNP OF/NNP)'	1
+'(ORGANIZATION BY/NNP)'	1
+'(ORGANIZATION Bachelor/NNP)'	3
+'(ORGANIZATION Baliene/NNP Ordinaire/NNP)'	1
+'(ORGANIZATION Baltic/NNP)'	3
+'(ORGANIZATION Banks/NNP)'	1
+'(ORGANIZATION Base/NNP)'	1
+'(ORGANIZATION Bashaw/NNP)'	2
+'(ORGANIZATION Bashee/NNP Isles/NNP)'	1
+'(ORGANIZATION Bashee/NNP)'	2
+'(ORGANIZATION Battery/NNP)'	1
+'(ORGANIZATION Bay/NNP)'	1
+'(ORGANIZATION Bays/NNP)'	1
+'(ORGANIZATION Behring/NNP)'	1
+'(ORGANIZATION Belisarius/NNP)'	1
+'(ORGANIZATION Bell/NNP)'	1
+'(ORGANIZATION Bengal/NNP Bay/NNP)'	1
+'(ORGANIZATION Berkshire/NNP)'	1
+'(ORGANIZATION Berlin/NNP Gazette/NNP)'	1
+'(ORGANIZATION Bible/NNP)'	3
+'(ORGANIZATION Bibliographical/NNP)'	1
+'(ORGANIZATION Bildad/NNP)'	1
+'(ORGANIZATION Bishop/NNP)'	1
+'(ORGANIZATION Black/NNP Fish/NNP)'	1
+'(ORGANIZATION Black/NNP Parliament/NNP)'	1
+'(ORGANIZATION Black/NNP Whale/NNP)'	1
+'(ORGANIZATION Blacksmith/NNP)'	1
+'(ORGANIZATION Blackstone/NNP)'	2
+'(ORGANIZATION Blanket/NNP)'	1
+'(ORGANIZATION Blocksburg/NNP)'	1
+'(ORGANIZATION Bloody/NNP)'	1
+'(ORGANIZATION Blue/NNP Whale/NNP)'	1
+'(ORGANIZATION Boat/NNP)'	1
+'(ORGANIZATION Book/NNP)'	1
+'(ORGANIZATION Bosom/NNP Friend/NNP)'	1
+'(ORGANIZATION Bottle/NNP Conjuror/NNP)'	1
+'(ORGANIZATION Brahmins/NNP)'	1
+'(ORGANIZATION Brazil/NNP Banks/NNP)'	1
+'(ORGANIZATION Buckets/NNPS)'	1
+'(ORGANIZATION Bull/NNP)'	2
+'(ORGANIZATION Burtons/NNPS)'	1
+'(ORGANIZATION Burtons/NNS)'	2
+'(ORGANIZATION Business/NNP)'	1
+'(ORGANIZATION Byward/NNP Tower/NNP)'	1
+'(ORGANIZATION CABIN/NNP)'	1
+'(ORGANIZATION CAPTAIN/NNP)'	1
+'(ORGANIZATION CAPTAINS/NNP)'	1
+'(ORGANIZATION CARPENTER/NN)'	1
+'(ORGANIZATION CARPENTER/NNP)'	2
+'(ORGANIZATION CATCHES/NNP)'	1
+'(ORGANIZATION CHAPTER/NNP)'	10
+'(ORGANIZATION CHAPTERS/NNP)'	1
+'(ORGANIZATION CHARLES/NNP)'	1
+'(ORGANIZATION CHEERLY/NNP)'	1
+'(ORGANIZATION CHOP/NNP)'	1
+'(ORGANIZATION CLOSES/NNP)'	1
+'(ORGANIZATION COFFIN/NNP)'	1
+'(ORGANIZATION COILS/NNP OF/NNP)'	1
+'(ORGANIZATION COLNETT/NNP)'	1
+'(ORGANIZATION COMMERCIAL/JJ)'	1
+'(ORGANIZATION COMMODORE/NNP)'	1
+'(ORGANIZATION COMSTOCK/NNP)'	1
+'(ORGANIZATION CONTINUES/NNP)'	1
+'(ORGANIZATION COOK/NNP)'	1
+'(ORGANIZATION COOPER/NNP)'	1
+'(ORGANIZATION COWLEY/NNP)'	1
+'(ORGANIZATION COWPER/NNP)'	1
+'(ORGANIZATION CREWS/NNP)'	1
+'(ORGANIZATION CRUISE/NNP)'	1
+'(ORGANIZATION Cabin/NNP)'	2
+'(ORGANIZATION Cachalot/NNP)'	1
+'(ORGANIZATION Cambyses/NNS)'	1
+'(ORGANIZATION Canaller/NNP)'	1
+'(ORGANIZATION Cannon/NNP Whale/NNP)'	1
+'(ORGANIZATION Cape/NNP Horn/NNP)'	3
+'(ORGANIZATION Cape/NNP Whale/NNP)'	1
+'(ORGANIZATION Cape/NNP)'	2
+'(ORGANIZATION Captain/NNP Peleg/NNP)'	1
+'(ORGANIZATION Captains/NNP)'	1
+'(ORGANIZATION Carrol/NNP Ground/NNP)'	1
+'(ORGANIZATION Categut/NNP)'	1
+'(ORGANIZATION Catholic/NNP)'	2
+'(ORGANIZATION Cato/NNP)'	1
+'(ORGANIZATION Catskill/NNP)'	1
+'(ORGANIZATION Cattegat/NNP)'	1
+'(ORGANIZATION Central/NNP Europe/NNP)'	1
+'(ORGANIZATION Cetacean/NNP History/NNP)'	1
+'(ORGANIZATION Channel/NNP)'	1
+'(ORGANIZATION Charity/NNP)'	1
+'(ORGANIZATION Christian/JJ)'	1
+'(ORGANIZATION Christmas/NNP)'	1
+'(ORGANIZATION Cinque/NNP Port/NNP)'	1
+'(ORGANIZATION Cinque/NNP Ports/NNP)'	2
+'(ORGANIZATION Cockatoo/NNP Point/NNP)'	1
+'(ORGANIZATION Coffins/NNP)'	1
+'(ORGANIZATION Commodore/NNP Davis/NNP)'	1
+'(ORGANIZATION Commodore/NNP)'	8
+'(ORGANIZATION Commodores/NNP)'	1
+'(ORGANIZATION Common/JJ)'	1
+'(ORGANIZATION Commons/NNPS)'	1
+'(ORGANIZATION Congregational/NNP Church/NNP)'	1
+'(ORGANIZATION Constantine/NNP)'	1
+'(ORGANIZATION Constantinople/NNP)'	3
+'(ORGANIZATION Cooks/NNP)'	1
+'(ORGANIZATION Coppered/NNP Whale/NNP)'	1
+'(ORGANIZATION Corlears/NNP Hook/NNP)'	1
+'(ORGANIZATION Coronation/NNP)'	1
+'(ORGANIZATION Counterpane/NNP)'	1
+'(ORGANIZATION Crab/NNP)'	1
+'(ORGANIZATION Crew/NNP)'	1
+'(ORGANIZATION Crossed/NNP Harpoons/NNP)'	2
+'(ORGANIZATION Crozetts/NNP)'	1
+'(ORGANIZATION Customs/NNP)'	1
+'(ORGANIZATION Czar/NNP)'	2
+'(ORGANIZATION D/NNP)'	9
+'(ORGANIZATION DANCING/NN)'	1
+'(ORGANIZATION DANCING/NNP)'	1
+'(ORGANIZATION DANIEL/NNP)'	1
+'(ORGANIZATION DARWIN/NNP)'	1
+'(ORGANIZATION DEAD/NNP)'	1
+'(ORGANIZATION DEBELL/NNP)'	1
+'(ORGANIZATION DICTIONARY/NNP)'	2
+'(ORGANIZATION DID/NNP)'	1
+'(ORGANIZATION DIGNITY/NN)'	1
+'(ORGANIZATION DISCOVERS/NNP)'	1
+'(ORGANIZATION DISSECTION/NNP)'	1
+'(ORGANIZATION DO/NNP)'	7
+'(ORGANIZATION DUODECIMO/NNP)'	7
+'(ORGANIZATION Darmonodes/NNP)'	1
+'(ORGANIZATION Dart/NNP)'	1
+'(ORGANIZATION Deck/NNP)'	1
+'(ORGANIZATION Deity/NNP)'	1
+'(ORGANIZATION Delight/NNP)'	1
+'(ORGANIZATION Deliverer/NNP God/NNP)'	1
+'(ORGANIZATION Delta/NNP)'	1
+'(ORGANIZATION Dericks/NNP)'	1
+'(ORGANIZATION Dick/NNP)'	1
+'(ORGANIZATION Discovery/NNP Expedition/NNP)'	1
+'(ORGANIZATION Dismal/NNP Swamp/NNP)'	1
+'(ORGANIZATION Divine/NNP Inert/NNP)'	1
+'(ORGANIZATION Doubloon/NNP)'	1
+'(ORGANIZATION Dugongs/NNP)'	1
+'(ORGANIZATION Duke/NNP)'	7
+'(ORGANIZATION Duodecimoes/NNPS)'	1
+'(ORGANIZATION Dut/NNP)'	1
+'(ORGANIZATION ECKERMANN/NNP)'	1
+'(ORGANIZATION EDMUND/NN BURKE/NNP)'	1
+'(ORGANIZATION EDMUND/NN)'	1
+'(ORGANIZATION ELIZABETH/NNP)'	1
+'(ORGANIZATION EMBONPOINT/NNP)'	1
+'(ORGANIZATION ENGLISH/JJ)'	2
+'(ORGANIZATION ENSUING/NNP)'	1
+'(ORGANIZATION ENTER/NN)'	1
+'(ORGANIZATION ERECTION/NNP)'	1
+'(ORGANIZATION ERROMANGOAN/NNP)'	1
+'(ORGANIZATION ESCAPED/VBN)'	1
+'(ORGANIZATION ETCHINGS/NNP)'	1
+'(ORGANIZATION ETYMOLOGY/NN)'	1
+'(ORGANIZATION EX/NNP)'	1
+'(ORGANIZATION Earl/NNP)'	1
+'(ORGANIZATION Eastern/NNP)'	1
+'(ORGANIZATION Ecclesiastes/NNPS)'	1
+'(ORGANIZATION Eddystone/NNP)'	2
+'(ORGANIZATION Egypt/NNP)'	1
+'(ORGANIZATION Elbe/NNP)'	1
+'(ORGANIZATION Elephant/NNP Whale/NNP)'	1
+'(ORGANIZATION Elephant/NNP)'	1
+'(ORGANIZATION Emperors/NNP)'	1
+'(ORGANIZATION Empire/NNP)'	1
+'(ORGANIZATION Enderby/NNP)'	1
+'(ORGANIZATION English/NNP Anatomist/NNP)'	1
+'(ORGANIZATION English/NNP Captain/NNP)'	3
+'(ORGANIZATION English/NNP)'	3
+'(ORGANIZATION Englishman/NNP)'	4
+'(ORGANIZATION Epitome/NNP)'	1
+'(ORGANIZATION Equator/NNP)'	3
+'(ORGANIZATION Equatorial/NNP)'	2
+'(ORGANIZATION Eternities/NNPS)'	1
+'(ORGANIZATION Evangelist/NNP St./NNP John/NNP)'	1
+'(ORGANIZATION Exploring/NNP Expeditions/NNPS)'	1
+'(ORGANIZATION FAERIE/NNP)'	1
+'(ORGANIZATION FAIR/NNP)'	1
+'(ORGANIZATION FALCONER/NNP)'	1
+'(ORGANIZATION FEGEE/NNP)'	1
+'(ORGANIZATION FIFE/NNP)'	1
+'(ORGANIZATION FIRMLY/NNP)'	1
+'(ORGANIZATION FIRST/NNP)'	1
+'(ORGANIZATION FLASK/NNP)'	1
+'(ORGANIZATION FLOOD/NNP)'	1
+'(ORGANIZATION FOLIO/NNP)'	9
+'(ORGANIZATION FOR/NNP)'	1
+'(ORGANIZATION FORECASTLE/NNP)'	1
+'(ORGANIZATION FORESAIL/NN)'	1
+'(ORGANIZATION FORGE/NNP)'	1
+'(ORGANIZATION FORWARD/NNP)'	1
+'(ORGANIZATION FREDERICK/NNP)'	1
+'(ORGANIZATION FULLLER/NNP)'	1
+'(ORGANIZATION Fata/NNP Morgana/NNP)'	1
+'(ORGANIZATION Fate/NNP)'	5
+'(ORGANIZATION Fates/NNP)'	2
+'(ORGANIZATION Fates/NNPS)'	3
+'(ORGANIZATION Fedallah/NNP)'	10
+'(ORGANIZATION Feegees/NNS)'	1
+'(ORGANIZATION First/NNP Book/NNP)'	1
+'(ORGANIZATION First/NNP Congregational/NNP Church/NNP)'	1
+'(ORGANIZATION First/NNP Lowering/NNP)'	1
+'(ORGANIZATION First/NNP Night/NNP Watch/NNP)'	1
+'(ORGANIZATION Fishery/NNP)'	2
+'(ORGANIZATION Flask/NNP)'	1
+'(ORGANIZATION Folgers/NNP)'	1
+'(ORGANIZATION Forecastle/NNP Bulwarks/NNP)'	1
+'(ORGANIZATION Forecastle/NNP)'	1
+'(ORGANIZATION Formosa/NNP)'	1
+'(ORGANIZATION Fossil/NNP Whale/NNP)'	1
+'(ORGANIZATION Fossil/NNP Whales/NNP)'	1
+'(ORGANIZATION Frankfort/NNP)'	1
+'(ORGANIZATION Frenchman/NNP)'	3
+'(ORGANIZATION Funeral/NNP)'	1
+'(ORGANIZATION GATHER/NNP)'	1
+'(ORGANIZATION GATHERED/NNP)'	1
+'(ORGANIZATION GAZING/NNP)'	1
+'(ORGANIZATION GENERALLY/NNP)'	1
+'(ORGANIZATION GLOBE/NNP)'	4
+'(ORGANIZATION GO/NNP)'	1
+'(ORGANIZATION GOETHE/NNP)'	1
+'(ORGANIZATION GOLDEN/NNP)'	1
+'(ORGANIZATION GOLDSMITH/NNP)'	2
+'(ORGANIZATION GONDIBERT/NNP)'	1
+'(ORGANIZATION GOOD/NNP)'	1
+'(ORGANIZATION GRAMPUS/NNP)'	3
+'(ORGANIZATION GRAND/NNP)'	1
+'(ORGANIZATION GRIMLY/NNP)'	1
+'(ORGANIZATION Gall/NNP)'	1
+'(ORGANIZATION Gallipagos/NNP)'	1
+'(ORGANIZATION Ganders/NNP)'	1
+'(ORGANIZATION Gayhead/NNP)'	1
+'(ORGANIZATION General/NNP Washington/NNP)'	1
+'(ORGANIZATION German/NNP Emperor/NNP)'	1
+'(ORGANIZATION German/NNP Emperors/NNP)'	1
+'(ORGANIZATION Gibraltar/NNP)'	1
+'(ORGANIZATION Gilder/NNP)'	1
+'(ORGANIZATION Glacier/NNP)'	2
+'(ORGANIZATION God/NNP)'	3
+'(ORGANIZATION Gods/NNPS)'	1
+'(ORGANIZATION Golconda/NNP)'	1
+'(ORGANIZATION Golden/NNP Inn/NNP)'	3
+'(ORGANIZATION Goney/NNP)'	1
+'(ORGANIZATION Good/NNP Hope/NNP)'	6
+'(ORGANIZATION Goodwin/NNP Sands/NNP)'	1
+'(ORGANIZATION Gothic/NNP Arch/NNP)'	1
+'(ORGANIZATION Gothic/NNP Knight/NNP)'	1
+'(ORGANIZATION Grammar/NNP School/NNP)'	1
+'(ORGANIZATION Grampus/NNP)'	1
+'(ORGANIZATION Great/NNP Heidelburgh/NNP Tun/NNP)'	1
+'(ORGANIZATION Great/NNP Mysticetus/NNP)'	1
+'(ORGANIZATION Great/NNP Spirit/NNP)'	1
+'(ORGANIZATION Great/NNP Whale/NNP)'	1
+'(ORGANIZATION Green/NNP Mountains/NNP)'	2
+'(ORGANIZATION Greenland/NNP Fishery/NNP)'	1
+'(ORGANIZATION Greenlanders/NNPS)'	1
+'(ORGANIZATION Grisly/NNP Bears/NNP)'	1
+'(ORGANIZATION Growlands/NNPS Walfish/NNP)'	1
+'(ORGANIZATION Guernseyman/NNP)'	1
+'(ORGANIZATION HACKLUYT/NNP)'	1
+'(ORGANIZATION HALF/NNP OF/NNP)'	1
+'(ORGANIZATION HAMLET/NNP)'	1
+'(ORGANIZATION HAND/NNP)'	1
+'(ORGANIZATION HARD/NNP)'	1
+'(ORGANIZATION HARRIS/NNP)'	2
+'(ORGANIZATION HAWTHORNE/NNP)'	1
+'(ORGANIZATION HEARS/NNP)'	1
+'(ORGANIZATION HENRY/NNP)'	1
+'(ORGANIZATION HERBERT/NNP)'	1
+'(ORGANIZATION HIM/NNP)'	2
+'(ORGANIZATION HIMSELF/NNP)'	1
+'(ORGANIZATION HIS/NNP)'	2
+'(ORGANIZATION HISTORY/NNP OF/NNP)'	1
+'(ORGANIZATION HISTORY/NNP)'	1
+'(ORGANIZATION HOBBES/NNP)'	1
+'(ORGANIZATION HOLLAND/NNP)'	2
+'(ORGANIZATION HOLY/NNP)'	1
+'(ORGANIZATION HOMEWARD/NNP)'	1
+'(ORGANIZATION HORIZONTAL/NNP)'	1
+'(ORGANIZATION HORRID/NNP)'	1
+'(ORGANIZATION HUSSEY/NNP)'	1
+'(ORGANIZATION HUZZA/NNP)'	1
+'(ORGANIZATION Hardicanutes/NNPS)'	1
+'(ORGANIZATION Harpooneer/NNP)'	1
+'(ORGANIZATION Hartz/NNP)'	1
+'(ORGANIZATION Harvard/NNP)'	2
+'(ORGANIZATION Hebrew/NNP)'	1
+'(ORGANIZATION Heidelburgh/NNP Tun/NNP)'	3
+'(ORGANIZATION Hell/NNP)'	2
+'(ORGANIZATION High/JJ Priest/NNP)'	1
+'(ORGANIZATION High/NNP German/NNP)'	1
+'(ORGANIZATION High/NNP Priest/NNP)'	2
+'(ORGANIZATION Himmalehs/NNP)'	2
+'(ORGANIZATION Hindoo/NNP)'	1
+'(ORGANIZATION Hittite/NNP)'	1
+'(ORGANIZATION Hollanders/NNP)'	1
+'(ORGANIZATION Holofernes/NNP)'	1
+'(ORGANIZATION Holy/NNP Bible/NNP)'	1
+'(ORGANIZATION Holy/NNP Book/NNP)'	1
+'(ORGANIZATION Holy/NNP Evangelists/NNP)'	1
+'(ORGANIZATION Holy/NNP Land/NNP)'	1
+'(ORGANIZATION Holy/NNP)'	1
+'(ORGANIZATION Honour/NNP)'	1
+'(ORGANIZATION Horn/NNP)'	2
+'(ORGANIZATION Humane/NNP)'	1
+'(ORGANIZATION Huzza/NNP Porpoise/NNP)'	3
+'(ORGANIZATION Hyena/NNP Whale/NNP)'	1
+'(ORGANIZATION ICELAND/NNP)'	1
+'(ORGANIZATION ICELANDIC/NNP)'	1
+'(ORGANIZATION III/NNP)'	5
+'(ORGANIZATION ILE/NNP)'	1
+'(ORGANIZATION INTO/NNP)'	1
+'(ORGANIZATION ISAIAH/NNP)'	1
+'(ORGANIZATION ISHMAEL/NNP)'	1
+'(ORGANIZATION ISOLATO/NNP)'	1
+'(ORGANIZATION ISOLATOES/NNP)'	1
+'(ORGANIZATION IVORY/NNP)'	2
+'(ORGANIZATION Iceberg/NNP Whale/NNP)'	1
+'(ORGANIZATION Icebergs/NNP)'	1
+'(ORGANIZATION Iceland/NNP Whales/NNP)'	1
+'(ORGANIZATION Icy/NNP Glen/NNP)'	1
+'(ORGANIZATION Icy/NNP Sea/NNP)'	1
+'(ORGANIZATION Immortal/NNP)'	1
+'(ORGANIZATION Islanders/NNP)'	3
+'(ORGANIZATION Islands/NNPS)'	1
+'(ORGANIZATION Isle/NNP)'	4
+'(ORGANIZATION Isles/NNP)'	1
+'(ORGANIZATION Isthmus/NNP)'	1
+'(ORGANIZATION JEFFERSON/NNP)'	1
+'(ORGANIZATION JOIST/NNP)'	1
+'(ORGANIZATION Jeroboam/NNP)'	8
+'(ORGANIZATION Joppa/NNP)'	1
+'(ORGANIZATION Jungfrau/NNP)'	2
+'(ORGANIZATION Junk/NNP Whale/NNP)'	1
+'(ORGANIZATION Justice/NNP)'	1
+'(ORGANIZATION KEDGER/NNP)'	1
+'(ORGANIZATION KILLER/NNP)'	2
+'(ORGANIZATION Killer/NNP)'	1
+'(ORGANIZATION Kingdom/NNP)'	1
+'(ORGANIZATION Kraken/NNP)'	1
+'(ORGANIZATION LANTERNS/NNP)'	1
+'(ORGANIZATION LARGE/NNP)'	2
+'(ORGANIZATION LASCAR/NN)'	1
+'(ORGANIZATION LATIN/NNP)'	1
+'(ORGANIZATION LAY/NNP)'	3
+'(ORGANIZATION LEANING/NNP)'	1
+'(ORGANIZATION LEAP/NNP)'	1
+'(ORGANIZATION LEAPS/NNP)'	1
+'(ORGANIZATION LEATHER/NNP)'	1
+'(ORGANIZATION LEG/NNP)'	1
+'(ORGANIZATION LETTER/NNP)'	1
+'(ORGANIZATION LETTERS/NNP)'	1
+'(ORGANIZATION LEVIATHAN/NNP)'	1
+'(ORGANIZATION LIFE/NNP OF/NNP)'	1
+'(ORGANIZATION LIFE/NNP)'	1
+'(ORGANIZATION LIGHT/NNP OF/NNP)'	1
+'(ORGANIZATION LONG/NNP)'	2
+'(ORGANIZATION LORD/NNP)'	1
+'(ORGANIZATION LOUNGING/NNP)'	1
+'(ORGANIZATION LUCIAN/NNP)'	1
+'(ORGANIZATION LYING/NNP)'	1
+'(ORGANIZATION Lais/NNP)'	1
+'(ORGANIZATION Lakeman/NNP)'	19
+'(ORGANIZATION Lamp/NNP)'	1
+'(ORGANIZATION Langsdorff/NNP)'	1
+'(ORGANIZATION Late/NNP)'	1
+'(ORGANIZATION Law/NNP)'	1
+'(ORGANIZATION Laws/NNP)'	1
+'(ORGANIZATION Lazarus/NNP)'	1
+'(ORGANIZATION Leading/NNP Whale/NNP)'	1
+'(ORGANIZATION Lee/NNP Shore/NNP)'	1
+'(ORGANIZATION Less/NNP Erroneous/NNP Pictures/NNP)'	1
+'(ORGANIZATION Leuwenhoeck/NNP)'	1
+'(ORGANIZATION Levanter/NNP)'	1
+'(ORGANIZATION Leviathan/NNP)'	14
+'(ORGANIZATION Leviathanic/NNP)'	2
+'(ORGANIZATION Lexicon/NNP)'	1
+'(ORGANIZATION Liberties/NNPS)'	1
+'(ORGANIZATION Libra/NNP)'	1
+'(ORGANIZATION Lieutenant/NNP Maury/NNP)'	1
+'(ORGANIZATION Life/NNP Insurance/NNP)'	1
+'(ORGANIZATION Lima/NNP)'	1
+'(ORGANIZATION Line/NNP)'	3
+'(ORGANIZATION Lionel/NNP Wafer/NNP)'	1
+'(ORGANIZATION Little/NNP)'	1
+'(ORGANIZATION Log/NNP)'	1
+'(ORGANIZATION London/NNP Bridge/NNP)'	1
+'(ORGANIZATION London/NNP Geological/NNP Society/NNP)'	1
+'(ORGANIZATION Long/NNP Island/NNP)'	1
+'(ORGANIZATION Loom/NNP)'	1
+'(ORGANIZATION Lord/NNP God/NNP)'	1
+'(ORGANIZATION Lord/NNP Warden/NNP)'	4
+'(ORGANIZATION Lord/NNP)'	15
+'(ORGANIZATION Lost/NNP Icelandic/NNP Colonies/NNP)'	1
+'(ORGANIZATION MACY/NNP)'	1
+'(ORGANIZATION MAINMAST/NNP)'	1
+'(ORGANIZATION MANX/NNP)'	3
+'(ORGANIZATION MARBLE/NNP)'	1
+'(ORGANIZATION MAT/NNP)'	1
+'(ORGANIZATION MATE/NNP)'	2
+'(ORGANIZATION MEETING/NN OF/IN TWO/CD)'	1
+'(ORGANIZATION MEMORY/NNP OF/NNP)'	1
+'(ORGANIZATION MEMORY/NNP)'	2
+'(ORGANIZATION MIRIAM/NNP)'	1
+'(ORGANIZATION MONTAIGNE/NNP)'	1
+'(ORGANIZATION MONTGOMERY/NNP)'	1
+'(ORGANIZATION MORTAL/NNP)'	1
+'(ORGANIZATION MSS/NNP)'	1
+'(ORGANIZATION MULTUM/NNP)'	1
+'(ORGANIZATION MUTINEER/NNP)'	1
+'(ORGANIZATION MYSTERIOUS/NNP)'	1
+'(ORGANIZATION Mab/NNP)'	1
+'(ORGANIZATION Maccabees/NNP)'	1
+'(ORGANIZATION Maceys/NNP)'	1
+'(ORGANIZATION Mackinaw/NNP)'	1
+'(ORGANIZATION Macrocephalus/NNP)'	1
+'(ORGANIZATION Magnanimous/NNP Societies/NNPS)'	1
+'(ORGANIZATION Main/NNP)'	1
+'(ORGANIZATION Manhattoes/NNP)'	1
+'(ORGANIZATION Manilla/NNP)'	3
+'(ORGANIZATION Manxman/NNP)'	1
+'(ORGANIZATION Marine/NNP)'	1
+'(ORGANIZATION Massachusetts/NNP Indians/NNPS)'	1
+'(ORGANIZATION Mate/NNP)'	1
+'(ORGANIZATION Matse/NNP Avatar/NNP)'	1
+'(ORGANIZATION Matter/NNP)'	1
+'(ORGANIZATION Mediterranean/NNP)'	2
+'(ORGANIZATION Mendanna/NNP)'	1
+'(ORGANIZATION Merchant/NN)'	1
+'(ORGANIZATION Merchant/NNP)'	1
+'(ORGANIZATION Met/NNP)'	1
+'(ORGANIZATION Methuselah/NNP)'	1
+'(ORGANIZATION Moby/NNP Dick/NNP)'	10
+'(ORGANIZATION Moluccas/NNP)'	1
+'(ORGANIZATION Monstrous/NNP Pictures/NNP)'	1
+'(ORGANIZATION Moss/NNP)'	1
+'(ORGANIZATION Musket/NNP)'	1
+'(ORGANIZATION Mysticetus/NNP)'	1
+'(ORGANIZATION NANTUCKET/NN SONG/NNP)'	1
+'(ORGANIZATION NANTUCKET/NN)'	5
+'(ORGANIZATION NANTUCKET/NNP)'	2
+'(ORGANIZATION NARRATIVE/NNP)'	2
+'(ORGANIZATION NARWHALE/NNP)'	2
+'(ORGANIZATION NAT/NNP)'	1
+'(ORGANIZATION NATHAN/NNP)'	1
+'(ORGANIZATION NATURALIST/NNP)'	1
+'(ORGANIZATION NEWSPAPER/NNP)'	1
+'(ORGANIZATION NINE/NNP)'	1
+'(ORGANIZATION NOSTRIL/NNP)'	1
+'(ORGANIZATION NUDGING/NN)'	1
+'(ORGANIZATION Nantucket/NNP Indians/NNP)'	1
+'(ORGANIZATION Nantucket/NNP)'	4
+'(ORGANIZATION Nantucketer/NNP)'	2
+'(ORGANIZATION Nantucketers/NNPS)'	1
+'(ORGANIZATION Nantuckois/NNP)'	1
+'(ORGANIZATION Narragansett/NNP Woods/NNP)'	1
+'(ORGANIZATION Narwhale/NNP)'	4
+'(ORGANIZATION Nat/NNP Swaine/NNP)'	1
+'(ORGANIZATION National/NNP Observatory/NNP)'	1
+'(ORGANIZATION National/NNP)'	2
+'(ORGANIZATION Natural/NNP Bridge/NNP)'	1
+'(ORGANIZATION Natural/NNP History/NNP)'	3
+'(ORGANIZATION New/JJ Englander/NNP)'	1
+'(ORGANIZATION New/NNP Bedford/NNP)'	2
+'(ORGANIZATION New/NNP England/NNP)'	4
+'(ORGANIZATION New/NNP Zealand/NNP)'	3
+'(ORGANIZATION New/NNP)'	1
+'(ORGANIZATION Nick/NNP)'	1
+'(ORGANIZATION Noah/NNP)'	1
+'(ORGANIZATION Nor/NNP)'	2
+'(ORGANIZATION Northman/NNP)'	1
+'(ORGANIZATION Norway/NNP Maelstrom/NNP)'	1
+'(ORGANIZATION Nut/NNP)'	1
+'(ORGANIZATION O/NNP Ahab/NNP)'	1
+'(ORGANIZATION O/NNP Bulkington/NNP)'	1
+'(ORGANIZATION O/NNP Don/NNP Miguel/NNP)'	1
+'(ORGANIZATION O/NNP God/NNP)'	1
+'(ORGANIZATION O/NNP Jonah/NNP)'	1
+'(ORGANIZATION O/NNP Morquan/NNP)'	1
+'(ORGANIZATION O/NNP New/NNP Zealand/NNP Jack/NNP)'	1
+'(ORGANIZATION O/NNP Parsee/NNP)'	1
+'(ORGANIZATION O/NNP Timor/NNP Tom/NNP)'	1
+'(ORGANIZATION OCTAVO/NNP)'	9
+'(ORGANIZATION OCTHER/NNP)'	1
+'(ORGANIZATION OLD/NNP)'	3
+'(ORGANIZATION OPEN/NNP)'	1
+'(ORGANIZATION OWEN/NNP)'	1
+'(ORGANIZATION Octavo/NNP)'	1
+'(ORGANIZATION Old/NNP Spain/NNP)'	1
+'(ORGANIZATION Old/NNP)'	2
+'(ORGANIZATION Ontario/NNP Indians/NNPS)'	1
+'(ORGANIZATION Oriental/NNP)'	6
+'(ORGANIZATION PACIFIC/NNP)'	2
+'(ORGANIZATION PADS/NNP)'	1
+'(ORGANIZATION PALEY/NNP)'	1
+'(ORGANIZATION PARADISE/NNP)'	1
+'(ORGANIZATION PARLIAMENT/NNP)'	1
+'(ORGANIZATION PASSING/NNP)'	1
+'(ORGANIZATION PEQUOD/NNP)'	1
+'(ORGANIZATION PILGRIM/NNP)'	1
+'(ORGANIZATION PILOT/NNP)'	1
+'(ORGANIZATION PIP/NNP)'	2
+'(ORGANIZATION PLINY/NNP)'	1
+'(ORGANIZATION PLUTARCH/NNP)'	1
+'(ORGANIZATION POKE/NNP)'	1
+'(ORGANIZATION PORPOISE/NNP)'	3
+'(ORGANIZATION PRESIDENCY/NNP)'	1
+'(ORGANIZATION PROFANE/NNP)'	1
+'(ORGANIZATION PROGRESS/NNP)'	1
+'(ORGANIZATION PSALMS/NNP)'	1
+'(ORGANIZATION PURPOSE/NNP OF/NNP)'	1
+'(ORGANIZATION Pacific/NNP Ocean/NNP)'	1
+'(ORGANIZATION Pacific/NNP Oceans/NNPS)'	1
+'(ORGANIZATION Pacific/NNP)'	18
+'(ORGANIZATION Pactolus/NNP)'	1
+'(ORGANIZATION Pagan/NNP)'	4
+'(ORGANIZATION Painter/NNP)'	1
+'(ORGANIZATION Pantheistic/NNP)'	1
+'(ORGANIZATION Pantheon/NNP)'	1
+'(ORGANIZATION Paracelsan/NNP)'	1
+'(ORGANIZATION Paracelsus/NNP)'	1
+'(ORGANIZATION Parliament/NNP)'	1
+'(ORGANIZATION Parsee/NNP Ahab/NNP)'	1
+'(ORGANIZATION Parsee/NNP)'	19
+'(ORGANIZATION Passion/NNP)'	1
+'(ORGANIZATION Peleg/NNP)'	1
+'(ORGANIZATION Pequod/NNP Meets/NNPS)'	5
+'(ORGANIZATION Pequod/NNP)'	100
+'(ORGANIZATION Perth/NNP)'	1
+'(ORGANIZATION Phaedon/NNP)'	1
+'(ORGANIZATION Pharaoh/NNP)'	1
+'(ORGANIZATION Philippine/NNP Islands/NNPS)'	1
+'(ORGANIZATION Phrenologist/NNP)'	1
+'(ORGANIZATION Physeter/NNP)'	1
+'(ORGANIZATION Pine/NNP Barrens/NNP)'	1
+'(ORGANIZATION Pip/NNP)'	1
+'(ORGANIZATION Pipe/NNP)'	1
+'(ORGANIZATION Pirates/NNPS)'	1
+'(ORGANIZATION Plate/NNP)'	1
+'(ORGANIZATION Post/NNP Captain/NNP)'	1
+'(ORGANIZATION Potluck/NNP)'	1
+'(ORGANIZATION Potters/NNP)'	1
+'(ORGANIZATION Pottsfich/NNP)'	1
+'(ORGANIZATION Powers/NNP)'	1
+'(ORGANIZATION Prairie/NNP)'	1
+'(ORGANIZATION Prairies/NNPS)'	1
+'(ORGANIZATION Prodromus/NNP)'	1
+'(ORGANIZATION Prometheus/NNP)'	1
+'(ORGANIZATION Prophet/NNP Jonas/NNP)'	1
+'(ORGANIZATION Propontis/NNP)'	3
+'(ORGANIZATION Protestant/NNP)'	1
+'(ORGANIZATION Pupella/NNP)'	1
+'(ORGANIZATION Puritanic/NNP)'	1
+'(ORGANIZATION QUEEN/NNP)'	1
+'(ORGANIZATION Quadrant/NNP)'	1
+'(ORGANIZATION Quakeress/NNP)'	2
+'(ORGANIZATION Quakers/NNS)'	1
+'(ORGANIZATION Quarto/NNP)'	1
+'(ORGANIZATION Queequeg/NNP)'	6
+'(ORGANIZATION Quog/NNP Whale/NNP)'	1
+'(ORGANIZATION RABELAIS/NNP)'	1
+'(ORGANIZATION RAIMOND/NNP)'	1
+'(ORGANIZATION RECLINING/NN AND/CC)'	1
+'(ORGANIZATION RED/NNP)'	1
+'(ORGANIZATION REFERENCE/NNP)'	1
+'(ORGANIZATION REPEATED/NNP)'	1
+'(ORGANIZATION REPUBLICA/NNP)'	1
+'(ORGANIZATION REQUIEM/NNP)'	1
+'(ORGANIZATION REQUIN/NNP)'	1
+'(ORGANIZATION RESPECTABLE/NNP)'	1
+'(ORGANIZATION REST/NNP)'	1
+'(ORGANIZATION RESUMING/NNP)'	1
+'(ORGANIZATION REV/NNP)'	1
+'(ORGANIZATION REVENGE/NNP)'	1
+'(ORGANIZATION RICHARD/NNP)'	1
+'(ORGANIZATION RICHARDSON/NNP)'	1
+'(ORGANIZATION RIGHT/NNP)'	1
+'(ORGANIZATION RISES/NNS AND/CC)'	1
+'(ORGANIZATION ROBERT/NNP LONG/NNP)'	1
+'(ORGANIZATION ROCKS/NNP)'	1
+'(ORGANIZATION ROSE/NNP)'	1
+'(ORGANIZATION ROSS/NNP)'	1
+'(ORGANIZATION Rachel/NNP)'	1
+'(ORGANIZATION Rad/NNP)'	1
+'(ORGANIZATION Rafters/NNP)'	1
+'(ORGANIZATION Red/NNP Men/NNP)'	1
+'(ORGANIZATION Red/NNP Sea/NNP)'	1
+'(ORGANIZATION Republican/NNP)'	1
+'(ORGANIZATION Revival/NNP)'	1
+'(ORGANIZATION Right/NNP Whale/NNP)'	24
+'(ORGANIZATION Right/NNP)'	2
+'(ORGANIZATION Righteousness/NNP)'	1
+'(ORGANIZATION Rio/NNP)'	2
+'(ORGANIZATION Rock/NNP)'	1
+'(ORGANIZATION Rocky/NNP Mountains/NNP)'	1
+'(ORGANIZATION Rokovoko/NNP)'	1
+'(ORGANIZATION Roman/JJ Emperor/NNP)'	1
+'(ORGANIZATION Roman/JJ)'	2
+'(ORGANIZATION Rue/NNP Dauphine/NNP)'	1
+'(ORGANIZATION SAILOR/NNP)'	18
+'(ORGANIZATION SAILORS/NNP)'	1
+'(ORGANIZATION SAMUEL/NNP)'	2
+'(ORGANIZATION SCREWS/NNP)'	1
+'(ORGANIZATION SCUTTLE/NNP)'	2
+'(ORGANIZATION SENATE/NNP)'	1
+'(ORGANIZATION SETH/NNP)'	1
+'(ORGANIZATION SHAKING/NNP)'	1
+'(ORGANIZATION SHIP/NNP)'	1
+'(ORGANIZATION SHIPMATES/NNP)'	1
+'(ORGANIZATION SHIPWRECK/NNP)'	2
+'(ORGANIZATION SHRINKING/NNP)'	1
+'(ORGANIZATION SIBBALD/NNP)'	1
+'(ORGANIZATION SINGS/NNS)'	2
+'(ORGANIZATION SIR/NNP)'	4
+'(ORGANIZATION SIXTH/NNP)'	1
+'(ORGANIZATION SKRIMSHANDER/NNP)'	1
+'(ORGANIZATION SKY/NNP)'	1
+'(ORGANIZATION SLEET/NNP)'	1
+'(ORGANIZATION SMALL/NNP)'	1
+'(ORGANIZATION SNEEZES/NNP)'	5
+'(ORGANIZATION SOCIAL/JJ)'	1
+'(ORGANIZATION SOLANDER/NNP)'	1
+'(ORGANIZATION SOUTH/NNP AMERICA/NNP)'	1
+'(ORGANIZATION SPEECH/NNP)'	1
+'(ORGANIZATION SPERM/NN)'	1
+'(ORGANIZATION SPERM/NNP)'	3
+'(ORGANIZATION SPERMA/NNP)'	2
+'(ORGANIZATION SPERMACETI/NNP)'	1
+'(ORGANIZATION SPLICE/NNP)'	1
+'(ORGANIZATION SPOUTINGS/NNP)'	1
+'(ORGANIZATION STANDING/NN)'	1
+'(ORGANIZATION STARBUCK/NNP)'	2
+'(ORGANIZATION STEP/NNP)'	1
+'(ORGANIZATION STERN/NNP)'	1
+'(ORGANIZATION STICK/NNP)'	1
+'(ORGANIZATION STUBB/NNP)'	1
+'(ORGANIZATION SUDDEN/NNP)'	1
+'(ORGANIZATION SULKY/NNP)'	1
+'(ORGANIZATION SUMMER/NNP)'	1
+'(ORGANIZATION Saco/NNP)'	1
+'(ORGANIZATION Sag/NNP Harbor/NNP)'	1
+'(ORGANIZATION Salisbury/NNP Plain/NNP)'	1
+'(ORGANIZATION Salisbury/NNP Plains/NNPS)'	1
+'(ORGANIZATION Sam/NNP)'	1
+'(ORGANIZATION Samuel/NNP Enderby/NNP)'	4
+'(ORGANIZATION Sandwich/NNP Islands/NNPS)'	1
+'(ORGANIZATION Schoolmasters/NNP)'	1
+'(ORGANIZATION Scorpion/NNP)'	1
+'(ORGANIZATION Scotch/NNP)'	1
+'(ORGANIZATION Scragg/NNP Whale/NNP)'	1
+'(ORGANIZATION Scriptural/NNP)'	1
+'(ORGANIZATION Scripture/NNP)'	1
+'(ORGANIZATION Scriptures/NNP)'	1
+'(ORGANIZATION Sea/NNP)'	1
+'(ORGANIZATION Senators/NNP)'	1
+'(ORGANIZATION Seneca/NNP)'	1
+'(ORGANIZATION Seychelle/NNP)'	1
+'(ORGANIZATION Shaker/NNP God/NNP)'	1
+'(ORGANIZATION Shakers/NNPS)'	1
+'(ORGANIZATION Shaster/NNP)'	2
+'(ORGANIZATION Sheffield/NNP)'	1
+'(ORGANIZATION Shem/NNP)'	1
+'(ORGANIZATION Shetland/NNP Islands/NNPS)'	1
+'(ORGANIZATION Ship/NNP)'	1
+'(ORGANIZATION Shore/NNP Whaling/NNP)'	1
+'(ORGANIZATION Sleet/NNP)'	1
+'(ORGANIZATION Society/NNP)'	1
+'(ORGANIZATION Socratic/JJ)'	1
+'(ORGANIZATION Soloma/NNP Islands/NNPS)'	1
+'(ORGANIZATION Son/NNP)'	1
+'(ORGANIZATION Sovereign/NNP)'	2
+'(ORGANIZATION Spaniard/NNP)'	2
+'(ORGANIZATION Spanish/NNP)'	1
+'(ORGANIZATION Sperm/NNP Whale/NNP Fishery/NNP)'	1
+'(ORGANIZATION Sperm/NNP Whale/NNP)'	77
+'(ORGANIZATION Sperm/NNP Whales/NNP)'	2
+'(ORGANIZATION Sperm/NNP)'	2
+'(ORGANIZATION Spermaceti/NNP Whale/NNP Fisheries/NNPS)'	1
+'(ORGANIZATION Spermacetti/NNP Whale/NNP)'	1
+'(ORGANIZATION Sphynx/NNP)'	1
+'(ORGANIZATION Spinoza/NNP)'	1
+'(ORGANIZATION Spitzbergen/NNP)'	1
+'(ORGANIZATION Spouter/NNP)'	1
+'(ORGANIZATION Squire/NNP)'	1
+'(ORGANIZATION St./NNP George/NNP)'	1
+'(ORGANIZATION St./NNP Peter/NNP)'	1
+'(ORGANIZATION Starbuck/NNP)'	1
+'(ORGANIZATION States/NNPS)'	1
+'(ORGANIZATION Steelkilt/NNP)'	1
+'(ORGANIZATION Straits/NNPS)'	4
+'(ORGANIZATION Stubb/NNP)'	2
+'(ORGANIZATION Sumatra/NNP)'	1
+'(ORGANIZATION Sunda/NNP)'	1
+'(ORGANIZATION Superior/NNP)'	1
+'(ORGANIZATION Supplied/NNP)'	1
+'(ORGANIZATION Symphony/NNP)'	1
+'(ORGANIZATION Syren/NNP)'	1
+'(ORGANIZATION TABLET/NNP Is/NNP)'	2
+'(ORGANIZATION TAKING/NNP)'	1
+'(ORGANIZATION TALES/NNP)'	1
+'(ORGANIZATION TAMBOURINE/NNP)'	2
+'(ORGANIZATION TASHTEGO/NNP)'	2
+'(ORGANIZATION TEENTH/NNP)'	1
+'(ORGANIZATION TELL/NNP)'	2
+'(ORGANIZATION TEN/NNP)'	1
+'(ORGANIZATION THE/DT LOCK/NNP)'	1
+'(ORGANIZATION THE/DT)'	7
+'(ORGANIZATION THE/NNP HELM/NNP)'	1
+'(ORGANIZATION THE/NNP)'	16
+'(ORGANIZATION THEY/NNP)'	1
+'(ORGANIZATION THOMAS/NNP)'	3
+'(ORGANIZATION THRASHER/NNP)'	2
+'(ORGANIZATION THY/NNP)'	1
+'(ORGANIZATION TIMES/NNP)'	1
+'(ORGANIZATION TOLD/NNP)'	1
+'(ORGANIZATION TOOKE/NNP)'	1
+'(ORGANIZATION TRIUMPH/NNP)'	1
+'(ORGANIZATION TRUE/NNP)'	1
+'(ORGANIZATION TURNS/NNS)'	1
+'(ORGANIZATION TWICE/NNP)'	1
+'(ORGANIZATION TYERMAN/NNP)'	1
+'(ORGANIZATION Tahiti/NNP)'	1
+'(ORGANIZATION Tartar/NNP)'	2
+'(ORGANIZATION Tartarean/NNP)'	1
+'(ORGANIZATION Tashtego/NNP)'	2
+'(ORGANIZATION Tattoo/NNP Land/NNP)'	1
+'(ORGANIZATION Tell/NNP)'	3
+'(ORGANIZATION Temperance/NNP Society/NNP)'	1
+'(ORGANIZATION Teneriffe/NNP)'	1
+'(ORGANIZATION Thames/NNP Tunnel/NNP)'	1
+'(ORGANIZATION Three/NNP Fates/NNP)'	1
+'(ORGANIZATION Thunder/NNP Cloud/NNP)'	1
+'(ORGANIZATION Titanic/NNP)'	1
+'(ORGANIZATION Tomahawk/NNP)'	1
+'(ORGANIZATION Traitors/NNPS)'	1
+'(ORGANIZATION Tranque/NNP)'	3
+'(ORGANIZATION Trap/NNP)'	1
+'(ORGANIZATION Trinity/NNP)'	1
+'(ORGANIZATION True/NNP Pictures/NNP)'	1
+'(ORGANIZATION True/NNP Whale/NNP)'	2
+'(ORGANIZATION Trumpa/NNP)'	1
+'(ORGANIZATION Try/NNP Pots/NNP)'	3
+'(ORGANIZATION Tudors/NNP)'	1
+'(ORGANIZATION Tuileries/NNPS)'	3
+'(ORGANIZATION Tun/NNP)'	3
+'(ORGANIZATION Twins/NNP)'	1
+'(ORGANIZATION Typhoon/NNP)'	3
+'(ORGANIZATION Typhoons/NNS)'	1
+'(ORGANIZATION Tyre/NNP)'	1
+'(ORGANIZATION ULLOA/NNP)'	1
+'(ORGANIZATION UNITED/NNP)'	1
+'(ORGANIZATION UNO/NNP)'	1
+'(ORGANIZATION Unicorn/NNP)'	1
+'(ORGANIZATION Unicornism/NNP)'	1
+'(ORGANIZATION VARIOUS/NNP)'	1
+'(ORGANIZATION VEIN/NNP)'	1
+'(ORGANIZATION VERBAL/NNP)'	1
+'(ORGANIZATION VERSION/NNP)'	1
+'(ORGANIZATION VIDE/NNP)'	1
+'(ORGANIZATION VISIT/NNP)'	1
+'(ORGANIZATION VOYAGE/NNP)'	5
+'(ORGANIZATION VOYAGES/NNP)'	2
+'(ORGANIZATION Valparaiso/NNP)'	1
+'(ORGANIZATION Van/NNP Rensselaers/NNP)'	1
+'(ORGANIZATION Vancouver/NNP)'	1
+'(ORGANIZATION Victory/NNP)'	1
+'(ORGANIZATION Vineyard/NNP)'	6
+'(ORGANIZATION Virgin/NNP)'	4
+'(ORGANIZATION Vision/NNP)'	1
+'(ORGANIZATION Voyages/NNP)'	1
+'(ORGANIZATION WALLER/NNP)'	1
+'(ORGANIZATION WALTER/NNP)'	1
+'(ORGANIZATION WAS/NNP)'	1
+'(ORGANIZATION WATCH/NNP)'	1
+'(ORGANIZATION WAVING/NN)'	1
+'(ORGANIZATION WHALE/NNP)'	17
+'(ORGANIZATION WHALEBONE/NNP)'	1
+'(ORGANIZATION WHALEMAN/NNP)'	1
+'(ORGANIZATION WHALES/NNP)'	1
+'(ORGANIZATION WHALING/NNP)'	2
+'(ORGANIZATION WHAT/NNP)'	1
+'(ORGANIZATION WHICH/WDT)'	2
+'(ORGANIZATION WHIFF/NNP)'	1
+'(ORGANIZATION WHITE/NNP)'	1
+'(ORGANIZATION WILLIAM/NNP)'	1
+'(ORGANIZATION WILLIS/NNP)'	1
+'(ORGANIZATION WIND/NNP)'	1
+'(ORGANIZATION WINDLASS/NNP)'	1
+'(ORGANIZATION WINDOW/NNP)'	1
+'(ORGANIZATION WISE/NNP)'	1
+'(ORGANIZATION WITH/NNP)'	1
+'(ORGANIZATION WORK/NNP)'	1
+'(ORGANIZATION WORLD/NNP)'	1
+'(ORGANIZATION Washington/NNP)'	1
+'(ORGANIZATION Whale/NNP Watch/NNP)'	1
+'(ORGANIZATION Whale/NNP)'	4
+'(ORGANIZATION Whalebone/NNP)'	1
+'(ORGANIZATION Whaleman/NNP)'	1
+'(ORGANIZATION Whales/NNP)'	1
+'(ORGANIZATION Whitehall/NNP)'	1
+'(ORGANIZATION Whiteness/NNP)'	1
+'(ORGANIZATION Wild/NNP)'	1
+'(ORGANIZATION Windsor/NNP Castle/NNP)'	1
+'(ORGANIZATION Windsor/NNP)'	1
+'(ORGANIZATION Wrinkled/NNP Bellies/NNPS)'	1
+'(ORGANIZATION XXXIX/NNP Articles/NNP)'	1
+'(ORGANIZATION Yale/NNP College/NNP)'	1
+'(ORGANIZATION Yale/NNP)'	1
+'(ORGANIZATION Yankee/NNP)'	1
+'(ORGANIZATION Yankees/NNPS)'	1
+'(ORGANIZATION Yankees/NNS)'	2
+'(ORGANIZATION Yarman/NNP)'	2
+'(ORGANIZATION Yellow/NNP Sea/NNP)'	1
+'(ORGANIZATION Zealand/NNP Tom/NNP)'	1
+'(ORGANIZATION Zealanders/NNP)'	1
+'(ORGANIZATION Zodiac/NNP)'	1
+'(PERSON Aboard/NNP)'	1
+'(PERSON Abraham/NNP)'	1
+'(PERSON Achilles/NNP)'	1
+'(PERSON Adam/NNP)'	6
+'(PERSON Afric/NNP Temple/NNP)'	1
+'(PERSON Afric/NNP)'	1
+'(PERSON Agassiz/NNP)'	1
+'(PERSON Ahab/NNP)'	327
+'(PERSON Ahabs/NNP)'	1
+'(PERSON Ahasuerus/NNP Daggoo/NNP)'	1
+'(PERSON Air/NNP)'	1
+'(PERSON Aladdin/NNP)'	1
+'(PERSON Alarmed/NNP)'	1
+'(PERSON Albatross/NNP)'	3
+'(PERSON Albemarle/NNP)'	1
+'(PERSON Albert/NNP Durer/NNP)'	1
+'(PERSON Albicore/NNP)'	1
+'(PERSON Alexander/NNP)'	2
+'(PERSON Almanack/NNP)'	1
+'(PERSON Aloft/NNP)'	1
+'(PERSON America/NNP)'	1
+'(PERSON Amittai/NNP)'	1
+'(PERSON Amsterdam/NNP)'	1
+'(PERSON Andes/NNP)'	2
+'(PERSON Andrew/NNP Jackson/NNP)'	1
+'(PERSON Andromeda/NNP)'	2
+'(PERSON Angelo/NNP)'	1
+'(PERSON Annawon/NNP)'	1
+'(PERSON Anne/NNP)'	1
+'(PERSON Antarctic/NNP)'	1
+'(PERSON Antilles/NNP)'	1
+'(PERSON Antiochus/NNP)'	1
+'(PERSON April/NNP)'	1
+'(PERSON Aquarius/NNP)'	2
+'(PERSON Arched/NNP)'	1
+'(PERSON Archy/NNP)'	5
+'(PERSON Aries/NNPS)'	1
+'(PERSON Arion/NNP)'	1
+'(PERSON Ark/NNP)'	1
+'(PERSON Ashantee/NNP)'	1
+'(PERSON Ashore/NNP)'	1
+'(PERSON Atlantic/NNP)'	2
+'(PERSON Aunt/NNP Charity/NNP)'	4
+'(PERSON Aye/NNP)'	2
+'(PERSON Bachelor/NNP)'	2
+'(PERSON Balaene/NNP)'	1
+'(PERSON Bally/NNP)'	1
+'(PERSON Bargain/NNP)'	1
+'(PERSON Baron/NNP Cuvier/NNP)'	1
+'(PERSON Baron/NNP)'	1
+'(PERSON Bartholomew/NNP Diaz/NNP)'	1
+'(PERSON Beale/NNP)'	4
+'(PERSON Beams/NNP)'	1
+'(PERSON Becket/NNP)'	1
+'(PERSON Beelzebub/NNP)'	1
+'(PERSON Belshazzar/NNP)'	3
+'(PERSON Belubed/NNP)'	1
+'(PERSON Bench/NNP)'	1
+'(PERSON Bendigoes/NNP)'	1
+'(PERSON Benjamin/NNP Franklin/NNP)'	1
+'(PERSON Bennett/NNP)'	2
+'(PERSON Bernard/NNP Germain/NNP)'	1
+'(PERSON Bernard/NNP)'	1
+'(PERSON Betty/NNP)'	1
+'(PERSON Bildad/NNP)'	19
+'(PERSON Bishop/NNP Jebb/NNP)'	1
+'(PERSON Bishop/NNP Pontoppodan/NNP)'	1
+'(PERSON Bishop/NNP)'	1
+'(PERSON Black/NNP Letter/NNP)'	1
+'(PERSON Black/NNP)'	2
+'(PERSON Blue/NNP Ridge/NNP)'	1
+'(PERSON Bonapartes/NNP)'	1
+'(PERSON Borean/NNP)'	1
+'(PERSON Bouton/NNP)'	1
+'(PERSON Brace/NN)'	1
+'(PERSON Brahma/NNP)'	2
+'(PERSON Brandreth/NNP)'	1
+'(PERSON Brazil/NNP Banks/NNP)'	1
+'(PERSON Broke/NNP)'	1
+'(PERSON Brother/NNP Jonathan/NNP)'	1
+'(PERSON Brute/NNP)'	1
+'(PERSON Buffalo/NNP)'	3
+'(PERSON Bulkington/NNP)'	5
+'(PERSON Bunger/NNP)'	8
+'(PERSON Bunyan/NNP)'	1
+'(PERSON Burton/NNP Constable/NNP)'	1
+'(PERSON Burtons/NNS)'	1
+'(PERSON Cabaco/NNP)'	5
+'(PERSON Cachalot/NN Blanche/NNP)'	1
+'(PERSON Cadiz/NNP)'	1
+'(PERSON Caesar/NNP)'	1
+'(PERSON Cape/NNP Cod/NNP)'	1
+'(PERSON Cape/NNP Horn/NNP)'	11
+'(PERSON Cape/NNP Tormentoto/NNP)'	1
+'(PERSON Captain/NNP Ahab/NNP)'	42
+'(PERSON Captain/NNP Bildad/NNP)'	12
+'(PERSON Captain/NNP Boomer/NNP)'	3
+'(PERSON Captain/NNP Butler/NNP)'	1
+'(PERSON Captain/NNP Coffin/NNP)'	1
+'(PERSON Captain/NNP Derick/NNP De/NNP Deer/NNP)'	1
+'(PERSON Captain/NNP Mayhew/NNP)'	2
+'(PERSON Captain/NNP Peleg/NNP)'	22
+'(PERSON Captain/NNP Pollard/NNP)'	3
+'(PERSON Captain/NNP Scoresby/NNP)'	3
+'(PERSON Captain/NNP Sleet/NNP)'	4
+'(PERSON Captain/NNP)'	1
+'(PERSON Caramba/NNP)'	1
+'(PERSON Careful/NNP)'	1
+'(PERSON Carey/NNP)'	1
+'(PERSON Carpenter/NNP)'	4
+'(PERSON Cash/NNP)'	1
+'(PERSON Cellini/NNP)'	1
+'(PERSON Cetology/NNP)'	1
+'(PERSON Cetus/NNP)'	1
+'(PERSON Chace/NNP)'	1
+'(PERSON Charlemagne/NNP)'	1
+'(PERSON Charley/NNP Coffin/NNP)'	1
+'(PERSON Charley/NNP)'	2
+'(PERSON Christian/NNP)'	1
+'(PERSON Christmas/NNP)'	1
+'(PERSON Civitas/NNP)'	1
+'(PERSON Clifford/NNP)'	2
+'(PERSON Cluny/NNP)'	1
+'(PERSON Cod/NNP)'	2
+'(PERSON Cods/NNS)'	1
+'(PERSON Coenties/NNP Slip/NNP)'	1
+'(PERSON Coffin/NNP)'	1
+'(PERSON Coffins/NNP)'	1
+'(PERSON Coleman/NNP)'	1
+'(PERSON Colnett/NNP)'	3
+'(PERSON Cologne/NNP)'	1
+'(PERSON Columbus/NNP)'	2
+'(PERSON Cook/NNP)'	1
+'(PERSON Cooke/NNP)'	1
+'(PERSON Count/NNP)'	1
+'(PERSON Cousin/NNP Hosea/NNP)'	1
+'(PERSON Cowper/NNP)'	1
+'(PERSON Crammer/NNP)'	1
+'(PERSON Creagh/NNP)'	1
+'(PERSON Crockett/NNP)'	1
+'(PERSON Cuvier/NNP)'	2
+'(PERSON Czar/NNP Peter/NNP)'	1
+'(PERSON Daboll/NNP)'	2
+'(PERSON Daggoo/NNP)'	18
+'(PERSON Dagon/NNP)'	1
+'(PERSON Dame/NNP Isabella/NNP)'	1
+'(PERSON Damocles/NNP)'	1
+'(PERSON Dampier/NNP)'	1
+'(PERSON Dan/NNP Coopman/NNP)'	2
+'(PERSON Dan/NNP)'	1
+'(PERSON Daniel/NNP Boone/NNP)'	1
+'(PERSON Dante/NNP)'	1
+'(PERSON Dardanelles/NNP)'	1
+'(PERSON Darkness/NN)'	1
+'(PERSON Davy/NNP Jones/NNP)'	2
+'(PERSON Deacon/NNP Deuteronomy/NNP)'	2
+'(PERSON Deacon/NNP)'	1
+'(PERSON Death/NNP)'	8
+'(PERSON Delight/NNP)'	1
+'(PERSON Derick/NNP De/NNP Deer/NNP)'	1
+'(PERSON Derick/NNP)'	10
+'(PERSON Dick/NNP)'	2
+'(PERSON Did/NNP)'	1
+'(PERSON Dinner/NNP)'	3
+'(PERSON Divine/NNP Providence/NNP)'	1
+'(PERSON Doctor/NNP Johnson/NNP)'	1
+'(PERSON Don/NNP Miguel/NNP)'	1
+'(PERSON Don/NNP Pedro/NNP)'	4
+'(PERSON Don/NNP Sebastian/NNP)'	7
+'(PERSON Don/NNP)'	4
+'(PERSON Dons/NNS)'	1
+'(PERSON Doom/NNP)'	1
+'(PERSON Dost/NNP)'	4
+'(PERSON Doubloon/NNP)'	1
+'(PERSON Down/NNP)'	1
+'(PERSON Dry/NNP)'	1
+'(PERSON Ebony/NNP)'	1
+'(PERSON Eckerman/NNP)'	1
+'(PERSON Edgewise/NNP)'	1
+'(PERSON Edmund/NNP Burke/NNP)'	1
+'(PERSON Edward/NNP)'	1
+'(PERSON Ehrenbreitstein/NNP)'	1
+'(PERSON Elijah/NNP)'	11
+'(PERSON Emir/NNP)'	2
+'(PERSON Emperor/NNP)'	2
+'(PERSON English/NNP whale-ships/NNP)'	1
+'(PERSON Enter/NNP)'	1
+'(PERSON Erie/NNP Canal/NNP)'	2
+'(PERSON Erie/NNP)'	1
+'(PERSON Erskine/NNP)'	4
+'(PERSON Essex/NNP)'	1
+'(PERSON Euroclydon/NNP)'	1
+'(PERSON Faith/NNP)'	1
+'(PERSON Father/NNP Mapple/NNP)'	7
+'(PERSON Father/NNP)'	2
+'(PERSON Fedallah/NNP)'	12
+'(PERSON Fejee/NNP)'	2
+'(PERSON Figuera/NNP)'	1
+'(PERSON First/NNP Congregation/NNP)'	1
+'(PERSON Fishes/NNP)'	1
+'(PERSON Fitz/NNP Swackhammer/NNP)'	1
+'(PERSON Flask/NNP Kill/NNP)'	1
+'(PERSON Flask/NNP)'	55
+'(PERSON Fleece/NNP)'	6
+'(PERSON Floundered/NNP)'	1
+'(PERSON Fogo/NNP Von/NNP Slack/NNP)'	1
+'(PERSON Fossil/NNP Whales/NNP)'	1
+'(PERSON Frederick/NNP Cuvier/NNP)'	4
+'(PERSON Frenchman/NNP)'	2
+'(PERSON Gabriel/NNP)'	19
+'(PERSON Gall/NNP)'	1
+'(PERSON Gardiner/NNP)'	2
+'(PERSON Gay/NNP Head/NNP)'	1
+'(PERSON Gemini/NNP)'	2
+'(PERSON George/NNP Washington/NNP)'	1
+'(PERSON George/NNP)'	3
+'(PERSON Ginger/NNP)'	2
+'(PERSON Globe/NNP)'	1
+'(PERSON God/NNP)'	38
+'(PERSON Goldsmith/NNP)'	1
+'(PERSON Gomorrah/NNP)'	1
+'(PERSON Good/NNP Hope/NNP)'	1
+'(PERSON Good/NNP)'	2
+'(PERSON Gor/NNP)'	2
+'(PERSON Grace/NNP)'	1
+'(PERSON Grammar/NNP)'	1
+'(PERSON Great/NNP Jove/NNP)'	1
+'(PERSON Grin/NNP)'	1
+'(PERSON Gros/NNP)'	1
+'(PERSON Guido/NNP)'	2
+'(PERSON Gurry/NNP)'	1
+'(PERSON Hadst/NNP)'	1
+'(PERSON Hail/NNP)'	1
+'(PERSON Halloa/NNP)'	1
+'(PERSON Hampton/NNP Court/NNP)'	1
+'(PERSON Hannibal/NNP)'	1
+'(PERSON Harbor/NNP)'	1
+'(PERSON Hard/NNP)'	3
+'(PERSON Hardly/RB)'	2
+'(PERSON Hark/NNP)'	2
+'(PERSON Harold/NNP)'	1
+'(PERSON Harpooneer/NNP)'	1
+'(PERSON Harris/NNP)'	2
+'(PERSON Harry/NNP)'	1
+'(PERSON Harto/NNP)'	1
+'(PERSON Hast/NNP)'	1
+'(PERSON Heaven/NNP)'	1
+'(PERSON Hedgehog/NNP)'	1
+'(PERSON Hell/NNP)'	1
+'(PERSON Henry/NNP VIIIth/NNP)'	1
+'(PERSON Hercules/NNP)'	6
+'(PERSON Hereby/NNP)'	1
+'(PERSON Herein/NNP)'	1
+'(PERSON Herman/NNP Melville/NNP)'	1
+'(PERSON Herod/NNP)'	1
+'(PERSON Herr/NNP Alexander/NNP)'	1
+'(PERSON Herschel/NNP)'	1
+'(PERSON Himself/NNP)'	1
+'(PERSON Hindoo/NNP)'	2
+'(PERSON Hogarth/NNP)'	1
+'(PERSON Holloa/NNP)'	3
+'(PERSON Honourary/NNP Grand/NNP Harpooneer/NNP)'	1
+'(PERSON Hosea/NNP Hussey/NNP)'	2
+'(PERSON Hosea/NNP)'	1
+'(PERSON Hotel/NNP)'	1
+'(PERSON Hudson/NNP)'	2
+'(PERSON Hugest/NNP)'	1
+'(PERSON Huggins/NNP)'	1
+'(PERSON Huggins/NNS)'	1
+'(PERSON Huron/NNP)'	1
+'(PERSON Hussey/NNP)'	3
+'(PERSON Huzza/NNP Porpoise/NNP)'	1
+'(PERSON II/NNP)'	5
+'(PERSON Ifs/NNP)'	1
+'(PERSON Impiety/NNP)'	1
+'(PERSON Ingin/NNP)'	1
+'(PERSON Invisible/JJ)'	1
+'(PERSON Ishmael/NNP)'	3
+'(PERSON JOHN/NNP HUNTER/NNP)'	1
+'(PERSON JOHN/NNP TALBOT/NNP)'	1
+'(PERSON JOHNSON/NNP)'	1
+'(PERSON Jack/NNP Bunger/NNP)'	1
+'(PERSON Jack/NNP)'	1
+'(PERSON Jacob/NNP)'	1
+'(PERSON Jaffa/NNP)'	1
+'(PERSON Java/NNP Head/NNP)'	2
+'(PERSON Java/NNP)'	2
+'(PERSON Jenny/NNP)'	2
+'(PERSON Jeremy/NNP Bentham/NNP)'	1
+'(PERSON Jeremy/NNP)'	1
+'(PERSON Jesu/NNP)'	1
+'(PERSON Jimimi/NNP)'	1
+'(PERSON Job/NNP)'	1
+'(PERSON Joe/NNP)'	1
+'(PERSON John/NNP Bull/NNP)'	1
+'(PERSON John/NNP Ferdinando/NNP)'	1
+'(PERSON John/NNP Hunter/NNP)'	2
+'(PERSON John/NNP Leo/NNP)'	2
+'(PERSON John/NNP)'	2
+'(PERSON Johnny/NNP)'	1
+'(PERSON Johnson/NNP)'	2
+'(PERSON Jonah/NNP)'	60
+'(PERSON Jonas/NNP)'	1
+'(PERSON Joppa/NNP)'	2
+'(PERSON Jordan/NNP)'	1
+'(PERSON Jove/NNP)'	6
+'(PERSON Juan/NNP Fernandes/NNP)'	1
+'(PERSON July/NNP)'	1
+'(PERSON Jungfrau/NNP)'	1
+'(PERSON Jupiter/NNP)'	3
+'(PERSON Justinian/JJ)'	1
+'(PERSON Kedron/NNP)'	1
+'(PERSON Kentucky/NNP Mammoth/NNP Cave/NNP)'	1
+'(PERSON Kill/NNP)'	1
+'(PERSON Kings/NNP)'	1
+'(PERSON Kit/NNP Carson/NNP)'	1
+'(PERSON Labor/NNP)'	1
+'(PERSON Lake/NNP Erie/NNP)'	1
+'(PERSON Lakeman/NNP)'	1
+'(PERSON Lamatins/NNP)'	1
+'(PERSON Langsdorff/NNP)'	1
+'(PERSON Lank/NNP)'	1
+'(PERSON Laplander/NNP snow-shoes/NNP)'	1
+'(PERSON Lascars/NNP)'	1
+'(PERSON Lavater/NNP)'	3
+'(PERSON Lazarus/NNP)'	4
+'(PERSON Ledyard/NNP)'	2
+'(PERSON Leeward/NNP)'	1
+'(PERSON Leicester/NNP)'	1
+'(PERSON Leo/NNP)'	1
+'(PERSON Lesson/NNP)'	1
+'(PERSON Letter/NNP)'	1
+'(PERSON Leviathan/NNP)'	22
+'(PERSON Libra/NNP)'	1
+'(PERSON Life/NNP)'	3
+'(PERSON Like/NNP)'	1
+'(PERSON Lima/NNP)'	5
+'(PERSON Line/NN)'	1
+'(PERSON Line/NNP)'	1
+'(PERSON Linnaeus/NNP)'	3
+'(PERSON Look/NNP)'	1
+'(PERSON Lord/NNP Ellenborough/NNP)'	2
+'(PERSON Lord/NNP)'	5
+'(PERSON Louis/NNP Blanc/NNP)'	1
+'(PERSON Louis/NNP Philippe/NNP)'	1
+'(PERSON Louis/NNP XVI/NNP)'	1
+'(PERSON Low/NNP Dutch/NNP)'	4
+'(PERSON Lucifer/NNP)'	1
+'(PERSON MCCULLOCH/NN)'	1
+'(PERSON Macey/NNP)'	4
+'(PERSON Madame/NNP Leviathan/NNP)'	1
+'(PERSON Madman/NNP)'	1
+'(PERSON Magnitude/NNP Diminish/NNP)'	1
+'(PERSON Manilla/NNP)'	1
+'(PERSON Mansoul/NNP)'	1
+'(PERSON Manxman/NNP)'	4
+'(PERSON Mapple/NNP)'	2
+'(PERSON Marius/NNP)'	1
+'(PERSON Mark/NNP Antony/NNP)'	1
+'(PERSON Mark/NNP)'	5
+'(PERSON Marmora/NNP)'	1
+'(PERSON Martha/NNP)'	3
+'(PERSON Mary/NNP Folger/NNP)'	1
+'(PERSON Mary/NNP Morrel/NNP)'	1
+'(PERSON Mary/NNP)'	1
+'(PERSON Massa/NNP Shark/NNP)'	1
+'(PERSON Massa/NNP Stubb/NNP)'	1
+'(PERSON Massa/NNP)'	1
+'(PERSON Matsmai/NNP)'	1
+'(PERSON Mayhew/NNP)'	1
+'(PERSON Melancthon/NNP)'	1
+'(PERSON Mene/NNP)'	2
+'(PERSON Merry/NNP)'	1
+'(PERSON Meshach/NNP)'	1
+'(PERSON Michael/NNP)'	1
+'(PERSON Michigan/NNP)'	2
+'(PERSON Milky/NNP Way/NNP)'	1
+'(PERSON Mills/NNP)'	1
+'(PERSON Miriam/NNP Coffin/NNP)'	1
+'(PERSON Miriam/NNP)'	1
+'(PERSON Missouri/NNP)'	2
+'(PERSON Moby/NNP Dick/NNP)'	68
+'(PERSON Moby/NNP)'	2
+'(PERSON Mogul/NNP)'	3
+'(PERSON Monadnock/NNP)'	1
+'(PERSON Monsieur/NNP)'	7
+'(PERSON Monsieurs/NNP)'	1
+'(PERSON Monsoons/NNPS)'	1
+'(PERSON Mosque/NNP)'	1
+'(PERSON Moss/NNP)'	2
+'(PERSON Mounttop/NNP)'	1
+'(PERSON Mr./NNP Dough-Boy/NNP)'	1
+'(PERSON Mr./NNP Elijah/NNP)'	1
+'(PERSON Mr./NNP Flask/NNP)'	6
+'(PERSON Mr./NNP Har/NNP)'	1
+'(PERSON Mr./NNP Harry/NNP Macey/NNP)'	1
+'(PERSON Mr./NNP Harry/NNP)'	1
+'(PERSON Mr./NNP Hosea/NNP Hussey/NNP)'	1
+'(PERSON Mr./NNP Humpback/NNP)'	1
+'(PERSON Mr./NNP Mounttop/NNP)'	1
+'(PERSON Mr./NNP Queequeg/NNP)'	1
+'(PERSON Mr./NNP Starbuck/NNP)'	20
+'(PERSON Mr./NNP Stubb/NNP)'	11
+'(PERSON Mr./NNP Webster/NNP)'	1
+'(PERSON Mr./NNP)'	11
+'(PERSON Mungo/NNP Park/NNP)'	1
+'(PERSON Mungo/NNP)'	1
+'(PERSON Murray/NNP)'	1
+'(PERSON Muster/NNP)'	1
+'(PERSON Nantucket/NNP Quakerism/NNP)'	1
+'(PERSON Nantucket/NNP)'	15
+'(PERSON Napoleon/NNP)'	1
+'(PERSON Nathan/NNP Swain/NNP)'	1
+'(PERSON Nature/NNP)'	2
+'(PERSON Negro/NNP Hill/NNP)'	1
+'(PERSON Nelson/NNP)'	3
+'(PERSON Nescio/NNP)'	1
+'(PERSON Neskyeuna/NNP Shakers/NNP)'	1
+'(PERSON Neskyeuna/NNP)'	1
+'(PERSON Next/JJ)'	1
+'(PERSON Niagara/NNP)'	1
+'(PERSON Nineveh/NNP)'	1
+'(PERSON Niphon/NNP)'	1
+'(PERSON Noah/NNP Webster/NNP)'	1
+'(PERSON Noah/NNP)'	2
+'(PERSON Obed/NNP Macy/NNP)'	1
+'(PERSON Olassen/NNP)'	1
+'(PERSON Old/NNP Ahab/NNP)'	1
+'(PERSON Old/NNP Thunder/NNP)'	1
+'(PERSON Old/NNP)'	2
+'(PERSON Ontario/NNP)'	1
+'(PERSON Ottoman/NNP)'	1
+'(PERSON Owen/NNP Chace/NNP)'	1
+'(PERSON Owen/NNP)'	2
+'(PERSON Pacific/NNP)'	4
+'(PERSON Pacifics/NNP)'	1
+'(PERSON Pagan/NNP Roman/NNP)'	1
+'(PERSON Pagan/NNP)'	1
+'(PERSON Pale/NNP Sherry/NNP)'	1
+'(PERSON Pan/NNP)'	1
+'(PERSON Parsee/NNP)'	1
+'(PERSON Pass/NNP)'	1
+'(PERSON Passion/NNP)'	1
+'(PERSON Patagonia/NNP)'	1
+'(PERSON Patagonian/JJ Cape/NNP)'	1
+'(PERSON Paul/NNP)'	1
+'(PERSON Pedro/NNP)'	1
+'(PERSON Peleg/NNP)'	36
+'(PERSON Pequod/NNP)'	12
+'(PERSON Perry/NNP)'	1
+'(PERSON Perseus/NNP Descending/NNP)'	1
+'(PERSON Perseus/NNP)'	3
+'(PERSON Perth/NNP)'	10
+'(PERSON Peru/NNP)'	1
+'(PERSON Peter/NNP Coffin/NNP)'	4
+'(PERSON Peter/NNP Peterson/NNP)'	1
+'(PERSON Pilot/NNP Paul/NNP)'	1
+'(PERSON Pilot/NNP)'	1
+'(PERSON Pine/NNP Barrens/NNP)'	1
+'(PERSON Pip/NNP)'	45
+'(PERSON Pippin/NNP)'	1
+'(PERSON Pisces/NNS)'	1
+'(PERSON Pizarro/NNP)'	1
+'(PERSON Plato/NNP)'	2
+'(PERSON Platonist/NNP)'	1
+'(PERSON Pliny/NNP)'	2
+'(PERSON Plowdon/NNP)'	2
+'(PERSON Polar/NNP)'	1
+'(PERSON Pompey/NNP)'	1
+'(PERSON Poor/NNP)'	5
+'(PERSON Porus/NNP)'	1
+'(PERSON Possession/NNP)'	1
+'(PERSON Povelson/NNP)'	1
+'(PERSON Power/NN)'	1
+'(PERSON Pray/NNP God/NNP)'	1
+'(PERSON Presbyterian/NNP Christians/NNP)'	1
+'(PERSON Procopius/NNP)'	2
+'(PERSON Prynne/NNP)'	1
+'(PERSON Ptolemy/NNP Philopater/NNP)'	1
+'(PERSON Pull/NNP)'	1
+'(PERSON Purchas/NNP)'	1
+'(PERSON Push/NNP)'	1
+'(PERSON Pusie/NNP Hall/NNP)'	1
+'(PERSON Quakerish/JJ Nantucketer/NNP)'	1
+'(PERSON Quarto/NNP)'	1
+'(PERSON Queen/NNP Bess/NNP)'	1
+'(PERSON Queen/NNP Maachah/NNP)'	1
+'(PERSON Queen/NNP)'	4
+'(PERSON Queequeg/NNP)'	117
+'(PERSON Quick/NNP)'	4
+'(PERSON Quohog/NNP)'	3
+'(PERSON Rabbins/NNP)'	1
+'(PERSON Rabelais/NNP)'	1
+'(PERSON Rachel/NNP)'	1
+'(PERSON Radney/NNP)'	8
+'(PERSON Railroads/NNP)'	1
+'(PERSON Raise/NNP)'	1
+'(PERSON Ramadan/NNP)'	1
+'(PERSON Rattler/NNP)'	2
+'(PERSON Ready/NNP)'	2
+'(PERSON Regent/NNP)'	1
+'(PERSON Remote/NNP)'	1
+'(PERSON Richard/NNP III/NNP)'	1
+'(PERSON Right/NNP Whale/NNP Cruising/NNP Grounds/NNPS)'	1
+'(PERSON Right/NNP Whale/NNP)'	3
+'(PERSON Right/NNP Whalemen/NNP)'	1
+'(PERSON Right/NNP Whales/NNP)'	2
+'(PERSON Rinaldo/NNP Rinaldini/NNP)'	1
+'(PERSON River/NNP Whale/NNP)'	1
+'(PERSON Roanoke/NNP)'	2
+'(PERSON Rockaway/NNP Beach/NNP)'	1
+'(PERSON Rocks/NNP)'	1
+'(PERSON Rogers/NNP)'	1
+'(PERSON Roman/NNP)'	1
+'(PERSON Rome/NNP)'	1
+'(PERSON Rope/NNP Walks/NNP)'	1
+'(PERSON Rose/NNP)'	1
+'(PERSON Ross/NNP Browne/NNP)'	2
+'(PERSON Sabbath/NNP)'	1
+'(PERSON Sachem/NNP)'	1
+'(PERSON Sag/NNP Harbor/NNP)'	1
+'(PERSON Sagittarius/NNP)'	1
+'(PERSON Sal/NNP)'	3
+'(PERSON Saladin/NNP)'	1
+'(PERSON Sam/NNP)'	1
+'(PERSON Sammy/NNP)'	2
+'(PERSON Samson/NNP)'	1
+'(PERSON Samuel/NNP Enderby/NNP)'	2
+'(PERSON Samuel/NNP)'	3
+'(PERSON Santa/NNP Claus/NNP)'	1
+'(PERSON Saratoga/NNP)'	1
+'(PERSON Sartain/NNP)'	1
+'(PERSON Satanic/NNP)'	1
+'(PERSON Saturn/NNP)'	1
+'(PERSON Saul/NNP)'	1
+'(PERSON Saxon/NNP)'	1
+'(PERSON Schmerenburgh/NNP)'	1
+'(PERSON Scoresby/NNP)'	4
+'(PERSON Scorpio/NNP)'	1
+'(PERSON Scotch/NNP Sibbald/NNP)'	1
+'(PERSON Sebastian/NNP)'	1
+'(PERSON See/NNP)'	1
+'(PERSON Seeva/NNP)'	1
+'(PERSON Semiramis/NNP)'	1
+'(PERSON Senor/NNP)'	1
+'(PERSON Sha/NNP)'	1
+'(PERSON Shadrach/NNP)'	1
+'(PERSON Shakespeare/NNP)'	1
+'(PERSON Shark/NNP Massacre/NNP)'	1
+'(PERSON Shark/NNP)'	1
+'(PERSON Sharks/NNP)'	1
+'(PERSON Ship/NNP Jeroboam/NNP)'	1
+'(PERSON Shirt/NNP)'	1
+'(PERSON Siam/NNP)'	1
+'(PERSON Simeon/NNP Macey/NNP)'	1
+'(PERSON Sin/NNP)'	1
+'(PERSON Sir/NNP Clifford/NNP Constable/NNP)'	1
+'(PERSON Sir/NNP Clifford/NNP)'	1
+'(PERSON Sir/NNP Martin/NNP Frobisher/NNP)'	1
+'(PERSON Sir/NNP Martin/NNP)'	1
+'(PERSON Sir/NNP Thomas/NNP Browne/NNP)'	1
+'(PERSON Sir/NNP William/NNP Jones/NNP)'	1
+'(PERSON Sir/NNP)'	10
+'(PERSON Sirs/NNP)'	1
+'(PERSON Skeleton/NNP)'	1
+'(PERSON Smeer/NNP)'	1
+'(PERSON Smells/NNP)'	1
+'(PERSON Smut/NNP)'	1
+'(PERSON Solomon/NNP)'	7
+'(PERSON Son/NNP)'	1
+'(PERSON Spaniard/NNP)'	1
+'(PERSON Spencer/NNP)'	1
+'(PERSON Sperm/NNP Whale-teeth/NNP)'	1
+'(PERSON Sperm/NNP Whale/NNP Fishery/NNP)'	1
+'(PERSON Sperm/NNP Whale/NNP)'	10
+'(PERSON Sperm/NNP Whaler/NNP)'	1
+'(PERSON Sperm/NNP Whales/NNP)'	4
+'(PERSON Sperm/NNP)'	1
+'(PERSON Spermacetti/NNP Whales/NNP)'	1
+'(PERSON Spring/NNP)'	1
+'(PERSON Spurzheim/NNP)'	1
+'(PERSON Squid/NNP)'	1
+'(PERSON Squires/NNP)'	2
+'(PERSON St./NNP George/NNP)'	2
+'(PERSON St./NNP Paul/NNP)'	1
+'(PERSON Stand/NNP)'	1
+'(PERSON Starboard/NNP)'	1
+'(PERSON Starbuck/NNP)'	141
+'(PERSON Steady/JJ)'	1
+'(PERSON Steady/NNP)'	3
+'(PERSON Steel/NNP)'	1
+'(PERSON Steelkilt/NNP Charlemagne/NNP)'	1
+'(PERSON Steelkilt/NNP)'	36
+'(PERSON Step/NNP)'	1
+'(PERSON Stern/NNP)'	3
+'(PERSON Steward/NNP)'	2
+'(PERSON Stop/NNP)'	1
+'(PERSON Street/NNP)'	1
+'(PERSON Strello/NNP)'	1
+'(PERSON Strength/NNP)'	1
+'(PERSON Stretched/NNP)'	1
+'(PERSON Stubb/NNP)'	187
+'(PERSON Such/JJ)'	2
+'(PERSON Sulphur/NNP Bottom/NNP)'	1
+'(PERSON Summer/NNP)'	1
+'(PERSON Supper/NNP)'	2
+'(PERSON Supreme/NNP)'	1
+'(PERSON Surgeon/NNP Beale/NNP)'	1
+'(PERSON Surgeon/NNP)'	1
+'(PERSON Susan/NNP)'	1
+'(PERSON Sweet/NNP)'	1
+'(PERSON Swim/NNP)'	1
+'(PERSON Sylla/NNP)'	1
+'(PERSON Tahiti/NNP)'	2
+'(PERSON Tamerlane/NNP)'	1
+'(PERSON Tanaquil/NNP)'	1
+'(PERSON Tarquin/NNP)'	2
+'(PERSON Tarsus/NNP)'	1
+'(PERSON Tartar/NNP Emperors/NNP)'	1
+'(PERSON Tartar/NNP)'	1
+'(PERSON Tash/NNP)'	4
+'(PERSON Tashtego/NNP)'	29
+'(PERSON Tekel/NNP Upharsin/NNP)'	1
+'(PERSON Terra/NNP Del/NNP Fuego/NNP)'	1
+'(PERSON Texas/NNP)'	1
+'(PERSON Texel/NNP)'	1
+'(PERSON Thames/NNP Tunnels/NNP)'	1
+'(PERSON Thine/NNP)'	1
+'(PERSON Tho/NNP)'	1
+'(PERSON Thou/NNP)'	13
+'(PERSON Thy/NNP)'	2
+'(PERSON Time/NNP)'	1
+'(PERSON Tistig/NNP)'	1
+'(PERSON Tom/NNP)'	1
+'(PERSON Tongatobooarrs/NNP)'	1
+'(PERSON Tophet/NNP)'	1
+'(PERSON Trade/NNP Winds/NNP)'	1
+'(PERSON Tranquo/NNP)'	4
+'(PERSON Tun/NNP)'	1
+'(PERSON Turks/NNS)'	1
+'(PERSON Typhoon/NNP)'	1
+'(PERSON Union/NNP)'	1
+'(PERSON Untried/NNP)'	1
+'(PERSON Uppermost/NNP)'	1
+'(PERSON Utter/NNP)'	1
+'(PERSON Vancouver/NNP)'	1
+'(PERSON Verily/NNP)'	1
+'(PERSON Very/NNP)'	1
+'(PERSON Vesuvius/NNP)'	1
+'(PERSON Vineyard/NNP)'	1
+'(PERSON Virgo/NNP)'	1
+'(PERSON Virtue/NNP)'	3
+'(PERSON Vishnoo/NNP)'	4
+'(PERSON Volcano/NNP Bay/NNP)'	1
+'(PERSON Voyages/NNP)'	1
+'(PERSON Water/NNP)'	1
+'(PERSON Well/NNP)'	1
+'(PERSON Wellington/NNP)'	1
+'(PERSON Whale/NNP)'	8
+'(PERSON Whaler/NNP)'	1
+'(PERSON Whales/NNP)'	3
+'(PERSON Whelped/NNP)'	1
+'(PERSON Whereupon/NNP)'	1
+'(PERSON Whirlpooles/NNP)'	1
+'(PERSON Whole/NNP)'	1
+'(PERSON Will/NNP He/NNP Perish/NNP)'	1
+'(PERSON Will/NNP)'	3
+'(PERSON William/NNP Prynne/NNP)'	1
+'(PERSON Woebegone/NNP)'	1
+'(PERSON Xerxes/NNP)'	1
+'(PERSON Yarman/NNP)'	3
+'(PERSON Ye/NNP)'	2
+'(PERSON Years/NNP)'	1
+'(PERSON Yojo/NNP)'	14
+'(PERSON Young/NNP)'	1
+'(PERSON Zeuglodon/NNP)'	1
+'(PERSON Zoroaster/NNP)'	1
