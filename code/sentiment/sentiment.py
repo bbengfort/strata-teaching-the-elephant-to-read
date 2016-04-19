@@ -86,3 +86,4 @@ class SentimentModel(object):
 if __name__ == "__main__":
     model = SentimentModel(movie_reviews)
     print model
+    model.show_most_informative_features()

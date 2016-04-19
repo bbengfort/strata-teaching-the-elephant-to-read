@@ -16,5 +16,10 @@ posfeats = [(bag_of_words(movie_reviews.words(fileids=[f])), 'pos') for f in pos
 
 classifier = NaiveBayesClassifier.train(negfeats + posfeats)
 
+#classifier.show_most_informative_features()
+
 print classifier.classify(bag_of_words("An astounding triumph!"))
 print classifier.classify(bag_of_words("The movie was idiotic and ludicrous."))
+
+
+
